@@ -30,14 +30,14 @@ class Home extends Component {
             onMouseEnter={this.onMouseLeftEnter}
             onMouseLeave={this.onMouseLeftLeave}
             onClick={() => { history.push('/russian') }}>
-          <div className="headline">los</div>
+          <div className="headline">Los</div>
           </div>
           <div
             className="flex flex-justify-center flex-align-items-center one-half right"
             onMouseEnter={this.onMouseRightEnter}
             onMouseLeave={this.onMouseRightLeave}
             onClick={() => { history.push('/russian') }}>
-          <div className="headline">пошли</div>
+          <div className="headline">Пошли</div>
           </div>
       </Grid>
     )

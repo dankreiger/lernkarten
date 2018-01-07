@@ -1,7 +1,25 @@
-import React from 'react';
+import React, {Component} from 'react';
+import vocabulary from './static/vocabulary';
 
-const Flashcard = ({match}) => {
-  return(<div>Flashcard</div>)
+class Flashcard extends Component {
+  constructor(props){
+    super(props);
+    console.log(this.props);
+    this.state = {
+      vocabulary: vocabulary[this.props.match.params.topicId],
+      currentCard: 0
+    }
+  }
+
+  render() {
+    const {vocabulary, currentCard} = this.state;
+    return (
+      <div className='Flashcard'>
+        {vocabulary[currentCard].word}
+      </div>
+    )
+  }
 }
+
 
 export default Flashcard;

@@ -5,8 +5,6 @@ import Flashcard from './Flashcard';
 // bootstrap components
 import { Grid, Row, Col } from 'react-bootstrap';
 
-const sites = ['Greetings'];
-
 const German = ({ match }) => (
   <Grid>
     <Row className='flex flex-justify-center'>
