@@ -1,0 +1,11 @@
+.full-width {
+  width: 100%; }
+
+.flex {
+  display: flex; }
+
+.flex-justify-center {
+  justify-content: center; }
+
+.flex-align-items-center {
+  align-items: center; }
