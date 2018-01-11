@@ -6,8 +6,16 @@
   display: flex;
 }
 
+.flex-columns {
+  flex-direction: column;
+}
+
 .flex-justify-center {
   justify-content: center;
+}
+
+.flex-space-around {
+  justify-content: space-around;
 }
 
 .flex-align-items-center {

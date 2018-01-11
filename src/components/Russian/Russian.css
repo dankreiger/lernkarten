@@ -1,3 +1,14 @@
+.menuLink {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.3s all;
+  font-size: 1.6em; }
+  .menuLink:hover {
+    transform: scale(1.1);
+    text-decoration: none; }
+
 .Flashcard {
   background: #fff;
   cursor: pointer;
@@ -31,7 +42,8 @@
   .Flashcard.newCard {
     transition: 0s; }
 
-.front, .back {
+.back,
+.front {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;

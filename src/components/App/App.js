@@ -11,7 +11,6 @@ import German from '../German/German';
 import Russian from '../Russian/Russian';
 
 const App = ({location}) => {
-
   return (
     <div className="App">
       <Layout>
@@ -19,7 +18,7 @@ const App = ({location}) => {
           <Switch location={location}>
             <Route exact path="/" component={Home}/>
             <Route path="/german" component={German}/>
-            <Route path="/russian/menu" component={Russian}/>
+            <Route path="/russian" component={Russian}/>
           </Switch>
         </div>
       </Layout>

@@ -1,3 +1,16 @@
+.menuLink {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.3s all;
+  font-size: 1.6em;
+  &:hover {
+    transform: scale(1.1);
+    text-decoration: none;
+  }
+}
+
 .Flashcard {
   background: #fff;
   cursor: pointer;
@@ -26,15 +39,18 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+
   &:hover {
     border-radius: 3px;
   }
+
   &.newCard {
     transition: 0s;
   }
 }
 
-.front, .back {
+.back,
+.front {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -53,9 +69,11 @@
     margin-top: 0;
     margin-bottom: 0;
   }
+
   &.flipped {
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
+
     p {
       -webkit-transform: rotateY(180deg);
       transform: rotateY(180deg);

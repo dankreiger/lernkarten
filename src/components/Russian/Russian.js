@@ -1,38 +1,37 @@
-import React, { Component } from 'react';
-import { Route } from 'react-router-dom'
-import { Grid, Row } from 'react-bootstrap';
+import React from 'react';
+import { Grid } from 'react-bootstrap';
 import './Russian.css';
 import BreadcrumbMenu from '../../helpers/BreadcrumbMenu/BreadcrumbMenu';
-import ListItem from './ListItem';
+import vocabulary from './static/vocabulary';
+import { Link, Route } from 'react-router-dom'
 import Flashcard from './Flashcard';
 
-const sites = ['Greetings'];
+const Russian = ({history, location, match}) => {
+  const currentLocation = location.pathname.slice(9);
 
-class Russian extends Component {
-
-  render() {
-    const { match, location } = this.props;
-
-    const links = sites.map(site => {
-      let topic = site.replace(/ /g,"_").toLowerCase();
-      return(
-        <ListItem key={topic} link={`${match.url}/${topic}`} text={site} />
-      )
-    })
-
-    console.log(location.pathname.slice(9))
-
-    return (
-      <Grid>
-        <Row className='flex'>
-          <BreadcrumbMenu
-            history={this.props.history}language={'русский'} />
-        </Row>
-        {links}
-        <Route path={`${this.props.match.url}/:topicId`} component={Flashcard} />
-      </Grid>
-    )
+  const capitalizeFirstLetter = (string) => {
+    return string.charAt(0).toUpperCase() + string.slice(1);
   }
-}
 
+  const linkStyle = history.location.pathname !== '/russian' ? {'display': 'none'} : null;
+
+  return (
+    <div>
+      <BreadcrumbMenu language='Русский' history={history} currentLocation={capitalizeFirstLetter(currentLocation)} />
+      <Grid className='flex flex-columns flex-align-items-center'>
+        {Object.entries(vocabulary).map(([topic, words]) => {
+          let link = `${match.url}/${topic}`;
+
+          return (
+            <div className='flex flex-justify-center full-width' key={topic}>
+              <Link className='menuLink' style={linkStyle} to={link}>{topic}</Link>
+              <Route path={link} render={ ()=> <Flashcard words={words} someProp={100}/> } />
+            </div>
+          )
+        })}
+      </Grid>
+
+    </div>
+  )
+}
 export default Russian;
