@@ -1,6 +1,5 @@
 import React from 'react';
 import ListItem from './ListItem';
-import vocabulary from './static/vocabulary';
 
 const sites = ['Greetings'];
 

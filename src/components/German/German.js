@@ -1,6 +1,4 @@
 import React from 'react';
-import { Link, Route } from 'react-router-dom'
-import Flashcard from './Flashcard';
 import Lessons from './Lessons';
 import BreadcrumbMenu from '../../helpers/BreadcrumbMenu/BreadcrumbMenu';
 

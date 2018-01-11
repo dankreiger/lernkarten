@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom'
-import { Grid, Row, Col } from 'react-bootstrap';
+import { Grid, Row } from 'react-bootstrap';
 import './Russian.css';
 import BreadcrumbMenu from '../../helpers/BreadcrumbMenu/BreadcrumbMenu';
 import ListItem from './ListItem';
