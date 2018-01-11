@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom'
 import { Grid, Row, Col } from 'react-bootstrap';
-import './Russian.css'
+import './Russian.css';
+import BreadcrumbMenu from '../../helpers/BreadcrumbMenu/BreadcrumbMenu';
 import ListItem from './ListItem';
 import Flashcard from './Flashcard';
 
@@ -10,7 +11,7 @@ const sites = ['Greetings'];
 class Russian extends Component {
 
   render() {
-    const {match} = this.props;
+    const { match, location } = this.props;
 
     const links = sites.map(site => {
       let topic = site.replace(/ /g,"_").toLowerCase();
@@ -19,12 +20,13 @@ class Russian extends Component {
       )
     })
 
+    console.log(location.pathname.slice(9))
+
     return (
       <Grid>
-        <Row className='flex flex-justify-center'>
-          <Col>
-            <h2>русский</h2>
-          </Col>
+        <Row className='flex'>
+          <BreadcrumbMenu
+            history={this.props.history}language={'русский'} />
         </Row>
         {links}
         <Route path={`${this.props.match.url}/:topicId`} component={Flashcard} />

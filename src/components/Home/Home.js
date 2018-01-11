@@ -29,7 +29,7 @@ class Home extends Component {
             className="flex flex-justify-center flex-align-items-center one-half left"
             onMouseEnter={this.onMouseLeftEnter}
             onMouseLeave={this.onMouseLeftLeave}
-            onClick={() => { history.push('/russian') }}>
+            onClick={() => { history.push('/german') }}>
           <div className="headline">Los</div>
           </div>
           <div

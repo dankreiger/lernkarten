@@ -1,26 +1,30 @@
 import React from 'react';
 import { Link, Route } from 'react-router-dom'
 import Flashcard from './Flashcard';
+import Lessons from './Lessons';
+import BreadcrumbMenu from '../../helpers/BreadcrumbMenu/BreadcrumbMenu';
 
 // bootstrap components
 import { Grid, Row, Col } from 'react-bootstrap';
 
-const German = ({ match }) => (
-  <Grid>
-    <Row className='flex flex-justify-center'>
-      <Col>
-        <h2>Deutsch</h2>
-      </Col>
-    </Row>
-    <Row>
-      <Col sm={12} md={12}>
-        <Link to={`${match.url}/exampleTopicId`} id={50}>
-          Example topic
-        </Link>
-        <Route path={`${match.url}/:topicId`} component={Flashcard} />
-      </Col>
-    </Row>
-  </Grid>
-)
+const German = ({history, location, match}) => {
+  const currentLocation = location.pathname.slice(8);
 
+  const capitalizeFirstLetter = (string) => {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  }
+
+  return (
+    <div>
+      <BreadcrumbMenu language='Deutsch' history={history} currentLocation={capitalizeFirstLetter(currentLocation)} />
+      <Grid>
+        <Row className='flex flex-justify-center'>
+          <Col sm={12} md={12}>
+            <Lessons />
+          </Col>
+        </Row>
+      </Grid>
+    </div>
+  )
+}
 export default German;
