@@ -9,3 +9,8 @@ export function translateLink(path){
   lang = lang.includes('german') ? 'german' : 'russian';
   return (lang && path.includes(lang)) ? links[lang] : links.default;
 }
+
+export function formatLink(path) {
+  const currentLocation = path.includes('german') ? path.slice(8) : path.slice(9);
+  return currentLocation.charAt(0).toUpperCase() + currentLocation.slice(1);
+}

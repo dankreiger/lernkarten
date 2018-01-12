@@ -6,9 +6,11 @@ import { Switch, Route } from 'react-router-dom'
 import Home from '../Home/Home';
 import Navigation from '../Navigation/Navigation';
 import LanguageMenu from '../LanguageMenu/LanguageMenu';
+import Flashcard from '../Flashcard/Flashcard';
+import vocabulary from '../../static/vocabulary';
 
 
-const App = ({location}) => {
+const App = ({history, location}) => {
   return (
     <div className="App">
       <div className="Layout">
@@ -16,8 +18,10 @@ const App = ({location}) => {
         <div className="full-width" id="app-routes">
           <Switch location={location}>
             <Route exact path="/" component={Home}/>
-            <Route path="/german" component={LanguageMenu}/>
-            <Route path="/russian" component={LanguageMenu}/>
+            <Route exact path="/german" component={LanguageMenu}/>
+            <Route exact path="/russian" component={LanguageMenu}/>
+            <Route path="/german/:topic" render={ ()=> <Flashcard history={history} location={location} words={vocabulary.german}/> } />
+            <Route path="/russian/:topic" render={ ()=> <Flashcard history={history} location={location} words={vocabulary.russian}/> } />
           </Switch>
         </div>
       </div>

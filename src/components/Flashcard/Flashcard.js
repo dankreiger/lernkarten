@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
 import classNames from 'classnames';
+import BreadcrumbMenu from '../BreadcrumbMenu/BreadcrumbMenu';
+import { formatLink } from '../../static/links';
+
 import './Flashcard.css';
 
 class Flashcard extends Component {
@@ -19,11 +22,19 @@ class Flashcard extends Component {
 
   render() {
     const {currentCard, flipped} = this.state;
-    const {words} = this.props;
+    const {history, location, words} = this.props;
+    const subject = formatLink(location.pathname);
+
+    console.log(words[subject.toLowerCase()][currentCard])
 
     return (
-      <div className={ classNames('Flashcard', {'front': !flipped, 'back': flipped, 'flipped': flipped}) } onClick={this.flipCard}>
-        <p className="lead">{flipped ? words[currentCard].translation : words[currentCard].word}</p>
+      <div>
+        <BreadcrumbMenu history={history} currentLocation={subject} />
+        <div className="flex flex-justify-center">
+          <div className={ classNames('Flashcard', {'front': !flipped, 'back': flipped, 'flipped': flipped}) } onClick={this.flipCard}>
+            <p className="lead">{flipped ? words[subject.toLowerCase()][currentCard].translation : words[subject.toLowerCase()][currentCard].word}</p>
+          </div>
+        </div>
       </div>
     )
   }
