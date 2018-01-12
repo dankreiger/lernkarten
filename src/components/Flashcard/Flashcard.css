@@ -33,11 +33,9 @@
   margin-bottom: 0; }
 
 .Flashcard.flipped {
-  -webkit-transform-origin: 50%  51%;
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg); }
   .Flashcard.flipped p {
-    -webkit-transform-origin: 50%  51%;
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg); }
 

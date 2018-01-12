@@ -5,7 +5,7 @@ import Artyom from 'artyom.js';
 
 import BreadcrumbMenu from '../BreadcrumbMenu/BreadcrumbMenu';
 import FlashcardButtons from './FlashcardButtons';
-import { formatLink } from '../../static/links';
+import { formatLink } from '../../static/helpers';
 
 import './Flashcard.css';
 
@@ -19,6 +19,8 @@ class Flashcard extends Component {
 
     this.flipCard = this.flipCard.bind(this);
     this.nextCard = this.nextCard.bind(this);
+    this.previousCard = this.previousCard.bind(this);
+
     this.sayWord = this.sayWord.bind(this);
     this.cardCategory = formatLink(props.location.pathname);
     this.currentWords = props.words[this.cardCategory.toLowerCase()];
@@ -34,7 +36,12 @@ class Flashcard extends Component {
       this.setState(
         {currentCardIndex: nextCardNumber > wordQuantity ? 0 : nextCardNumber, flipped: false}
       );
+  }
 
+  previousCard() {
+    this.setState(
+      {currentCardIndex: this.state.currentCardIndex === 0 ? this.currentWords.length - 1 : this.state.currentCardIndex - 1, flipped: false}
+    );
   }
 
   sayWord = () => {
@@ -57,7 +64,7 @@ class Flashcard extends Component {
         <div className={ classNames(flashcardClasses) } onClick={this.flipCard}>
           <p className="lead">{flipped ? currentCard.translation : currentCard.word}</p>
         </div>
-        <FlashcardButtons sayWord={this.sayWord} nextCard={this.nextCard} />
+        <FlashcardButtons previousCard={this.previousCard} sayWord={this.sayWord} nextCard={this.nextCard} />
       </div>
     )
   }

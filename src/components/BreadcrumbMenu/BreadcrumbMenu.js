@@ -1,6 +1,6 @@
 import React from 'react'
 import { Breadcrumb } from 'react-bootstrap';
-import { translateLink } from '../../static/links';
+import { translateLink, snakeToTitle } from '../../static/helpers';
 import './BreadcrumbMenu.css';
 
 
@@ -15,7 +15,7 @@ const BreadcrumbMenu = ({history, lesson, currentLocation}) => {
         <Breadcrumb.Item onClick={() => { history.push(`/${links.url}`) }}>
           {path.includes('german') ? links.de : links.ru}
         </Breadcrumb.Item>
-        {currentLocation && <Breadcrumb.Item active>{currentLocation}</Breadcrumb.Item>}
+        {currentLocation && <Breadcrumb.Item active>{snakeToTitle(currentLocation)}</Breadcrumb.Item>}
       </Breadcrumb>
     </div>
   )

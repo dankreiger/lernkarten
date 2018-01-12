@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, NavLink, Link } from 'react-router-dom'
 import { Navbar, Nav } from 'react-bootstrap';
-import { translateLink } from '../../static/links';
+import { translateLink } from '../../static/helpers';
 
 import './Navigation.css';
 
