@@ -15,15 +15,14 @@ class Flashcard extends Component {
   }
 
   flipCard() {
-    this.setState({flipped: !this.state.flipCard})
+    this.setState({flipped: !this.state.flipped})
   }
 
   render() {
     const {vocabulary, currentCard, flipped} = this.state;
-
     return (
-      <div className={classNames('Flashcard', {'front': !flipped, 'back': flipped, 'flipped': flipped})} onClick={this.flipCard}>
-        {/* <p class="lead">{if(flipped) ?  : {vocabulary[currentCard].word}}</p> */}
+      <div className={ classNames('Flashcard', {'front': !flipped, 'back': flipped, 'flipped': flipped}) } onClick={this.flipCard}>
+        <p className="lead">{flipped ? vocabulary[currentCard].translation : vocabulary[currentCard].word}</p>
       </div>
     )
   }
