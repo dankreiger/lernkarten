@@ -19,7 +19,7 @@ const LanguageMenu = ({history, location, match}) => {
     <div>
       <BreadcrumbMenu history={history} currentLocation={capitalizeFirstLetter(currentLocation)} />
       <Grid className='flex flex-columns flex-align-items-center'>
-        {Object.entries(vocabulary).map(([topic, words]) => {
+        {Object.entries(vocabulary[match.url.slice(1)]).map(([topic, words]) => {
           let link = `${match.url}/${topic}`;
           return (
             <div className='flex flex-justify-center full-width' key={topic}>

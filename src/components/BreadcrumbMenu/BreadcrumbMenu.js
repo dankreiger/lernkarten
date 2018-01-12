@@ -9,7 +9,7 @@ const BreadcrumbMenu = ({history, lesson, currentLocation}) => {
         links = translateLink(path);
 
   return (
-    <div class='breadcrumb-wrapper'>
+    <div className='breadcrumb-wrapper'>
       <Breadcrumb className='container'>
         <Breadcrumb.Item onClick={() => { history.push('/') }}>{links.home}</Breadcrumb.Item>
         <Breadcrumb.Item onClick={() => { history.push(`/${links.url}`) }}>
