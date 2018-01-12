@@ -16,11 +16,13 @@ const vocabulary = {
     ],
     basics: [
       {word: 'До́брое у́тро', translation: 'Good morning'},
-      {word: 'Добрый день.', translation: 'Good afternoon'}
+      {word: 'Добрый день.', translation: 'Good afternoon'},
+      {word: 'добрый вечер', translation: 'Good evening'}
     ],
     objects: [
       {word: 'стол', translation: 'table'},
-      {word: 'стул', translation: 'chair'}
+      {word: 'стул', translation: 'chair'},
+      {word: 'шкаф', translation: 'closet'}
     ]
   }
 }
