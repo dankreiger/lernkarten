@@ -1,44 +1,35 @@
 import React, { Component } from 'react';
+import { Link, Route } from 'react-router-dom'
 import { Grid } from 'react-bootstrap';
-
 import classNames from 'classnames';
-
 import './Home.css';
 
 class Home extends Component {
   constructor(props){
     super(props);
-    this.state = { hoverLeft: false, hoverRight: false }
-    this.onMouseLeftEnter = this.onMouseLeftEnter.bind(this);
-    this.onMouseLeftLeave = this.onMouseLeftLeave.bind(this);
-    this.onMouseRightEnter = this.onMouseRightEnter.bind(this);
-    this.onMouseRightLeave = this.onMouseRightLeave.bind(this);
+    this.state = {
+      hoverLeft: false,
+      hoverRight: false
+    }
   }
-
-  // hover effects
-  onMouseLeftEnter() { this.setState({hoverLeft: true}) }
-  onMouseRightEnter() { this.setState({hoverRight: true}) }
-  onMouseLeftLeave() { this.setState({hoverLeft: false}) }
-  onMouseRightLeave() { this.setState({hoverRight: false}) }
 
   render() {
     const { history } = this.props;
+    const { hoverLeft, hoverRight } = this.state;
     return (
-      <Grid className={classNames('Home', {'hover-left': this.state.hoverLeft, 'hover-right': this.state.hoverRight})}>
-          <div
-            className="flex flex-justify-center flex-align-items-center one-half left"
-            onMouseEnter={this.onMouseLeftEnter}
-            onMouseLeave={this.onMouseLeftLeave}
-            onClick={() => { history.push('/german') }}>
-          <div className="headline">Los</div>
-          </div>
-          <div
-            className="flex flex-justify-center flex-align-items-center one-half right"
-            onMouseEnter={this.onMouseRightEnter}
-            onMouseLeave={this.onMouseRightLeave}
-            onClick={() => { history.push('/russian') }}>
-          <div className="headline">Пошли</div>
-          </div>
+      <Grid className={classNames('Home', {'hover-left': hoverLeft, 'hover-right': hoverRight})}>
+        <Link
+          className="headline one-half left"
+          onMouseOver={() => this.setState({hoverLeft: true})}
+          onMouseOut={() => this.setState({hoverLeft: false})}
+          to="/german">
+        </Link>
+        <Link
+          className="headline one-half right"
+          onMouseOver={() => this.setState({hoverRight: true})}
+          onMouseOut={() => this.setState({hoverRight: false})}
+          to="/russian">
+        </Link>
       </Grid>
     )
   }

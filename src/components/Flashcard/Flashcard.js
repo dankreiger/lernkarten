@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import './Flashcard.css';
 
 class Flashcard extends Component {
   constructor(props){
@@ -11,8 +12,6 @@ class Flashcard extends Component {
 
   render() {
     const {vocabulary, currentCard} = this.state;
-
-    console.log(vocabulary)
 
     return (
       <div className='Flashcard'>

@@ -1,8 +1,3 @@
-* {
-  box-sizing: border-box; }
-  *:before, *:after {
-    box-sizing: border-box; }
-
 .Home {
   background: #09f;
   cursor: pointer;
@@ -35,7 +30,7 @@
         height: 100%;
         background: rgba(25, 120, 220, 0.5);
         position: absolute; }
-    .Home .one-half.left, .Home .one-half.right, .Home .one-half.left:before, .Home .one-half.right:before {
+    .Home .one-half.left, .Home .one-half.left:before, .Home .one-half.right, .Home .one-half.right:before {
       transition: 500ms all ease-in-out; }
   .Home.hover-left .left {
     width: 85%; }
@@ -51,7 +46,3 @@
     .Home.hover-right .left:before {
       background: rgba(0, 0, 0, 0.65);
       z-index: 2; }
-  .Home .headline {
-    color: #fff;
-    z-index: 1;
-    font-size: 3.25em; }

@@ -1,27 +1,29 @@
 import React from 'react';
-import { Grid } from 'react-bootstrap';
-import './Russian.css';
-import BreadcrumbMenu from '../../helpers/BreadcrumbMenu/BreadcrumbMenu';
-import vocabulary from './static/vocabulary';
 import { Link, Route } from 'react-router-dom'
-import Flashcard from './Flashcard';
+import { Grid } from 'react-bootstrap';
 
-const Russian = ({history, location, match}) => {
-  const currentLocation = location.pathname.slice(9);
+import BreadcrumbMenu from '../../helpers/BreadcrumbMenu/BreadcrumbMenu';
+import vocabulary from '../../static/vocabulary';
+import Flashcard from '../Flashcard/Flashcard';
+import './LanguageMenu.css';
+
+const LanguageMenu = ({history, location, match}) => {
+  const currentLocation = location.pathname.includes('german') ? location.pathname.slice(8) : location.pathname.slice(9);
 
   const capitalizeFirstLetter = (string) => {
     return string.charAt(0).toUpperCase() + string.slice(1);
   }
 
-  const linkStyle = history.location.pathname !== '/russian' ? {'display': 'none'} : null;
+  const linkStyle = location.pathname !== match.url ? {'display': 'none'} : null;
 
+  const language = location.pathname.slice(1);
+  console.log(match.url)
   return (
     <div>
-      <BreadcrumbMenu language='Русский' history={history} currentLocation={capitalizeFirstLetter(currentLocation)} />
+      <BreadcrumbMenu language={capitalizeFirstLetter(match.url.slice(1))} history={history} currentLocation={capitalizeFirstLetter(currentLocation)} />
       <Grid className='flex flex-columns flex-align-items-center'>
         {Object.entries(vocabulary).map(([topic, words]) => {
           let link = `${match.url}/${topic}`;
-
           return (
             <div className='flex flex-justify-center full-width' key={topic}>
               <Link className='menuLink' style={linkStyle} to={link}>{topic}</Link>
@@ -34,4 +36,4 @@ const Russian = ({history, location, match}) => {
     </div>
   )
 }
-export default Russian;
+export default LanguageMenu;
