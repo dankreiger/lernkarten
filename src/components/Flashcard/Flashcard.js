@@ -54,6 +54,15 @@ class Flashcard extends Component {
     });
   }
 
+  sayWordMobile = () => {
+    let artyom = new Artyom(),
+        currentWord = document.querySelector('.react-swipeable-view-container div[aria-hidden="false"] p').innerText;
+
+    artyom.say(currentWord, {
+      lang: this.props.location.pathname.includes('russian') ? "ru-RU" : "de-DE"
+    });
+  }
+
   render() {
 
     const {currentCardIndex, flipped} = this.state;
@@ -73,13 +82,13 @@ class Flashcard extends Component {
               </div>
             )}
           </SwipeableViews>
-          <FlashcardButtons mobileDeviceWidth={true} previousCard={this.previousCard} sayWord={this.sayWord} nextCard={this.nextCard} />
+          <FlashcardButtons sayWord={this.sayWordMobile} />
         </MediaQuery>
         <MediaQuery minDeviceWidth={1224}>
           <div className={ classNames(flashcardClasses) } onClick={this.flipCard}>
             <p className="lead">{flipped ? currentCard.translation : currentCard.word}</p>
           </div>
-          <FlashcardButtons mobileDeviceWidth={false} previousCard={this.previousCard} sayWord={this.sayWord} nextCard={this.nextCard} />
+          <FlashcardButtons previousCard={this.previousCard} sayWord={this.sayWord} nextCard={this.nextCard} />
         </MediaQuery>
       </div>
     )
