@@ -2,8 +2,6 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom'
 
 // components
-import Layout from '../../helpers/Layout/Layout';
-import LanguageMenu from '../../helpers/LanguageMenu/LanguageMenu';
 
 import Home from '../Home/Home';
 import Navigation from '../Navigation/Navigation';
