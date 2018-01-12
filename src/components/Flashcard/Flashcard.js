@@ -23,15 +23,19 @@ class Flashcard extends Component {
   render() {
     const {currentCard, flipped} = this.state;
     const {history, location, words} = this.props;
-    const subject = formatLink(location.pathname);
 
-    console.log(words[subject.toLowerCase()][currentCard])
+    const subject = formatLink(location.pathname);
+    const flashcardClasses = [
+      'Flashcard', 'flex', 'flex-align-items-center', 'flex-columns', 'full-width',
+      {'front': !flipped, 'back': flipped, 'flipped': flipped}
+    ]
 
     return (
       <div>
         <BreadcrumbMenu history={history} currentLocation={subject} />
         <div className="flex flex-justify-center">
-          <div className={ classNames('Flashcard', {'front': !flipped, 'back': flipped, 'flipped': flipped}) } onClick={this.flipCard}>
+          <div
+            className={ classNames(flashcardClasses) } onClick={this.flipCard}>
             <p className="lead">{flipped ? words[subject.toLowerCase()][currentCard].translation : words[subject.toLowerCase()][currentCard].word}</p>
           </div>
         </div>
