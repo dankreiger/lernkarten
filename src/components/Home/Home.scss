@@ -82,5 +82,8 @@
     color: #fff;
     z-index: 1;
     font-size: 3.25em;
+    @media(max-width: 480px){
+      font-size: 2em;
+    }
   }
 }
