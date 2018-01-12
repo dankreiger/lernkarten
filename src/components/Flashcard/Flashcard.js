@@ -6,7 +6,6 @@ class Flashcard extends Component {
   constructor(props){
     super(props);
     this.state = {
-      vocabulary: props.words,
       currentCard: 0,
       flipped: false
     }
@@ -19,10 +18,12 @@ class Flashcard extends Component {
   }
 
   render() {
-    const {vocabulary, currentCard, flipped} = this.state;
+    const {currentCard, flipped} = this.state;
+    const {words} = this.props;
+
     return (
       <div className={ classNames('Flashcard', {'front': !flipped, 'back': flipped, 'flipped': flipped}) } onClick={this.flipCard}>
-        <p className="lead">{flipped ? vocabulary[currentCard].translation : vocabulary[currentCard].word}</p>
+        <p className="lead">{flipped ? words[currentCard].translation : words[currentCard].word}</p>
       </div>
     )
   }
