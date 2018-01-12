@@ -11,15 +11,13 @@
     .Home .one-half.left {
       left: 0;
       cursor: pointer;
-      background: #ff0078;
-      background: url("https://cdn.flixbus.de/city_description_images/berlin-nachtleben.jpg") center center no-repeat;
-      background-size: cover; }
+      background: #000;
+      color: #fff; }
     .Home .one-half.right {
       right: 0;
       cursor: pointer;
-      background: #1978dc;
-      background: url("http://www.telegraph.co.uk/content/dam/Travel/Destinations/Europe/Russia/Moscow/moscow-go-red-square-xlarge.jpg") center center no-repeat;
-      background-size: cover; }
+      background: #fff;
+      color: #000; }
     .Home .one-half.left, .Home .one-half.left:before, .Home .one-half.right, .Home .one-half.right:before {
       transition: 500ms all ease-in-out; }
   .Home.hover-left .left {
@@ -37,7 +35,6 @@
       background: rgba(0, 0, 0, 0.65);
       z-index: 2; }
   .Home .headline {
-    color: #fff;
     z-index: 1;
     font-size: 3.25em; }
     @media (max-width: 480px) {
