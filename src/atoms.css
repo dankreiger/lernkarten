@@ -30,3 +30,6 @@
 .flex-justify-space-around {
   -ms-flex-pack: distribute;
   justify-content: space-around; }
+
+.padding-top-single {
+  padding-top: 1rem; }

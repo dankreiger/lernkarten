@@ -1,6 +1,10 @@
 import React, {Component} from 'react';
 import classNames from 'classnames';
+
+import Artyom from 'artyom.js';
+
 import BreadcrumbMenu from '../BreadcrumbMenu/BreadcrumbMenu';
+import FlashcardButtons from './FlashcardButtons';
 import { formatLink } from '../../static/links';
 
 import './Flashcard.css';
@@ -9,12 +13,15 @@ class Flashcard extends Component {
   constructor(props){
     super(props);
     this.state = {
-      currentCard: 0,
+      currentCardIndex: 0,
       flipped: false
     }
 
     this.flipCard = this.flipCard.bind(this);
     this.nextCard = this.nextCard.bind(this);
+    this.sayWord = this.sayWord.bind(this);
+    this.cardCategory = formatLink(props.location.pathname);
+    this.currentWords = props.words[this.cardCategory.toLowerCase()];
   }
 
   flipCard() {
@@ -22,34 +29,34 @@ class Flashcard extends Component {
   }
 
   nextCard() {
-    let wordQuantity = this.props.words[formatLink(this.props.location.pathname).toLowerCase()].length - 1,
-        nextCardNumber = this.state.currentCard + 1;
+    let wordQuantity = this.currentWords.length - 1,
+        nextCardNumber = this.state.currentCardIndex + 1;
+      this.setState(
+        {currentCardIndex: nextCardNumber > wordQuantity ? 0 : nextCardNumber, flipped: false}
+      );
 
-    if(nextCardNumber > wordQuantity) {
-      this.setState({currentCard: 0});
-    } else {
-      this.setState({currentCard: nextCardNumber});
-    }
+  }
+
+  sayWord = () => {
+    let artyom = new Artyom();
+    artyom.say(this.currentWords[this.state.currentCardIndex].word, {
+      lang:"ru-RU"
+    });
   }
 
   render() {
-    const {currentCard, flipped} = this.state;
-    const {history, location, words} = this.props;
+    const {currentCardIndex, flipped} = this.state;
 
-    const subject = formatLink(location.pathname);
-    const flashcardClasses = [
-      'Flashcard', 'flex', 'flex-justify-center', 'flex-align-items-center', 'flex-columns', 'full-width',
-      {'front': !flipped, 'back': flipped, 'flipped': flipped}
-    ]
+    const flashcardClasses = ['Flashcard', 'flex', 'flex-justify-center', 'flex-align-items-center', 'flex-columns', 'full-width', {'front': !flipped, 'back': flipped, 'flipped': flipped}]
+    const currentCard = this.currentWords[currentCardIndex];
 
     return (
       <div>
-        <BreadcrumbMenu history={history} currentLocation={subject} />
-          <div
-            className={ classNames(flashcardClasses) } onClick={this.flipCard}>
-            <p className="lead">{flipped ? words[subject.toLowerCase()][currentCard].translation : words[subject.toLowerCase()][currentCard].word}</p>
-          </div>
-        <button onClick={this.nextCard}>Next</button>
+        <BreadcrumbMenu history={this.props.history} currentLocation={this.cardCategory} />
+        <div className={ classNames(flashcardClasses) } onClick={this.flipCard}>
+          <p className="lead">{flipped ? currentCard.translation : currentCard.word}</p>
+        </div>
+        <FlashcardButtons sayWord={this.sayWord} nextCard={this.nextCard} />
       </div>
     )
   }
