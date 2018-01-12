@@ -55,7 +55,7 @@ class Flashcard extends Component {
 
     const {currentCardIndex, flipped} = this.state;
 
-    const flashcardClasses = ['Flashcard', 'notecard', 'flex', 'flex-justify-center', 'flex-align-items-center', 'flex-columns', 'full-width', {'front': !flipped, 'back': flipped, 'flipped': flipped}]
+    const flashcardClasses = ['Flashcard', 'notecard', 'flex', 'flex-justify-center', 'flex-align-items-center', 'flex-columns', 'full-width', {'front': !flipped, 'back': flipped}]
     const currentCard = this.currentWords[currentCardIndex];
 
     return (
