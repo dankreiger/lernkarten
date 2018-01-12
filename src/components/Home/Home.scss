@@ -1,24 +1,17 @@
-* {
-  box-sizing: border-box;
-  &:before, &:after {
-    box-sizing: border-box;
-  }
-}
-
-
-
 .Home {
   background: #09f;
-  cursor: pointer;
   width: 100%;
   height: 100%;
+
   .one-half {
     position: absolute;
     width: 50%;
     height: 100%;
     overflow: hidden;
+
     &.left {
       left: 0;
+      cursor: pointer;
       background: rgb(255, 0, 120);
       background: url("https://cdn.flixbus.de/city_description_images/berlin-nachtleben.jpg") center center no-repeat;
       background-size: cover;
@@ -30,11 +23,14 @@
         position: absolute;
       }
     }
+
     &.right {
       right: 0;
+      cursor: pointer;
       background: rgb(25, 120, 220);
       background: url("http://www.telegraph.co.uk/content/dam/Travel/Destinations/Europe/Russia/Moscow/moscow-go-red-square-xlarge.jpg") center center no-repeat;
       background-size: cover;
+
       &:before {
         content: "";
         width: 100%;
@@ -43,37 +39,42 @@
         position: absolute;
       }
     }
-    &.left, &.right, &.left:before, &.right:before {
+
+    &.left,
+    &.left:before,
+    &.right,
+    &.right:before {
       transition: 500ms all ease-in-out;
     }
   }
+
   &.hover-left {
     .left {
       width: 85%;
     }
+
     .right {
       width: 15%;
+
       &:before {
         background: rgba(0, 0, 0, 0.65);
         z-index: 2;
       }
     }
   }
+
   &.hover-right {
     .right {
       width: 85%;
     }
+
     .left {
       width: 15%;
+
       &:before {
         background: rgba(0, 0, 0, 0.65);
         z-index: 2;
       }
     }
-  }
-  .headline {
-    color: #fff;
-    z-index: 1;
-    font-size: 3.25em;
   }
 }
