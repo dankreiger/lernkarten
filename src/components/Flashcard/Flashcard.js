@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
 import classNames from 'classnames';
+import SwipeableViews from 'react-swipeable-views';
+import MediaQuery from 'react-responsive';
+
 
 import Artyom from 'artyom.js';
 
@@ -58,13 +61,26 @@ class Flashcard extends Component {
     const flashcardClasses = ['Flashcard', 'notecard', 'flex', 'flex-justify-center', 'flex-align-items-center', 'flex-columns', 'full-width', {'front': !flipped, 'back': flipped}]
     const currentCard = this.currentWords[currentCardIndex];
 
+
     return (
       <div>
         <BreadcrumbMenu history={this.props.history} currentLocation={this.cardCategory} />
-        <div className={ classNames(flashcardClasses) } onClick={this.flipCard}>
-          <p className="lead">{flipped ? currentCard.translation : currentCard.word}</p>
-        </div>
-        <FlashcardButtons previousCard={this.previousCard} sayWord={this.sayWord} nextCard={this.nextCard} />
+        <MediaQuery maxDeviceWidth={1223}>
+          <SwipeableViews>
+            {this.currentWords.map((currentCard, index) =>
+              <div key={index} className={ classNames(flashcardClasses) } onClick={this.flipCard}>
+                <p className="lead">{flipped ? currentCard.translation : currentCard.word}</p>
+              </div>
+            )}
+          </SwipeableViews>
+          <FlashcardButtons mobileDeviceWidth={true} previousCard={this.previousCard} sayWord={this.sayWord} nextCard={this.nextCard} />
+        </MediaQuery>
+        <MediaQuery minDeviceWidth={1224}>
+          <div className={ classNames(flashcardClasses) } onClick={this.flipCard}>
+            <p className="lead">{flipped ? currentCard.translation : currentCard.word}</p>
+          </div>
+          <FlashcardButtons mobileDeviceWidth={false} previousCard={this.previousCard} sayWord={this.sayWord} nextCard={this.nextCard} />
+        </MediaQuery>
       </div>
     )
   }
