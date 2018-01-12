@@ -19,10 +19,18 @@ const vocabulary = {
       {word: 'Добрый день.', translation: 'Good afternoon'},
       {word: 'добрый вечер', translation: 'Good evening'}
     ],
-    objects: [
+    nouns: [
       {word: 'стол', translation: 'table'},
       {word: 'стул', translation: 'chair'},
-      {word: 'шкаф', translation: 'closet'}
+      {word: 'шкаф', translation: 'closet'},
+      {word: 'ла́мпа', translation: 'lamp'},
+      {word: 'кни́га', translation: 'book'},
+      {word: 'ру́чка', translation: 'pen'},
+      {word: 'письмо́', translation: 'pencil'},
+      {word: 'дом', translation: 'house'},
+      {word: 'окно́', translation: 'window'},
+      {word: 'ма́льчик', translation: 'boy'},
+      {word: 'де́вушка', translation: 'girl'}
     ]
   }
 }
