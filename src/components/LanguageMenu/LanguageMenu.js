@@ -17,7 +17,6 @@ const LanguageMenu = ({history, location, match}) => {
   const linkStyle = location.pathname !== match.url ? {'display': 'none'} : null;
 
   const language = location.pathname.slice(1);
-  console.log(match.url)
   return (
     <div>
       <BreadcrumbMenu language={capitalizeFirstLetter(match.url.slice(1))} history={history} currentLocation={capitalizeFirstLetter(currentLocation)} />

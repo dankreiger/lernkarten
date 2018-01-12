@@ -1,6 +1,5 @@
 .Home {
   background: #09f;
-  cursor: pointer;
   width: 100%;
   height: 100%;
 
@@ -12,6 +11,7 @@
 
     &.left {
       left: 0;
+      cursor: pointer;
       background: rgb(255, 0, 120);
       background: url("https://cdn.flixbus.de/city_description_images/berlin-nachtleben.jpg") center center no-repeat;
       background-size: cover;
@@ -26,6 +26,7 @@
 
     &.right {
       right: 0;
+      cursor: pointer;
       background: rgb(25, 120, 220);
       background: url("http://www.telegraph.co.uk/content/dam/Travel/Destinations/Europe/Russia/Moscow/moscow-go-red-square-xlarge.jpg") center center no-repeat;
       background-size: cover;

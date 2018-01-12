@@ -5,7 +5,6 @@ import { Grid } from 'react-bootstrap';
 
 const BreadcrumbMenu = ({history, language, lesson, currentLocation}) => {
   const links = translateLink(history.location.pathname);
-  console.log(currentLocation)
   return (
     <Breadcrumb>
       <Breadcrumb.Item onClick={() => { history.push('/') }}>{links.home}</Breadcrumb.Item>
