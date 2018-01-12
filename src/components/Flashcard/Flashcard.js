@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import classNames from 'classnames';
+import SwipeableViews from 'react-swipeable-views';
 
 import Artyom from 'artyom.js';
 
@@ -19,6 +20,8 @@ class Flashcard extends Component {
 
     this.flipCard = this.flipCard.bind(this);
     this.nextCard = this.nextCard.bind(this);
+    this.previousCard = this.previousCard.bind(this);
+
     this.sayWord = this.sayWord.bind(this);
     this.cardCategory = formatLink(props.location.pathname);
     this.currentWords = props.words[this.cardCategory.toLowerCase()];
@@ -31,10 +34,16 @@ class Flashcard extends Component {
   nextCard() {
     let wordQuantity = this.currentWords.length - 1,
         nextCardNumber = this.state.currentCardIndex + 1;
+
       this.setState(
         {currentCardIndex: nextCardNumber > wordQuantity ? 0 : nextCardNumber, flipped: false}
       );
+  }
 
+  previousCard() {
+    this.setState(
+      {currentCardIndex: this.state.currentCardIndex === 0 ? this.currentWords.length - 1 : this.state.currentCardIndex - 1, flipped: false}
+    );
   }
 
   sayWord = () => {
@@ -51,13 +60,39 @@ class Flashcard extends Component {
     const flashcardClasses = ['Flashcard', 'flex', 'flex-justify-center', 'flex-align-items-center', 'flex-columns', 'full-width', {'front': !flipped, 'back': flipped, 'flipped': flipped}]
     const currentCard = this.currentWords[currentCardIndex];
 
+    const styles = {
+      slide: {
+        padding: 15,
+        minHeight: 100,
+        color: '#fff',
+      },
+      slide1: {
+        background: '#FEA900',
+      },
+      slide2: {
+        background: '#B3DC4A',
+      },
+      slide3: {
+        background: '#6AC0FF',
+      },
+    };
+
     return (
       <div>
         <BreadcrumbMenu history={this.props.history} currentLocation={this.cardCategory} />
+        <SwipeableViews>
+          {this.currentWords.map((word) => {
+            return(
+              <div className={ classNames(flashcardClasses) } onClick={this.flipCard}>
+                <p className="lead">{flipped ? currentCard.translation : currentCard.word}</p>
+              </div>
+            )
+          }}
+        </SwipeableViews>
         <div className={ classNames(flashcardClasses) } onClick={this.flipCard}>
           <p className="lead">{flipped ? currentCard.translation : currentCard.word}</p>
         </div>
-        <FlashcardButtons sayWord={this.sayWord} nextCard={this.nextCard} />
+        <FlashcardButtons previousCard={this.previousCard} sayWord={this.sayWord} nextCard={this.nextCard} />
       </div>
     )
   }

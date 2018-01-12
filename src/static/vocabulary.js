@@ -30,6 +30,10 @@ const vocabulary = {
       {word: 'письмо́', translation: 'mail'},
       {word: 'дом', translation: 'house'},
       {word: 'окно́', translation: 'window'},
+      {word: 'журна́л', translation: 'magazine'},
+      {word: 'авто́бус', translation: 'bus'},
+      {word: 'магазин', translation: 'store'},
+      {word: 'шко́ла', translation: 'school'},
       {word: 'ма́льчик', translation: 'boy'},
       {word: 'де́вушка', translation: 'girl'}
     ]
