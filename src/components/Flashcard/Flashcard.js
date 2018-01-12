@@ -14,10 +14,22 @@ class Flashcard extends Component {
     }
 
     this.flipCard = this.flipCard.bind(this);
+    this.nextCard = this.nextCard.bind(this);
   }
 
   flipCard() {
     this.setState({flipped: !this.state.flipped})
+  }
+
+  nextCard() {
+    let wordQuantity = this.props.words[formatLink(this.props.location.pathname).toLowerCase()].length - 1,
+        nextCardNumber = this.state.currentCard + 1;
+
+    if(nextCardNumber > wordQuantity) {
+      this.setState({currentCard: 0});
+    } else {
+      this.setState({currentCard: nextCardNumber});
+    }
   }
 
   render() {
@@ -37,6 +49,7 @@ class Flashcard extends Component {
             className={ classNames(flashcardClasses) } onClick={this.flipCard}>
             <p className="lead">{flipped ? words[subject.toLowerCase()][currentCard].translation : words[subject.toLowerCase()][currentCard].word}</p>
           </div>
+        <button onClick={this.nextCard}>Next</button>
       </div>
     )
   }
