@@ -82,7 +82,7 @@ class Flashcard extends Component {
               </div>
             )}
           </SwipeableViews>
-          <FlashcardButtons sayWord={this.sayWordMobile} />
+          <FlashcardButtons sayWord={this.sayWordMobile} mobile={true} />
         </MediaQuery>
         <MediaQuery minDeviceWidth={1224}>
           <div className={ classNames(flashcardClasses) } onClick={this.flipCard}>
