@@ -1,13 +1,18 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+import { Route, NavLink, Link } from 'react-router-dom'
 import { Navbar, Nav } from 'react-bootstrap';
-
 import { translateLink } from '../../static/links';
-import ListItemLink from '../../helpers/ListItemLink/ListItemLink';
 
 import './Navigation.css';
 
 
+const ListItemLink = ({ to, children }) => (
+  <Route path={to} children={({match}) => (
+    <li role="presentation" className={match ? 'active' : ''}>
+      <NavLink to={to}>{children}</NavLink>
+    </li>
+  )} />
+);
 
 const Navigation = ({location}) => {
   const path = location.pathname;
@@ -25,7 +30,7 @@ const Navigation = ({location}) => {
       <Navbar.Collapse>
         <Nav pullRight>
           <ListItemLink eventKey={1} to="/german">{de}</ListItemLink>
-        <ListItemLink eventKey={2} to="/russian">{ru}</ListItemLink>
+          <ListItemLink eventKey={2} to="/russian">{ru}</ListItemLink>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

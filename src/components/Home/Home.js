@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link, Route } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { Grid } from 'react-bootstrap';
 import classNames from 'classnames';
 import './Home.css';
@@ -14,7 +14,6 @@ class Home extends Component {
   }
 
   render() {
-    const { history } = this.props;
     const { hoverLeft, hoverRight } = this.state;
     return (
       <Grid className={classNames('Home', {'hover-left': hoverLeft, 'hover-right': hoverRight})}>

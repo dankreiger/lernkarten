@@ -2,14 +2,15 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom'
 
 import Home from '../Home/Home';
-import Layout from '../../helpers/Layout/Layout';
+import Navigation from '../Navigation/Navigation';
 import LanguageMenu from '../LanguageMenu/LanguageMenu';
 
 
 const App = ({location}) => {
   return (
     <div className="App">
-      <Layout location={location}>
+      <div className="Layout">
+        <Navigation location={location}/>
         <div className="full-width" id="app-routes">
           <Switch location={location}>
             <Route exact path="/" component={Home}/>
@@ -17,7 +18,7 @@ const App = ({location}) => {
             <Route path="/russian" component={LanguageMenu}/>
           </Switch>
         </div>
-      </Layout>
+      </div>
     </div>
   );
 }
