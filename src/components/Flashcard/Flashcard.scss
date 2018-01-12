@@ -1,5 +1,5 @@
 .Flashcard {
-  background: #fff;
+  // background: #fff;
   cursor: pointer;
   border-radius: 2px;
   height: 65vh;
@@ -11,8 +11,6 @@
   -webkit-transition: 0.6s;
   -o-transition: 0.6s;
   transition: 0.6s;
-
-  background: linear-gradient(top, #ffffff 15%,#F94545 16%,#ffffff 16%,#ffffff 25%,#85b2d3 26%,#ffffff 26%, #ffffff 35%,#85b2d3 36%,#ffffff 36%,#ffffff 45%,#85b2d3 46%,#ffffff 46%, #ffffff 55%,#85b2d3 56%,#ffffff 56%, #ffffff 65%,#85b2d3 66%,#ffffff 66%, #ffffff 75%,#85b2d3 76%,#ffffff 76%, #ffffff 85%,#85b2d3 86%,#ffffff 86%, #ffffff 95%,#85b2d3 96%,#ffffff 96%);
 
   &:hover {
     border-radius: 3px;
@@ -45,10 +43,12 @@
   }
 
   &.flipped {
+    -webkit-transform-origin: 50%  51%;
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
 
     p {
+      -webkit-transform-origin: 50%  51%;
       -webkit-transform: rotateY(180deg);
       transform: rotateY(180deg);
     }
