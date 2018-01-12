@@ -40,11 +40,12 @@ class Flashcard extends Component {
   sayWord = () => {
     let artyom = new Artyom();
     artyom.say(this.currentWords[this.state.currentCardIndex].word, {
-      lang:"ru-RU"
+      lang: this.props.location.pathname.includes('russian') ? "ru-RU" : "de-DE"
     });
   }
 
   render() {
+
     const {currentCardIndex, flipped} = this.state;
 
     const flashcardClasses = ['Flashcard', 'flex', 'flex-justify-center', 'flex-align-items-center', 'flex-columns', 'full-width', {'front': !flipped, 'back': flipped, 'flipped': flipped}]
