@@ -56,7 +56,7 @@ class Flashcard extends Component {
 
   sayWordMobile = () => {
     let artyom = new Artyom(),
-        currentWord = document.querySelector('.react-swipeable-view-container div[aria-hidden="false"] p').innerText;
+        currentWord = document.querySelector('.react-swipeable-view-container div[aria-hidden="false"] .Flashcard').getAttribute('data-word');
 
     artyom.say(currentWord, {
       lang: this.props.location.pathname.includes('russian') ? "ru-RU" : "de-DE"
@@ -64,12 +64,9 @@ class Flashcard extends Component {
   }
 
   render() {
-
     const {currentCardIndex, flipped} = this.state;
-
     const flashcardClasses = ['Flashcard', 'notecard', 'flex', 'flex-justify-center', 'flex-align-items-center', 'flex-columns', 'full-width', {'front': !flipped, 'back': flipped}]
     const currentCard = this.currentWords[currentCardIndex];
-
 
     return (
       <div>
@@ -77,7 +74,7 @@ class Flashcard extends Component {
         <MediaQuery maxDeviceWidth={1223}>
           <SwipeableViews>
             {this.currentWords.map((currentCard, index) =>
-              <div key={index} className={ classNames(flashcardClasses) } onClick={this.flipCard}>
+              <div key={index} className={ classNames(flashcardClasses) } data-word={currentCard.word} onClick={this.flipCard}>
                 <p className="lead">{flipped ? currentCard.translation : currentCard.word}</p>
               </div>
             )}
