@@ -1,6 +1,120 @@
 const nouns_feminine = [
-  {word: 'die Adresse', translation: 'the address'},
-  {word: 'die Apfelsine', translation: 'the orange'}
+  {
+    word: 'die Adresse',
+    translation: 'the address'
+  }, {
+    word: 'die Apfelsine',
+    translation: 'the orange'
+  }, {
+    word: 'die Apotheke',
+    translation: 'the pharmacy'
+  }, {
+    word: 'die Bank',
+    translation: 'the bank'
+  }, {
+    word: 'die Bedienung',
+    translation: 'the service'
+  }, {
+    word: 'die Beschreibung',
+    translation: 'the description'
+  }, {
+    word: 'die Bibliothek',
+    translation: 'the library'
+  }, {
+    word: 'die Bluse',
+    translation: 'the blouse'
+  }
 ]
 
 export default nouns_feminine;
+
+// Brille,
+// Brücke,
+// City,
+// Cola,
+// Decke,
+// Diskette,
+// Dolmetscherin,
+// Dose,
+// Dusche,
+// Eile,
+// Einladung,
+// Etage,
+// Fahrkarte,
+// Festung,
+// Fotografie,
+// Frage,
+// Funktion,
+// Gabel,
+// Garage,
+// Gardine,
+// Gasse,
+// Gitarre,
+// Größe,
+// Hilfe,
+// Hose,
+// Hütte,
+// Information,
+// Kasse,
+// Kassette,
+// Kirche,
+// Krawatte,
+// Kreditkarte,
+// Kreide,
+// Küche,
+// Kultur,
+// Lampe,
+// Landkarte,
+// Landschaft,
+// Mandarine,
+// Maschine,
+// Maus,
+// Milch,
+// Mutter,
+// Mütze,
+// Nachricht,
+// Nacht,
+// Nase,
+// Natur,
+// Nummer,
+// Oma,
+// Oper,
+// Ordnung,
+// Pause,
+// Pflanze,
+// Pizza,
+// Polizistin,
+// Post,
+// Postkarte,
+// Prüfung,
+// Reparatur,
+// Reservierung,
+// Sache,
+// Sahne,
+// Schule,
+// Sehenswürdigkeit,
+// SMS,
+// Socke,
+// Sonne,
+// Straße,
+// Straßenbahn,
+// Tasche,
+// Tasse,
+// Toilette,
+// Torte,
+// U - Bahn,
+// Überraschung,
+// Übung,
+// Uhr,
+// Umwelt,
+// Universität,
+// Verbindung,
+// Wand,
+// Wanderung,
+// Welt,
+// Werbung,
+// Werkstatt,
+// Wirtschaft,
+// Woche,
+// Wurst,
+// Zeitung

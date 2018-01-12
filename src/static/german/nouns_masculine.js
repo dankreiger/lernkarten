@@ -1,6 +1,136 @@
 const nouns_masculine = [
-  {word: 'der Anruf', translation: 'the call'},
-  {word: 'der Anzug', translation: 'the suit'}
+  {
+    word: 'der Apfel',
+    translation: 'the apple'
+  },
+  {
+    word: 'der Arm',
+    translation: 'the arm'
+  },
+  {
+    word: 'der Arzt',
+    translation: 'the doctor (male)'
+  },
+  {
+    word: 'der Anruf',
+    translation: 'the call'
+  }, {
+    word: 'der Anzug',
+    translation: 'the suit'
+  }, {
+    word: 'der Ausweis',
+    translation: 'the identification'
+  }, {
+    word: 'der Bahnhof',
+    translation: 'the train station'
+  },
+  {
+    word: 'der Balkon',
+    translation: 'the balcony'
+  },
+  {
+    word: 'der Baum',
+    translation: 'the tree'
+  }
 ]
 
 export default nouns_masculine;
+
+
+// Berg,
+// Beruf,
+// Bildschirm,
+// Bus,
+// Computer,
+// Dezember,
+// Dienstag,
+// Durst,
+// Drucker,
+// Eintrittskarte,
+// Einwohner,
+// Fahrschein,
+// Februar,
+// Fernseher,
+// Finger,
+// Flughafen,
+// Flur,
+// Frühling,
+// Füller,
+// Fuß,
+// Fußboden,
+// Garten,
+// Gast,
+// Geburtstag,
+// Hafen,
+// Hamburger,
+// Herbst,
+// Herr,
+// Himmel,
+// Hut,
+// Hunger,
+// Januar,
+// Juli,
+// Juni,
+// Kaffee,
+// Kakao,
+// Keller,
+// Kellner,
+// Kleiderhaken,
+// Koch,
+// Kognak,
+// Kuchen,
+// Kugelschreiber,
+// Kuchen,
+// Kunde,
+// Laden,
+// Lehrer,
+// Locher,
+// Löffel,
+// Mai,
+// März,
+// Mann,
+// Markt,
+// Marktplatz,
+// Monitor,
+// Name,
+// November,
+// Oktober,
+// Opa,
+// Park,
+// Pass,
+// Passant,
+// Platz,
+// Projektor,
+// Pullover,
+// Radiergummi,
+// Regen,
+// Rock,
+// Schinken,
+// Schlüssel,
+// Schnaps,
+// Schnee,
+// Schrank,
+// September,
+// Sessel,
+// Sommer,
+// Star,
+// Strumpf,
+// Stuhl,
+// Supermarkt,
+// Tag,
+// Tee,
+// Teppich,
+// Test,
+// Tisch,
+// Tourist,
+// Urlaub,
+// Vater,
+// Wagen,
+// Wein,
+// Wind,
+// Winter,
+// Wunsch,
+// Zeiger,
+// Zucker,
+// Zug,
+// Zuschauer
