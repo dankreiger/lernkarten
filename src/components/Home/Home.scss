@@ -16,13 +16,13 @@
       background: rgb(255, 0, 120);
       background: url("https://cdn.flixbus.de/city_description_images/berlin-nachtleben.jpg") center center no-repeat;
       background-size: cover;
-      &:before {
-        content: "";
-        width: 100%;
-        height: 100%;
-        background: rgba(255, 0, 120, 0.5);
-        position: absolute;
-      }
+      // &:before {
+      //   content: "";
+      //   width: 100%;
+      //   height: 100%;
+      //   background: rgba(255, 0, 120, 0.5);
+      //   position: absolute;
+      // }
     }
 
     &.right {
@@ -31,14 +31,14 @@
       background: rgb(25, 120, 220);
       background: url("http://www.telegraph.co.uk/content/dam/Travel/Destinations/Europe/Russia/Moscow/moscow-go-red-square-xlarge.jpg") center center no-repeat;
       background-size: cover;
-
-      &:before {
-        content: "";
-        width: 100%;
-        height: 100%;
-        background: rgba(25, 120, 220, 0.5);
-        position: absolute;
-      }
+      // 
+      // &:before {
+      //   content: "";
+      //   width: 100%;
+      //   height: 100%;
+      //   background: rgba(25, 120, 220, 0.5);
+      //   position: absolute;
+      // }
     }
 
     &.left,
@@ -83,7 +83,7 @@
     z-index: 1;
     font-size: 3.25em;
     @media(max-width: 480px){
-      font-size: 2em;
+      font-size: 2.6em;
     }
   }
 }
