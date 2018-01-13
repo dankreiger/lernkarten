@@ -2,6 +2,7 @@ const greetings = [
   {word: 'До́брое у́тро', translation: 'Good morning'},
   {word: 'Добрый день', translation: 'Good afternoon'},
   {word: 'Добрый вечер', translation: 'Good evening'},
+  {word: 'Cпокойной ночи', translation: 'Good night'},
   {word: 'Кто это?', translation: 'Who is this?'},
   {word: 'Что это?', translation: 'What is this?'},
   {word: 'Меня зовут', translation: 'My name is'},
