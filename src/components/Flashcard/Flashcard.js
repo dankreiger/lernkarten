@@ -55,16 +55,17 @@ class Flashcard extends Component {
 
   render() {
     const {currentCardIndex, flipped} = this.state;
-    const flashcardClasses = ['Flashcard', 'notecard', 'flex', 'flex-justify-center', 'flex-align-items-center', 'flex-columns', 'full-width', {'front': !flipped, 'back': flipped}]
+    const flashcardClasses = ['Flashcard', 'flex', 'flex-justify-center', 'flex-align-items-center', 'flex-columns', 'flex-grow-1', 'full-width', {'front': !flipped, 'back': flipped}];
+    const reactSwipeContainerClasses = ['carousel', 'notecard', 'mobileSwipeContainer', 'flex', 'flex-container-grow-vertical', 'flex-justify-center'];
     const currentCard = this.currentWords[currentCardIndex];
 
     return (
-      <div>
+      <div className="FlashcardContainer flex flex-container-grow-vertical">
         <BreadcrumbMenu history={this.props.history} currentLocation={this.cardCategory} />
         <MediaQuery maxDeviceWidth={1223}>
-          <ReactSwipe key={this.currentWords.length} className="carousel" swipeOptions={{continuous: true, callback: (index, el) => this.setSwipedSlideIndex(index,el)}}>
+          <ReactSwipe key={this.currentWords.length} className={classNames(reactSwipeContainerClasses, 'customBgImg', this.cardCategory)} swipeOptions={{continuous: true, callback: (index, el) => this.setSwipedSlideIndex(index,el)}}>
             {this.currentWords.map((currentCard, index) =>
-              <div key={index} className={ classNames('customBgImg', this.cardCategory, flashcardClasses) } data-word={currentCard.word} onClick={this.flipCard}>
+              <div key={index} className={ classNames(flashcardClasses) } data-word={currentCard.word} onClick={this.flipCard}>
                 <p className="lead">{flipped ? currentCard.translation : currentCard.word}</p>
               </div>
             )}
@@ -72,7 +73,7 @@ class Flashcard extends Component {
           <FlashcardButtons sayWord={this.sayWord} mobile={true} />
         </MediaQuery>
         <MediaQuery minDeviceWidth={1224}>
-          <div className={ classNames('customBgImg', this.cardCategory, flashcardClasses) } onClick={this.flipCard}>
+          <div className={ classNames('customBgImg', 'notecard', this.cardCategory, flashcardClasses) } onClick={this.flipCard}>
             <p className="lead">{flipped ? currentCard.translation : currentCard.word}</p>
           </div>
           <FlashcardButtons previousCard={this.previousCard} sayWord={this.sayWord} nextCard={this.nextCard} />

@@ -1,0 +1,9 @@
+.Layout {
+  display: flex;
+  flex-flow: column wrap;
+  height: 100vh; }
+
+.app-routes-container {
+  display: flex;
+  flex-grow: 1;
+  flex-flow: column wrap; }
