@@ -64,7 +64,7 @@ class Flashcard extends Component {
         <MediaQuery maxDeviceWidth={1223}>
           <ReactSwipe key={this.currentWords.length} className="carousel" swipeOptions={{continuous: true, callback: (index, el) => this.setSwipedSlideIndex(index,el)}}>
             {this.currentWords.map((currentCard, index) =>
-              <div key={index} className={ classNames(this.cardCategory, flashcardClasses) } data-word={currentCard.word} onClick={this.flipCard}>
+              <div key={index} className={ classNames('customBgImg', this.cardCategory, flashcardClasses) } data-word={currentCard.word} onClick={this.flipCard}>
                 <p className="lead">{flipped ? currentCard.translation : currentCard.word}</p>
               </div>
             )}
