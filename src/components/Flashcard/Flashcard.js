@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import classNames from 'classnames';
-import SwipeableViews from 'react-swipeable-views';
+import ReactSwipe from 'react-swipe';
 import MediaQuery from 'react-responsive';
 
 
@@ -54,13 +54,8 @@ class Flashcard extends Component {
     });
   }
 
-  sayWordMobile = () => {
-    let artyom = new Artyom(),
-        currentWord = document.querySelector('.react-swipeable-view-container div[aria-hidden="false"] .Flashcard').getAttribute('data-word');
-
-    artyom.say(currentWord, {
-      lang: this.props.location.pathname.includes('russian') ? "ru-RU" : "de-DE"
-    });
+  setSwipedSlideIndex = (index, el) => {
+    this.setState({currentCardIndex: index, flipped: false});
   }
 
   render() {
@@ -72,14 +67,14 @@ class Flashcard extends Component {
       <div>
         <BreadcrumbMenu history={this.props.history} currentLocation={this.cardCategory} />
         <MediaQuery maxDeviceWidth={1223}>
-          <SwipeableViews>
+          <ReactSwipe key={this.currentWords.length} className="carousel" swipeOptions={{continuous: true, callback: (index, el) => this.setSwipedSlideIndex(index,el)}}>
             {this.currentWords.map((currentCard, index) =>
               <div key={index} className={ classNames(flashcardClasses) } data-word={currentCard.word} onClick={this.flipCard}>
                 <p className="lead">{flipped ? currentCard.translation : currentCard.word}</p>
               </div>
             )}
-          </SwipeableViews>
-          <FlashcardButtons sayWord={this.sayWordMobile} mobile={true} />
+          </ReactSwipe>
+          <FlashcardButtons sayWord={this.sayWord} mobile={true} />
         </MediaQuery>
         <MediaQuery minDeviceWidth={1224}>
           <div className={ classNames(flashcardClasses) } onClick={this.flipCard}>

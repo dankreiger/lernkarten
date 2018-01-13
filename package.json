@@ -13,7 +13,8 @@
     "react-dom": "^16.2.0",
     "react-responsive": "^4.0.3",
     "react-router-dom": "^4.2.2",
-    "react-swipeable-views": "^0.12.12"
+    "react-swipe": "^5.1.1",
+    "swipe-js-iso": "^2.0.4"
   },
   "devDependencies": {
     "react-scripts": "1.0.17"
