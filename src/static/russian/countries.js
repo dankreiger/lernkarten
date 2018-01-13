@@ -15,11 +15,17 @@ const countries = [
     word: 'Китай',
     translation: 'China'
   }, {
-    word: 'Belarus',
-    translation: 'Беларусь'
+    word: 'Беларусь',
+    translation: 'Belarus'
   }, {
-    word: 'Japan',
-    translation: 'Япония'
+    word: 'Япония',
+    translation: 'Japan'
+  }, {
+    word: 'Франция',
+    translation: 'France'
+  }, {
+    word: 'Испания',
+    translation: 'Spain'
   }
 ]
 
