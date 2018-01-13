@@ -20,20 +20,15 @@ class Flashcard extends Component {
       flipped: false
     }
 
-    this.flipCard = this.flipCard.bind(this);
-    this.nextCard = this.nextCard.bind(this);
-    this.previousCard = this.previousCard.bind(this);
-
-    this.sayWord = this.sayWord.bind(this);
     this.cardCategory = formatLink(props.location.pathname);
     this.currentWords = props.words[this.cardCategory.toLowerCase()];
   }
 
-  flipCard() {
+  flipCard = () => {
     this.setState({flipped: !this.state.flipped})
   }
 
-  nextCard() {
+  nextCard = () => {
     let wordQuantity = this.currentWords.length - 1,
         nextCardNumber = this.state.currentCardIndex + 1;
       this.setState(
@@ -41,7 +36,7 @@ class Flashcard extends Component {
       );
   }
 
-  previousCard() {
+  previousCard = () => {
     this.setState(
       {currentCardIndex: this.state.currentCardIndex === 0 ? this.currentWords.length - 1 : this.state.currentCardIndex - 1, flipped: false}
     );

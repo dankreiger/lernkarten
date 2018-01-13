@@ -1,0 +1,30 @@
+const penguin_ch_1 = [
+  {word: 'то́т', translation: 'that'},
+  {word: 'ко́т', translation: 'cat'},
+  {word: 'так', translation: 'so'},
+  {word: 'там', translation: 'there'},
+  {word: 'кто́-то', translation: 'someone'},
+  {word: 'нет', translation: 'no'},
+  {word: 'Москва́', translation: 'Moscow'},
+  {word: 'метро', translation: 'metro / underground railway'},
+  {word: 'о́н', translation: 'he'},
+  {word: 'она́', translation: 'she'},
+  {word: 'сестра́', translation: 'sister'},
+  {word: 'рестора́н', translation: 'restaurant'},
+  {word: 'са́хар', translation: 'sugar'},
+  {word: 'вам', translation: 'to you'},
+  {word: 'Ве́ра', translation: 'Vera'},
+  {word: 'у́тро', translation: 'morning'},
+  {word: 'Нева́', translation: 'Neva'},
+  {word: 'ка́сса', translation: 'cash desk'},
+  {word: 'ка́рта', translation: 'map'},
+  {word: 'ма́рка', translation: 'postage stamp'},
+  {word: 'мир', translation: 'peace / world'},
+  {word: 'да', translation: 'yes'},
+  {word: 'футбо́л', translation: 'football'},
+  {word: 'спасибо', translation: 'thank you'},
+  {word: 'до свида́ния', translation: 'goodbye'},
+  {word: 'Югосла́вия', translation: 'Yugoslavia'}
+]
+
+export default penguin_ch_1;
