@@ -24,7 +24,9 @@ const penguin_ch_1 = [
   {word: 'футбо́л', translation: 'football'},
   {word: 'спасибо', translation: 'thank you'},
   {word: 'до свида́ния', translation: 'goodbye'},
-  {word: 'Югосла́вия', translation: 'Yugoslavia'}
+  {word: 'Югосла́вия', translation: 'Yugoslavia'},
+  {word: 'Алекса́ндр', translation: 'Alexander'},
+  {word: 'спу́тник', translation: 'sputnik / travelling companion '}
 ]
 
 export default penguin_ch_1;
