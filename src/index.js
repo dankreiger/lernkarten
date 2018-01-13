@@ -1,26 +1,26 @@
-// bootstrap css
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
-
-// react + react-dom
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-// react-router
-import { Route, BrowserRouter as Router } from 'react-router-dom'
-
-// css
+import { Route, Router } from 'react-router-dom'
 import './index.css';
 import './atoms.css'
-
-// imported components
 import App from './components/App/App';
-
-// service worker
 import registerServiceWorker from './registerServiceWorker';
+import { createBrowserHistory, createHashHistory } from 'history'
+
+
+const configureHistory = () => {
+  return window.matchMedia('(display-mode: standalone)').matches
+    ? createHashHistory()
+    : createBrowserHistory()
+}
+
+const history = configureHistory();
+
 
 const Index = () => (
-  <Router>
+  <Router history={history}>
     <Route path="/" component={App} />
   </Router>
 );
