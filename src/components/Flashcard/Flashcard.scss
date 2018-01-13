@@ -41,6 +41,9 @@
     margin-top: 0;
     margin-bottom: 0;
     text-align: center;
+    @media(max-width: 620px){
+      font-size: 1.7em;
+    }
     @media(max-width: 480px){
       font-size: 1.4em;
     }
