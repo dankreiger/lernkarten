@@ -8,6 +8,9 @@ const bulgakov = [
   }, {
     word: "Надо признаться, что среди интеллигентов тоже попадаются на редкость умные",
     translation: "I must admit there are some smart people even among the intelligentsia"
+  }, {
+    word: "безжалостно обращался к самому себе Рюхин, – не верю я ни во что из того, что пишу",
+    translation: "Ryukhin showed himself no mercy-'I don't believe in anything I've ever written!'"
   }
 ]
 
