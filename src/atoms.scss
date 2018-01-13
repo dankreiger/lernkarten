@@ -59,14 +59,17 @@
   background-repeat: no-repeat;
   background-position: center;
   background-color: rgba(0,0,0,0.7);
-  color: #fff;
+  color: #000;
   &.Freud {
+    color: #fff;
     background-image: url('./img/freud.png');
   }
   &.Tolstoy {
+    color: #fff;
     background-image: url('./img/tolstoy.png');
   }
   &.Bulgakov {
+    color: #fff;
     background-image: url('./img/bulgakov.png');
   }
 }
