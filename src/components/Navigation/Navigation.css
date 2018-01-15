@@ -1,14 +1,13 @@
 .navbar-inverse {
   border-radius: 0;
   border: 0;
-  height: 5vh;
+  height: 5%;
   margin-bottom: 0;
-  display: block; }
-  .navbar-inverse .navbar-collapse.collapse.in {
-    position: fixed;
-    z-index: 1;
-    width: 100%; }
-    .navbar-inverse .navbar-collapse.collapse.in .navbar-nav {
-      margin-top: 0; }
-  .navbar-inverse li {
-    background-color: #333; }
+  display: table-row;
+  /* bootstrap override */ }
+  .navbar-inverse .container {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0; }
+  .navbar-inverse .navbar-collapse.collapse.in .navbar-nav {
+    margin-top: 0; }

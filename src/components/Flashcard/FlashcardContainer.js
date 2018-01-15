@@ -1,16 +1,14 @@
 import React, {Component} from 'react';
 import classNames from 'classnames';
-import MediaQuery from 'react-responsive';
 
-
+// word recognition for say button
 import Artyom from 'artyom.js';
 
 import BreadcrumbMenu from '../BreadcrumbMenu/BreadcrumbMenu';
-import FlashcardMobileDevice from './FlashcardMobileDevice';
 import FlashcardButtons from './FlashcardButtons';
 import { formatLink } from '../../static/helpers';
 
-import './Flashcard.css';
+import './FlashcardContainer.css';
 
 class Flashcard extends Component {
   constructor(props){
@@ -49,10 +47,6 @@ class Flashcard extends Component {
     });
   }
 
-  setSwipedSlideIndex = (index, el) => {
-    this.setState({currentCardIndex: index, flipped: false});
-  }
-
   render() {
     const {currentCardIndex, flipped} = this.state;
     const flashcardClasses = ['Flashcard', {'front': !flipped, 'back': flipped}];
@@ -61,16 +55,12 @@ class Flashcard extends Component {
     return (
       <div className="FlashcardContainer">
         <BreadcrumbMenu history={this.props.history} currentLocation={this.cardCategory} />
-        {/* check these media queries */}
-        <MediaQuery maxDeviceWidth={1223}>
-          <FlashcardMobileDevice flashcardClasses={flashcardClasses} flipped={flipped} currentWords={this.currentWords} cardCategory={this.cardCategory} flipCard={this.flipCard} setSwipedSlideIndex={this.setSwipedSlideIndex}/>
-        </MediaQuery>
-        <MediaQuery minDeviceWidth={1224}>
+        <div className="FlashcardContent">
           <div className={ classNames('customBgImg', 'notecard', this.cardCategory, flashcardClasses) } onClick={this.flipCard}>
             <p className="lead">{flipped ? currentCard.translation : currentCard.word}</p>
           </div>
           <FlashcardButtons previousCard={this.previousCard} sayWord={this.sayWord} nextCard={this.nextCard} />
-        </MediaQuery>
+        </div>
       </div>
     )
   }

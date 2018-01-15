@@ -1,8 +1,12 @@
-.Layout {
-  height: 100vh;
-  overflow: hidden;
-  overflow-y: auto; }
-
-.app-routes-container {
-  display: block;
-  height: 95vh; }
+.App {
+  height: 100%; }
+  .App .Layout {
+    height: 100%;
+    width: 100%;
+    display: table;
+    overflow: hidden;
+    overflow-y: auto; }
+    .App .Layout .app-routes-container {
+      display: table-row;
+      height: 95%;
+      /* 100% - 5% (navigation bar) */ }

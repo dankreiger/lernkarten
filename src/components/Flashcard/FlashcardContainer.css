@@ -1,5 +1,7 @@
 .FlashcardContainer {
   height: 100%; }
+  .FlashcardContainer .FlashcardContent {
+    height: 90%; }
   .FlashcardContainer .notecard {
     background: -webkit-gradient(linear, left top, left bottom, color-stop(15%, #ffffff), color-stop(16%, #F94545), color-stop(16%, #ffffff), color-stop(25%, #ffffff), color-stop(26%, #85b2d3), color-stop(26%, #ffffff), color-stop(35%, #ffffff), color-stop(36%, #85b2d3), color-stop(36%, #ffffff), color-stop(45%, #ffffff), color-stop(46%, #85b2d3), color-stop(46%, #ffffff), color-stop(55%, #ffffff), color-stop(56%, #85b2d3), color-stop(56%, #ffffff), color-stop(65%, #ffffff), color-stop(66%, #85b2d3), color-stop(66%, #ffffff), color-stop(75%, #ffffff), color-stop(76%, #85b2d3), color-stop(76%, #ffffff), color-stop(85%, #ffffff), color-stop(86%, #85b2d3), color-stop(86%, #ffffff), color-stop(95%, #ffffff), color-stop(96%, #85b2d3), color-stop(96%, #ffffff));
     background: -webkit-linear-gradient(top, #ffffff 15%, #F94545 16%, #ffffff 16%, #ffffff 25%, #85b2d3 26%, #ffffff 26%, #ffffff 35%, #85b2d3 36%, #ffffff 36%, #ffffff 45%, #85b2d3 46%, #ffffff 46%, #ffffff 55%, #85b2d3 56%, #ffffff 56%, #ffffff 65%, #85b2d3 66%, #ffffff 66%, #ffffff 75%, #85b2d3 76%, #ffffff 76%, #ffffff 85%, #85b2d3 86%, #ffffff 86%, #ffffff 95%, #85b2d3 96%, #ffffff 96%);
@@ -28,7 +30,7 @@
         .FlashcardContainer .customBgImg.Bulgakov .lead, .FlashcardContainer .customBgImg.Freud .lead, .FlashcardContainer .customBgImg.Tolstoy .lead {
           font-size: 1.1em; } }
   .FlashcardContainer .Flashcard {
-    height: 80%;
+    height: 78%;
     cursor: pointer;
     border-radius: 2px;
     font-size: 1.5em;

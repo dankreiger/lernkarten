@@ -1,5 +1,5 @@
 .button-toolbar {
-  height: 15%;
+  height: 22%;
   width: 100%;
   margin-left: 0;
   button {
@@ -12,10 +12,12 @@
     &:active, &:focus {
       outline: 0 !important; /* bootstrap override */
     }
-  }
-  &.mobile-button-toolbar {
-    button {
-      width: 100%;
+    @media(min-width: 660px) {
+      width: percentage(1/2);
+      &:first-child, &:nth-child(3) {
+        width: percentage(1/4);
+      }
     }
+
   }
 }
