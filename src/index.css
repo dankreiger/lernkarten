@@ -24,6 +24,9 @@
   *:before, *:after {
     box-sizing: border-box; }
 
+html {
+  overflow-y: hidden; }
+
 .breadcrumb {
   margin-bottom: 0;
   padding-bottom: 5px; }
