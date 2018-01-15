@@ -1,2 +1,6 @@
 .breadcrumb-wrapper {
-  background-color: #f5f5f5; }
+  background-color: #f5f5f5;
+  height: 5%; }
+  .breadcrumb-wrapper .breadcrumb {
+    margin-bottom: 0;
+    padding-bottom: 5px; }

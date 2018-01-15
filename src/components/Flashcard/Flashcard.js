@@ -55,12 +55,12 @@ class Flashcard extends Component {
 
   render() {
     const {currentCardIndex, flipped} = this.state;
-    const flashcardClasses = ['Flashcard', 'flex', 'flex-justify-center', 'flex-align-items-center', 'flex-columns', 'flex-grow-1', 'full-width', {'front': !flipped, 'back': flipped}];
-    const reactSwipeContainerClasses = ['carousel', 'notecard', 'mobileSwipeContainer', 'flex', 'flex-container-grow-vertical', 'flex-justify-center'];
+    const flashcardClasses = ['Flashcard', {'front': !flipped, 'back': flipped}];
+    const reactSwipeContainerClasses = ['carousel', 'notecard', 'mobileSwipeContainer'];
     const currentCard = this.currentWords[currentCardIndex];
 
     return (
-      <div className="FlashcardContainer flex flex-container-grow-vertical">
+      <div className="FlashcardContainer">
         <BreadcrumbMenu history={this.props.history} currentLocation={this.cardCategory} />
         <MediaQuery maxDeviceWidth={1223}>
           <ReactSwipe key={this.currentWords.length} className={classNames(reactSwipeContainerClasses, 'customBgImg', this.cardCategory)} swipeOptions={{continuous: true, callback: (index, el) => this.setSwipedSlideIndex(index,el)}}>

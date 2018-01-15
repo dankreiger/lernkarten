@@ -1,0 +1,11 @@
+.button-toolbar {
+  height: 15%;
+  width: 100%; }
+  .button-toolbar button {
+    width: 33.33333%;
+    height: 100%;
+    margin-left: 0;
+    border-radius: 0;
+    border: 0;
+    margin-left: 0 !important;
+    /* bootstrap override */ }

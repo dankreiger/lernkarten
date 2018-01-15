@@ -12,10 +12,10 @@ const LanguageMenu = ({history, location, match}) => {
   return (
     <div>
       <BreadcrumbMenu history={history} currentLocation={formatLink(location.pathname)} />
-      <Grid className='flex flex-columns flex-align-items-center'>
+      <Grid>
         {Object.entries(vocabulary[match.url.slice(1)]).map(([topic, words]) => {
           return (
-            <div className='flex flex-justify-center full-width' key={topic}>
+            <div key={topic}>
               <Link className='menuLink' to={`${match.url}/${topic}`}>{snakeToTitle(topic)}</Link>
             </div>
           )

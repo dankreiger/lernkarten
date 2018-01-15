@@ -1,10 +1,13 @@
 .FlashcardContainer {
-
+  height: 100%;
 
   // child div isn't in markup - part of ReactSwipe dependency (this allows for swiping on the entire card)
-  .mobileSwipeContainer > div {
-    display: flex;
-    flex-grow: 1;
+  .mobileSwipeContainer {
+    height: 80%;
+  }
+
+  .Flashcard {
+    height: 80%;
   }
 
   .notecard {
@@ -70,7 +73,7 @@
       .lead {
         font-size: 2.3em;
         text-align: center;
-        position: absolute;
+        // position: absolute;
         left:0;
         right:0;
         margin: 0 auto;
@@ -95,16 +98,6 @@
   //   }
   // }
 
-  .button-toolbar {
-    margin-left: 0;
-    button {
-      width: 33%;
-      height: 80px;
-      margin-left: 0;
-      border-radius: 0;
-      border: 0;
-      margin-left: 0;
-    }
-  }
+
 
 }

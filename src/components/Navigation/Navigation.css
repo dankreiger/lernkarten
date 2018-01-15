@@ -1,6 +1,6 @@
-.navbar {
-  margin-bottom: 0; }
-
 .navbar-inverse {
   border-radius: 0;
-  border: 0; }
+  border: 0;
+  height: 5vh;
+  margin-bottom: 0;
+  display: block; }
