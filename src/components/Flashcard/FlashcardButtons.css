@@ -10,5 +10,8 @@
     border: 0;
     margin-left: 0 !important;
     /* bootstrap override */ }
+    .button-toolbar button:active, .button-toolbar button:focus {
+      outline: 0 !important;
+      /* bootstrap override */ }
   .button-toolbar.mobile-button-toolbar button {
     width: 100%; }

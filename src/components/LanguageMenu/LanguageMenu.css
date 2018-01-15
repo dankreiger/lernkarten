@@ -1,10 +1,21 @@
-.menuLink {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: 0.3s all;
-  font-size: 1.6em; }
-  .menuLink:hover {
-    transform: scale(1.1);
-    text-decoration: none; }
+.LanguageMenu {
+  height: 100%; }
+  .LanguageMenu .languageMenuList {
+    height: 95%;
+    /* 100% - 5% breadcrumb container height */
+    display: table; }
+    .LanguageMenu .languageMenuList .menuLinkRow {
+      display: table-row;
+      text-align: center; }
+      .LanguageMenu .languageMenuList .menuLinkRow .menuLink {
+        display: table-cell;
+        vertical-align: middle;
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: 0.3s all;
+        font-size: 1.6em; }
+        .LanguageMenu .languageMenuList .menuLinkRow .menuLink:hover {
+          transform: scale(1.1);
+          text-decoration: none; }

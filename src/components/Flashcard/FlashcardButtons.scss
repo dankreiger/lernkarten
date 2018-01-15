@@ -9,6 +9,9 @@
     border-radius: 0;
     border: 0;
     margin-left: 0 !important; /* bootstrap override */
+    &:active, &:focus {
+      outline: 0 !important; /* bootstrap override */
+    }
   }
   &.mobile-button-toolbar {
     button {

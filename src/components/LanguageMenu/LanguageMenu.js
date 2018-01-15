@@ -10,12 +10,12 @@ import './LanguageMenu.css';
 
 const LanguageMenu = ({history, location, match}) => {
   return (
-    <div>
+    <div className='LanguageMenu'>
       <BreadcrumbMenu history={history} currentLocation={formatLink(location.pathname)} />
-      <Grid>
+      <Grid className="languageMenuList">
         {Object.entries(vocabulary[match.url.slice(1)]).map(([topic, words]) => {
           return (
-            <div key={topic}>
+            <div className="menuLinkRow" key={topic}>
               <Link className='menuLink' to={`${match.url}/${topic}`}>{snakeToTitle(topic)}</Link>
             </div>
           )
