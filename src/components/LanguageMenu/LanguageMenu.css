@@ -10,8 +10,6 @@
       .LanguageMenu .languageMenuList .menuLinkRow .menuLink {
         display: table-cell;
         vertical-align: middle;
-        padding-top: 0.75rem;
-        padding-bottom: 0.75rem;
         text-decoration: none;
         text-transform: uppercase;
         transition: 0.3s all;

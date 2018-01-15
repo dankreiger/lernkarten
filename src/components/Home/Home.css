@@ -1,7 +1,9 @@
 .Home {
   background: #09f;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  padding-left: 0;
+  padding-right: 0; }
   .Home.hover-left .left {
     width: 85%; }
   .Home.hover-left .right {
@@ -17,24 +19,24 @@
       background: rgba(0, 0, 0, 0.65);
       z-index: 2; }
   .Home .one-half {
+    display: table;
     position: absolute;
     width: 50%;
     height: 100%;
     overflow: hidden;
-    text-decoration: none; }
-    .Home .one-half.left, .Home .one-half.right {
-      cursor: pointer;
-      background-size: cover;
-      z-index: 0;
-      color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    background-size: cover;
+    z-index: 0;
+    color: #fff;
+    transition: 500ms all ease-in-out; }
+    .Home .one-half:before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: -1;
       transition: 500ms all ease-in-out; }
-      .Home .one-half.left:before, .Home .one-half.right:before {
-        content: "";
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        z-index: -1;
-        transition: 500ms all ease-in-out; }
     .Home .one-half.left {
       left: 0;
       background: #ff0078;
@@ -48,6 +50,9 @@
       .Home .one-half.right:before {
         background: rgba(25, 120, 220, 0.5); }
   .Home .headline {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
     z-index: 1;
     font-size: 3.25em; }
     @media (max-width: 480px) {
