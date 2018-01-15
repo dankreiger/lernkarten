@@ -59,7 +59,7 @@ class Flashcard extends Component {
           <div className={ classNames('customBgImg', 'notecard', this.cardCategory, flashcardClasses) } onClick={this.flipCard}>
             <p className="lead">{flipped ? currentCard.translation : currentCard.word}</p>
           </div>
-          <FlashcardButtons previousCard={this.previousCard} sayWord={this.sayWord} nextCard={this.nextCard} />
+          <FlashcardButtons previousCard={this.previousCard} currentCategory={this.cardCategory} sayWord={this.sayWord} nextCard={this.nextCard} />
         </div>
       </div>
     )

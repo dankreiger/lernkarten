@@ -5,6 +5,8 @@
   @media (min-width: 660px) {
     .button-toolbar {
       height: 22%; } }
+  .button-toolbar.btn-toolbar-Bulgakov, .button-toolbar.btn-toolbar-Freud, .button-toolbar.btn-toolbar-Tolstoy {
+    height: 20%; }
   .button-toolbar button {
     width: 33.33333%;
     height: 100%;
