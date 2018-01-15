@@ -1,7 +1,10 @@
 .button-toolbar {
-  height: 22%;
+  height: 30%;
   width: 100%;
   margin-left: 0; }
+  @media (min-width: 660px) {
+    .button-toolbar {
+      height: 22%; } }
   .button-toolbar button {
     width: 33.33333%;
     height: 100%;

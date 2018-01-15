@@ -3,14 +3,11 @@
   .FlashcardContainer .FlashcardContent {
     height: 90%; }
   .FlashcardContainer .notecard {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(15%, #ffffff), color-stop(16%, #F94545), color-stop(16%, #ffffff), color-stop(25%, #ffffff), color-stop(26%, #85b2d3), color-stop(26%, #ffffff), color-stop(35%, #ffffff), color-stop(36%, #85b2d3), color-stop(36%, #ffffff), color-stop(45%, #ffffff), color-stop(46%, #85b2d3), color-stop(46%, #ffffff), color-stop(55%, #ffffff), color-stop(56%, #85b2d3), color-stop(56%, #ffffff), color-stop(65%, #ffffff), color-stop(66%, #85b2d3), color-stop(66%, #ffffff), color-stop(75%, #ffffff), color-stop(76%, #85b2d3), color-stop(76%, #ffffff), color-stop(85%, #ffffff), color-stop(86%, #85b2d3), color-stop(86%, #ffffff), color-stop(95%, #ffffff), color-stop(96%, #85b2d3), color-stop(96%, #ffffff));
-    background: -webkit-linear-gradient(top, #ffffff 15%, #F94545 16%, #ffffff 16%, #ffffff 25%, #85b2d3 26%, #ffffff 26%, #ffffff 35%, #85b2d3 36%, #ffffff 36%, #ffffff 45%, #85b2d3 46%, #ffffff 46%, #ffffff 55%, #85b2d3 56%, #ffffff 56%, #ffffff 65%, #85b2d3 66%, #ffffff 66%, #ffffff 75%, #85b2d3 76%, #ffffff 76%, #ffffff 85%, #85b2d3 86%, #ffffff 86%, #ffffff 95%, #85b2d3 96%, #ffffff 96%);
-    background: -o-linear-gradient(top, #ffffff 15%, #F94545 16%, #ffffff 16%, #ffffff 25%, #85b2d3 26%, #ffffff 26%, #ffffff 35%, #85b2d3 36%, #ffffff 36%, #ffffff 45%, #85b2d3 46%, #ffffff 46%, #ffffff 55%, #85b2d3 56%, #ffffff 56%, #ffffff 65%, #85b2d3 66%, #ffffff 66%, #ffffff 75%, #85b2d3 76%, #ffffff 76%, #ffffff 85%, #85b2d3 86%, #ffffff 86%, #ffffff 95%, #85b2d3 96%, #ffffff 96%);
-    background: linear-gradient(to bottom, #ffffff 15%, #F94545 16%, #ffffff 16%, #ffffff 25%, #85b2d3 26%, #ffffff 26%, #ffffff 35%, #85b2d3 36%, #ffffff 36%, #ffffff 45%, #85b2d3 46%, #ffffff 46%, #ffffff 55%, #85b2d3 56%, #ffffff 56%, #ffffff 65%, #85b2d3 66%, #ffffff 66%, #ffffff 75%, #85b2d3 76%, #ffffff 76%, #ffffff 85%, #85b2d3 86%, #ffffff 86%, #ffffff 95%, #85b2d3 96%, #ffffff 96%); }
+    background-color: #333; }
   .FlashcardContainer .customBgImg {
     background-repeat: no-repeat;
     background-position: center;
-    color: #000; }
+    color: #fff; }
     .FlashcardContainer .customBgImg.Freud {
       background-image: url("./../../img/freud.png"); }
     .FlashcardContainer .customBgImg.Tolstoy {
@@ -30,7 +27,7 @@
         .FlashcardContainer .customBgImg.Bulgakov .lead, .FlashcardContainer .customBgImg.Freud .lead, .FlashcardContainer .customBgImg.Tolstoy .lead {
           font-size: 1.1em; } }
   .FlashcardContainer .Flashcard {
-    height: 78%;
+    height: 70%;
     cursor: pointer;
     border-radius: 2px;
     font-size: 1.5em;
@@ -39,21 +36,21 @@
     -webkit-transition: 0.6s;
     -o-transition: 0.6s;
     transition: 0.6s; }
+    @media (min-width: 660px) {
+      .FlashcardContainer .Flashcard {
+        height: 78%; } }
     .FlashcardContainer .Flashcard:hover {
       border-radius: 3px; }
     .FlashcardContainer .Flashcard.newCard {
       transition: 0s; }
     .FlashcardContainer .Flashcard .lead {
       position: absolute;
-      top: 45%;
+      top: 39.7%;
       font-size: 2.3em;
       text-align: center;
       left: 0;
       right: 0;
       margin: 0 auto; }
-      @media (max-width: 770px) {
+      @media (min-width: 660px) {
         .FlashcardContainer .Flashcard .lead {
-          font-size: 2em; } }
-      @media (max-width: 500px) {
-        .FlashcardContainer .Flashcard .lead {
-          font-size: 1.6em; } }
+          height: 43%; } }
