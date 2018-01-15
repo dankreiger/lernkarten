@@ -1,16 +1,14 @@
 import React, {Component} from 'react';
 import classNames from 'classnames';
-import ReactSwipe from 'react-swipe';
-import MediaQuery from 'react-responsive';
 
-
+// word recognition for say button
 import Artyom from 'artyom.js';
 
 import BreadcrumbMenu from '../BreadcrumbMenu/BreadcrumbMenu';
 import FlashcardButtons from './FlashcardButtons';
 import { formatLink } from '../../static/helpers';
 
-import './Flashcard.css';
+import './FlashcardContainer.css';
 
 class Flashcard extends Component {
   constructor(props){
@@ -49,34 +47,20 @@ class Flashcard extends Component {
     });
   }
 
-  setSwipedSlideIndex = (index, el) => {
-    this.setState({currentCardIndex: index, flipped: false});
-  }
-
   render() {
     const {currentCardIndex, flipped} = this.state;
-    const flashcardClasses = ['Flashcard', 'notecard', 'flex', 'flex-justify-center', 'flex-align-items-center', 'flex-columns', 'full-width', {'front': !flipped, 'back': flipped}]
+    const flashcardClasses = ['Flashcard', {'front': !flipped, 'back': flipped}];
     const currentCard = this.currentWords[currentCardIndex];
 
     return (
-      <div>
+      <div className="FlashcardContainer">
         <BreadcrumbMenu history={this.props.history} currentLocation={this.cardCategory} />
-        <MediaQuery maxDeviceWidth={1223}>
-          <ReactSwipe key={this.currentWords.length} className="carousel" swipeOptions={{continuous: true, callback: (index, el) => this.setSwipedSlideIndex(index,el)}}>
-            {this.currentWords.map((currentCard, index) =>
-              <div key={index} className={ classNames('customBgImg', this.cardCategory, flashcardClasses) } data-word={currentCard.word} onClick={this.flipCard}>
-                <p className="lead">{flipped ? currentCard.translation : currentCard.word}</p>
-              </div>
-            )}
-          </ReactSwipe>
-          <FlashcardButtons sayWord={this.sayWord} mobile={true} />
-        </MediaQuery>
-        <MediaQuery minDeviceWidth={1224}>
-          <div className={ classNames('customBgImg', this.cardCategory, flashcardClasses) } onClick={this.flipCard}>
+        <div className="FlashcardContent">
+          <div className={ classNames('customBgImg', 'notecard', this.cardCategory, flashcardClasses) } onClick={this.flipCard}>
             <p className="lead">{flipped ? currentCard.translation : currentCard.word}</p>
           </div>
-          <FlashcardButtons previousCard={this.previousCard} sayWord={this.sayWord} nextCard={this.nextCard} />
-        </MediaQuery>
+          <FlashcardButtons previousCard={this.previousCard} currentCategory={this.cardCategory} sayWord={this.sayWord} nextCard={this.nextCard} />
+        </div>
       </div>
     )
   }

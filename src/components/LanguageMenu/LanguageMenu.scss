@@ -1,12 +1,23 @@
-.menuLink {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: 0.3s all;
-  font-size: 1.6em;
-  &:hover {
-    transform: scale(1.1);
-    text-decoration: none;
+.LanguageMenu {
+  height: 100%;
+  .languageMenuList {
+    height: 95%; /* 100% - 5% breadcrumb container height */
+    display: table;
+    .menuLinkRow {
+      display: table-row;
+      text-align: center;
+      .menuLink {
+        display: table-cell;
+        vertical-align: middle;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: 0.3s all;
+        font-size: 1.6em;
+        &:hover {
+          transform: scale(1.1);
+          text-decoration: none;
+        }
+      }
+    }
   }
 }

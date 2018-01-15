@@ -1,0 +1,25 @@
+.button-toolbar {
+  height: 30%;
+  width: 100%;
+  margin-left: 0; }
+  @media (min-width: 660px) {
+    .button-toolbar {
+      height: 22%; } }
+  .button-toolbar.btn-toolbar-Bulgakov, .button-toolbar.btn-toolbar-Freud, .button-toolbar.btn-toolbar-Tolstoy {
+    height: 20%; }
+  .button-toolbar button {
+    width: 33.33333%;
+    height: 100%;
+    margin-left: 0;
+    border-radius: 0;
+    border: 0;
+    margin-left: 0 !important;
+    /* bootstrap override */ }
+    .button-toolbar button:active, .button-toolbar button:focus {
+      outline: 0 !important;
+      /* bootstrap override */ }
+    @media (min-width: 660px) {
+      .button-toolbar button {
+        width: 50%; }
+        .button-toolbar button:first-child, .button-toolbar button:nth-child(3) {
+          width: 25%; } }

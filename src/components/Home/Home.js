@@ -18,14 +18,14 @@ class Home extends Component {
     return (
       <Grid className={classNames('Home', {'hover-left': hoverLeft, 'hover-right': hoverRight})}>
         <Link
-          className="one-half left flex flex-align-items-center flex-justify-center"
+          className="one-half left"
           onMouseOver={() => this.setState({hoverLeft: true})}
           onMouseOut={() => this.setState({hoverLeft: false})}
           to="/german">
           <span className="headline">Deutsch</span>
         </Link>
         <Link
-          className="one-half right flex flex-align-items-center flex-justify-center"
+          className="one-half right"
           onMouseOver={() => this.setState({hoverRight: true})}
           onMouseOut={() => this.setState({hoverRight: false})}
           to="/russian">

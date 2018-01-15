@@ -11,7 +11,6 @@ import { Route, BrowserRouter as Router } from 'react-router-dom'
 
 // css
 import './index.css';
-import './atoms.css'
 
 // imported components
 import App from './components/App/App';

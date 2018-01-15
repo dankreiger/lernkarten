@@ -1,8 +1,21 @@
-.navbar {
-  margin-bottom: 0;
-}
-
 .navbar-inverse {
   border-radius: 0;
   border: 0;
+  height: 5%;
+  margin-bottom: 0;
+  display: table-row;
+
+  /* bootstrap override */
+  .container {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .navbar-collapse.collapse.in {
+    .navbar-nav {
+      margin-top: 0;
+    }
+  }
+
 }

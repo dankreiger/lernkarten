@@ -1,13 +1,15 @@
 import React from 'react';
 import classNames from 'classnames';
 import { ButtonToolbar, Button } from 'react-bootstrap';
+import './FlashcardButtons.css';
 
-const FlashcardButtons = ({previousCard, nextCard, sayWord, mobile}) => {
+const FlashcardButtons = ({previousCard, nextCard, sayWord,  currentCategory}) => {
+  console.log(currentCategory)
   return(
-    <ButtonToolbar className='flex flex-justify-space-around full-width button-toolbar'>
-      {previousCard && <Button bsStyle="primary" bsSize="large" onClick={previousCard}>Previous</Button>}
-      <Button className={classNames({'flex-1-1-100': mobile})} bsStyle={mobile ? "primary" : "default"} bsSize="large" onClick={sayWord}>Say</Button>
-      {nextCard && <Button bsStyle="primary" bsSize="large" onClick={nextCard}>Next</Button>}
+    <ButtonToolbar className={classNames('button-toolbar', `btn-toolbar-${currentCategory}`)}>
+      <Button bsStyle="default" bsSize="large" onClick={previousCard}>&#8592;</Button>
+      <Button bsStyle="primary" bsSize="large" onClick={sayWord}>Say</Button>
+    <Button bsStyle="default" bsSize="large" onClick={nextCard}>&#8594;</Button>
     </ButtonToolbar>
   )
 }
