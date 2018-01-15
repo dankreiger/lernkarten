@@ -1,6 +1,7 @@
 .button-toolbar {
   height: 15%;
-  width: 100%; }
+  width: 100%;
+  margin-left: 0; }
   .button-toolbar button {
     width: 33.33333%;
     height: 100%;
@@ -9,3 +10,5 @@
     border: 0;
     margin-left: 0 !important;
     /* bootstrap override */ }
+  .button-toolbar.mobile-button-toolbar button {
+    width: 100%; }

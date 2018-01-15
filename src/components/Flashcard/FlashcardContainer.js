@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
 import classNames from 'classnames';
-import ReactSwipe from 'react-swipe';
 import MediaQuery from 'react-responsive';
 
 
 import Artyom from 'artyom.js';
 
 import BreadcrumbMenu from '../BreadcrumbMenu/BreadcrumbMenu';
+import FlashcardMobileDevice from './FlashcardMobileDevice';
 import FlashcardButtons from './FlashcardButtons';
 import { formatLink } from '../../static/helpers';
 
@@ -56,21 +56,14 @@ class Flashcard extends Component {
   render() {
     const {currentCardIndex, flipped} = this.state;
     const flashcardClasses = ['Flashcard', {'front': !flipped, 'back': flipped}];
-    const reactSwipeContainerClasses = ['carousel', 'notecard', 'mobileSwipeContainer'];
     const currentCard = this.currentWords[currentCardIndex];
 
     return (
       <div className="FlashcardContainer">
         <BreadcrumbMenu history={this.props.history} currentLocation={this.cardCategory} />
+        {/* check these media queries */}
         <MediaQuery maxDeviceWidth={1223}>
-          <ReactSwipe key={this.currentWords.length} className={classNames(reactSwipeContainerClasses, 'customBgImg', this.cardCategory)} swipeOptions={{continuous: true, callback: (index, el) => this.setSwipedSlideIndex(index,el)}}>
-            {this.currentWords.map((currentCard, index) =>
-              <div key={index} className={ classNames(flashcardClasses) } data-word={currentCard.word} onClick={this.flipCard}>
-                <p className="lead">{flipped ? currentCard.translation : currentCard.word}</p>
-              </div>
-            )}
-          </ReactSwipe>
-          <FlashcardButtons sayWord={this.sayWord} mobile={true} />
+          <FlashcardMobileDevice flashcardClasses={flashcardClasses} flipped={flipped} currentWords={this.currentWords} cardCategory={this.cardCategory} flipCard={this.flipCard} setSwipedSlideIndex={this.setSwipedSlideIndex}/>
         </MediaQuery>
         <MediaQuery minDeviceWidth={1224}>
           <div className={ classNames('customBgImg', 'notecard', this.cardCategory, flashcardClasses) } onClick={this.flipCard}>

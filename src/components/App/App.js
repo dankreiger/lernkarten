@@ -6,7 +6,7 @@ import { Switch, Route } from 'react-router-dom'
 import Home from '../Home/Home';
 import Navigation from '../Navigation/Navigation';
 import LanguageMenu from '../LanguageMenu/LanguageMenu';
-import Flashcard from '../Flashcard/Flashcard';
+import Flashcard from '../Flashcard/FlashcardContainer';
 import vocabulary from '../../static/vocabulary';
 
 import './App.css';

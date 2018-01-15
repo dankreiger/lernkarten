@@ -1,0 +1,8 @@
+.FlashcardMobileDevice {
+  height: 80%; }
+  .FlashcardMobileDevice .mobileSwipeContainer {
+    height: 100%; }
+    .FlashcardMobileDevice .mobileSwipeContainer div {
+      height: 100%; }
+      .FlashcardMobileDevice .mobileSwipeContainer div .Flashcard {
+        height: 100%; }

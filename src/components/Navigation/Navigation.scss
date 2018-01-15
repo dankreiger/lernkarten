@@ -4,4 +4,18 @@
   height: 5vh;
   margin-bottom: 0;
   display: block;
+
+  .navbar-collapse.collapse.in {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+
+    .navbar-nav {
+      margin-top: 0;
+    }
+  }
+
+  li {
+    background-color: #333;
+  }
 }
