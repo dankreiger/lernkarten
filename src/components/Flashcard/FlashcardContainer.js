@@ -1,16 +1,15 @@
 import React, {Component} from 'react';
-import classNames from 'classnames';
-
 // word recognition for say button
 import Artyom from 'artyom.js';
 
 import BreadcrumbMenu from '../BreadcrumbMenu/BreadcrumbMenu';
+import Flashcard from './Flashcard';
 import FlashcardButtons from './FlashcardButtons';
 import { formatLink } from '../../static/helpers';
 
 import './FlashcardContainer.css';
 
-class Flashcard extends Component {
+class FlashcardContainer extends Component {
   constructor(props){
     super(props);
     this.state = {
@@ -49,16 +48,13 @@ class Flashcard extends Component {
 
   render() {
     const {currentCardIndex, flipped} = this.state;
-    const flashcardClasses = ['Flashcard', {'front': !flipped, 'back': flipped}];
     const currentCard = this.currentWords[currentCardIndex];
 
     return (
       <div className="FlashcardContainer">
         <BreadcrumbMenu history={this.props.history} currentLocation={this.cardCategory} />
         <div className="FlashcardContent">
-          <div className={ classNames('customBgImg', 'notecard', this.cardCategory, flashcardClasses) } onClick={this.flipCard}>
-            <p className="lead">{flipped ? currentCard.translation : currentCard.word}</p>
-          </div>
+          <Flashcard cardCategory={this.cardCategory} flipCard={this.flipCard} flipped={flipped} currentCard={currentCard} />
           <FlashcardButtons previousCard={this.previousCard} currentCategory={this.cardCategory} sayWord={this.sayWord} nextCard={this.nextCard} />
         </div>
       </div>
@@ -67,4 +63,4 @@ class Flashcard extends Component {
 }
 
 
-export default Flashcard;
+export default FlashcardContainer;

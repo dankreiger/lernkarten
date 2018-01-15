@@ -28,6 +28,8 @@
         .FlashcardContainer .customBgImg.Bulgakov .lead, .FlashcardContainer .customBgImg.Freud .lead, .FlashcardContainer .customBgImg.Tolstoy .lead {
           font-size: 1.1em; } }
   .FlashcardContainer .Flashcard {
+    display: table;
+    width: 100%;
     height: 70%;
     cursor: pointer;
     border-radius: 2px;
@@ -45,9 +47,9 @@
     .FlashcardContainer .Flashcard.newCard {
       transition: 0s; }
     .FlashcardContainer .Flashcard .lead {
-      position: absolute;
-      top: 40.7%;
-      font-size: 2.3em;
+      display: table-cell;
+      font-size: 2.2em;
+      vertical-align: middle;
       text-align: center;
       left: 0;
       right: 0;

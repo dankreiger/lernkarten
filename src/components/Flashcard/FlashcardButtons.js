@@ -4,7 +4,6 @@ import { ButtonToolbar, Button } from 'react-bootstrap';
 import './FlashcardButtons.css';
 
 const FlashcardButtons = ({previousCard, nextCard, sayWord,  currentCategory}) => {
-  console.log(currentCategory)
   return(
     <ButtonToolbar className={classNames('button-toolbar', `btn-toolbar-${currentCategory}`)}>
       <Button bsStyle="default" bsSize="large" onClick={previousCard}>&#8592;</Button>
