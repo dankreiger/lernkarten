@@ -4,7 +4,7 @@ const topics = {
     nouns_feminine: 'feminine Nomen',
     nouns_neuter: 'neutrale Nomen',
     greetings: 'Begrüßungen',
-    freud: 'Sigmund Freud'
+    freud: 'Freud'
   },
   russian: {
     greetings: 'приветствия',
@@ -13,8 +13,8 @@ const topics = {
     countries: 'страны',
     verbs_infinitive: 'инфинитивом',
     penguin_ch_1: 'Penguin - глава 1',
-    bulgakov: 'Михаил Афанасьевич Булгаков',
-    tolstoy: 'Лев Николаевич Толсто́й'
+    bulgakov: 'Булгаков',
+    tolstoy: 'Толсто́й'
   }
 
 }

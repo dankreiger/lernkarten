@@ -1,0 +1,1692 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1025"
+   height="405"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="Linotype_machine_keyboard_layout_Russian.svg">
+  <title
+     id="title4112">Linotype machine keyboard layout for Russian</title>
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.14"
+     inkscape:cx="26.692748"
+     inkscape:cy="350.85335"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer4"
+     showgrid="true"
+     width="800px"
+     inkscape:window-width="1280"
+     inkscape:window-height="634"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:snap-center="false">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2985"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true"
+       originx="65px"
+       originy="-200px" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Linotype machine keyboard layout for Russian</dc:title>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/3.0/" />
+        <dc:date>2015-02-27</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>https://commons.wikimedia.org/wiki/User:Любослов_Езыкин</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:language>Russian/русский</dc:language>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-sa/3.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="bg"
+     transform="translate(65,5)"
+     sodipodi:insensitive="true">
+    <rect
+       style="fill:none;stroke:none"
+       id="rect7262"
+       width="1025"
+       height="405"
+       x="-65"
+       y="-5" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="hands"
+     transform="translate(65,15)"
+     style="display:inline"
+     sodipodi:insensitive="true">
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:12, 6;stroke-dashoffset:0;marker-start:none;display:inline"
+       d="m 120,-5 0,80 10,0 0,60 -50.000001,0 0,60 10,0 0,60 10.000001,0 0,60 10,0 0,65"
+       id="path4746"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccccccccc" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#f08080;fill-opacity:1;stroke:none;display:inline;font-family:DejaVu Serif;-inkscape-font-specification:DejaVu Serif"
+       x="130"
+       y="5"
+       id="text4928"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4930"
+         x="130"
+         y="5">right hand</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#f08080;fill-opacity:1;stroke:none;display:inline;font-family:DejaVu Serif;-inkscape-font-specification:DejaVu Serif"
+       x="5"
+       y="5"
+       id="text4928-8"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4930-2"
+         x="5"
+         y="5">left hand</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#40e0d0;fill-opacity:1;stroke:none;display:inline;font-family:DejaVu Serif;-inkscape-font-specification:DejaVu Serif"
+       x="30"
+       y="15"
+       id="text4928-8-4"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4930-2-5"
+         x="30"
+         y="15">левая рука</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#40e0d0;fill-opacity:1;stroke:none;display:inline;font-family:DejaVu Serif;-inkscape-font-specification:DejaVu Serif"
+       x="160"
+       y="15"
+       id="text4928-8-4-5"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4930-2-5-1"
+         x="160"
+         y="15">правая рука</tspan></text>
+  </g>
+  <g
+     inkscape:label="buttons"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(65,-447.36224)"
+     style="display:inline"
+     sodipodi:insensitive="true">
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642"
+       d="m 10,532.36224 c -2.357023,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.642975,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#000000;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-9"
+       d="m 70,532.36224 c -2.357023,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.642975,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#000000;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-5"
+       d="m 130,532.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#000000;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-4"
+       d="m 190,532.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#000000;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-3"
+       d="m 250,532.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#000000;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-2"
+       d="m 310,532.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#000000;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-9-3"
+       d="m 370,532.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#000000;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-5-3"
+       d="m 430,532.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#00bfff;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-4-4"
+       d="m 490,532.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#00bfff;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-3-1"
+       d="m 550,532.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#00bfff;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-1"
+       d="m 610,532.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#000000;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-9-38"
+       d="m 670,532.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#000000;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-5-7"
+       d="m 730,532.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#000000;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-4-42"
+       d="m 790,532.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#000000;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-3-7"
+       d="m 850,532.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#000000;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-93"
+       d="m 20,592.36224 c -2.357023,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.642975,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#000000;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-9-1"
+       d="m 80,592.36224 c -2.357023,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.642975,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#000000;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-5-9"
+       d="m 140,592.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#000000;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-4-8"
+       d="m 200,592.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#000000;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-3-6"
+       d="m 260,592.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#000000;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-2-5"
+       d="m 320,592.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#00bfff;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-9-3-0"
+       d="m 380,592.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#00bfff;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-5-3-2"
+       d="m 440,592.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#00bfff;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-4-4-8"
+       d="m 500,592.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#00bfff;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-3-1-6"
+       d="m 560,592.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#00bfff;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-1-0"
+       d="m 620,592.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#000000;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-9-38-2"
+       d="m 680,592.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#000000;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-5-7-4"
+       d="m 740,592.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#000000;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-4-42-8"
+       d="m 800,592.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#000000;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-3-7-6"
+       d="m 860,592.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#000000;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-0"
+       d="m 30,652.36224 c -2.357023,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.642975,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#000000;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-9-9"
+       d="m 90,652.36224 c -2.357023,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.642975,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#000000;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-5-0"
+       d="m 150,652.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#000000;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-4-0"
+       d="m 210,652.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#000000;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-3-61"
+       d="m 270,652.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#000000;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-2-3"
+       d="m 330,652.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#00bfff;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-9-3-8"
+       d="m 390,652.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#00bfff;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-5-3-9"
+       d="m 450,652.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#00bfff;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-4-4-3"
+       d="m 510,652.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#00bfff;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-3-1-4"
+       d="m 570,652.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#00bfff;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-1-4"
+       d="m 630,652.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#000000;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-9-38-6"
+       d="m 690,652.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#000000;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-5-7-0"
+       d="m 750,652.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#000000;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-4-42-6"
+       d="m 810,652.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#000000;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-3-7-61"
+       d="m 870,652.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#000000;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-49"
+       d="m 40,712.36224 c -2.357023,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.642975,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#000000;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-9-6"
+       d="m 100,712.36224 c -2.357023,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.642975,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#000000;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-5-37"
+       d="m 160,712.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#000000;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-4-88"
+       d="m 220,712.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#000000;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-3-2"
+       d="m 280,712.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#000000;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-2-9"
+       d="m 340,712.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#00bfff;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-9-3-1"
+       d="m 400,712.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#00bfff;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-5-3-3"
+       d="m 460,712.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#000000;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-4-4-5"
+       d="m 520,712.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#00bfff;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-3-1-9"
+       d="m 580,712.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#00bfff;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-1-8"
+       d="m 640,712.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#000000;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-9-38-4"
+       d="m 700,712.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#000000;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-5-7-07"
+       d="m 760,712.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#000000;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-4-42-63"
+       d="m 820,712.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#000000;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-3-7-615"
+       d="m 880,712.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#000000;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-20"
+       d="m 50,772.36224 c -2.357023,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.642975,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#00bfff;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-9-97"
+       d="m 110,772.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64298,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#000000;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-5-372"
+       d="m 170,772.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#000000;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-4-6"
+       d="m 230,772.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#000000;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-3-0"
+       d="m 290,772.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#000000;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-2-1"
+       d="m 350,772.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#000000;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-9-3-6"
+       d="m 410,772.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#00bfff;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-5-3-5"
+       d="m 470,772.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#00bfff;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-4-4-7"
+       d="m 530,772.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#00bfff;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-3-1-5"
+       d="m 590,772.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#00bfff;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-1-41"
+       d="m 650,772.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#00bfff;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-9-38-20"
+       d="m 710,772.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#000000;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-5-7-01"
+       d="m 770,772.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#000000;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-4-42-4"
+       d="m 830,772.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#000000;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-3-7-60"
+       d="m 890,772.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#000000;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-7"
+       d="m 60,832.36224 c -2.357023,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.642975,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#000000;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-9-7"
+       d="m 120,832.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64298,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#000000;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-5-77"
+       d="m 180,832.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#000000;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-4-3"
+       d="m 240,832.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#000000;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-3-3"
+       d="m 300,832.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#00bfff;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-2-59"
+       d="m 360,832.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#00bfff;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-9-3-9"
+       d="m 420,832.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#00bfff;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-5-3-8"
+       d="m 480,832.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#00bfff;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-4-4-1"
+       d="m 540,832.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#00bfff;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-3-1-8"
+       d="m 600,832.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#00bfff;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-1-2"
+       d="m 660,832.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#000000;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-9-38-66"
+       d="m 720,832.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#000000;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-5-7-03"
+       d="m 780,832.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#000000;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-4-42-80"
+       d="m 840,832.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#000000;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-3-7-1"
+       d="m 900,832.36224 c -2.35702,0 -5,-2.64298 -5,-5 l 0,-40 c 0,-2.35703 2.64297,-5 5,-5 l 40,0 c 2.35702,0 5,2.64298 5,5 l 0,40 c 0,2.35702 -2.64298,5 -5,5 z"
+       style="fill:#000000;stroke:none" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4642-15"
+       d="m -50,687.36224 c -2.35702,0 -5,-9.51473 -5,-18 l 0,-144 c 0,-8.4853 2.64298,-18 5,-18 l 40,0 c 2.35702,0 5,9.51473 5,18 l 0,144 c 0,8.48527 -2.64298,18 -5,18 z"
+       style="fill:#000000;stroke:none;display:inline" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="letters"
+     style="display:inline"
+     transform="translate(65,5)"
+     sodipodi:insensitive="true">
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="320"
+       y="370"
+       id="text5153-4"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7"
+         x="320"
+         y="370">—</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="260"
+       y="370"
+       id="text5153-4-8"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-3"
+         x="260"
+         y="370">з</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="200"
+       y="370"
+       id="text5153-4-5"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-1"
+         x="200"
+         y="370">я</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="80"
+       y="370"
+       id="text5153-4-1"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-6"
+         x="80"
+         y="370">и</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="620"
+       y="370"
+       id="text5153-4-4"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-06"
+         x="620"
+         y="370">№</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="560"
+       y="370"
+       id="text5153-4-8-1"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-3-8"
+         x="560"
+         y="370">6</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="500"
+       y="370"
+       id="text5153-4-5-9"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-1-8"
+         x="500"
+         y="370">»</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="440"
+       y="370"
+       id="text5153-4-2-4"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-0-1"
+         x="440"
+         y="370">!</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="380"
+       y="370"
+       id="text5153-4-1-4"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-6-3"
+         x="380"
+         y="370">«</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="920"
+       y="370"
+       id="text5153-4-3"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-7"
+         x="920"
+         y="370">Х</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="860"
+       y="370"
+       id="text5153-4-8-10"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-3-7"
+         x="860"
+         y="370">З</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="800"
+       y="370"
+       id="text5153-4-5-3"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-1-4"
+         x="800"
+         y="370">Я</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="740"
+       y="370"
+       id="text5153-4-2-9"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-0-6"
+         x="740"
+         y="370">У</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="680"
+       y="370"
+       id="text5153-4-1-5"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-6-1"
+         x="680"
+         y="370">И</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="270"
+       y="70"
+       id="text5153-4-0"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-9"
+         x="270"
+         y="70">ю</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="210"
+       y="70"
+       id="text5153-4-8-9"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-3-6"
+         x="210"
+         y="70">ц</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="150"
+       y="70"
+       id="text5153-4-5-8"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-1-3"
+         x="150"
+         y="70">т</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="90"
+       y="70"
+       id="text5153-4-2-48"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-0-4"
+         x="90"
+         y="70">с</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="30"
+       y="70"
+       id="text5153-4-1-9"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-6-9"
+         x="30"
+         y="70">о</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="570"
+       y="70"
+       id="text5153-4-4-2"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-06-5"
+         x="570"
+         y="70">7</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="510"
+       y="70"
+       id="text5153-4-8-1-5"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-3-8-3"
+         x="510"
+         y="70">1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="450"
+       y="70"
+       id="text5153-4-5-9-3"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-1-8-3"
+         x="450"
+         y="70">-</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="390"
+       y="70"
+       id="text5153-4-2-4-7"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-0-1-4"
+         x="390"
+         y="70">Й</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="870"
+       y="70"
+       id="text5153-4-3-0"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-7-8"
+         x="870"
+         y="70">Ю</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="810"
+       y="70"
+       id="text5153-4-8-10-8"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-3-7-0"
+         x="810"
+         y="70">Ц</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="750"
+       y="70"
+       id="text5153-4-5-3-6"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-1-4-8"
+         x="750"
+         y="70">Т</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="690"
+       y="70"
+       id="text5153-4-2-9-1"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-0-6-9"
+         x="690"
+         y="70">С</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="630"
+       y="70"
+       id="text5153-4-1-5-8"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-6-1-9"
+         x="630"
+         y="70">О</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="280"
+       y="130"
+       id="text5153-4-7"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-2"
+         x="280"
+         y="130">х</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="220"
+       y="130"
+       id="text5153-4-8-2"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-3-82"
+         x="220"
+         y="130">п</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="160"
+       y="130"
+       id="text5153-4-5-89"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-1-0"
+         x="160"
+         y="130">ж</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="100"
+       y="130"
+       id="text5153-4-2-7"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-0-8"
+         x="100"
+         y="130">м</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="40"
+       y="130"
+       id="text5153-4-1-1"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-6-5"
+         x="40"
+         y="130">е</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="580"
+       y="130"
+       id="text5153-4-4-8"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-06-6"
+         x="580"
+         y="130">8</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="520"
+       y="130"
+       id="text5153-4-8-1-1"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-3-8-2"
+         x="520"
+         y="130">2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="880"
+       y="130"
+       id="text5153-4-3-6"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-7-5"
+         x="880"
+         y="130">Ь</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="820"
+       y="130"
+       id="text5153-4-8-10-3"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-3-7-9"
+         x="820"
+         y="130">П</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="760"
+       y="130"
+       id="text5153-4-5-3-2"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-1-4-4"
+         x="760"
+         y="130">Ж</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="700"
+       y="130"
+       id="text5153-4-2-9-6"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-0-6-1"
+         x="700"
+         y="130">М</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="640"
+       y="130"
+       id="text5153-4-1-5-82"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-6-1-1"
+         x="640"
+         y="130">Е</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="290"
+       y="190"
+       id="text5153-4-19"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-76"
+         x="290"
+         y="190">э</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="230"
+       y="190"
+       id="text5153-4-8-29"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-3-5"
+         x="230"
+         y="190">л</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="170"
+       y="190"
+       id="text5153-4-5-2"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-1-00"
+         x="170"
+         y="190">б</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="110"
+       y="190"
+       id="text5153-4-2-3"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-0-9"
+         x="110"
+         y="190">в</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="50"
+       y="190"
+       id="text5153-4-1-18"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-6-19"
+         x="50"
+         y="190">н</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="590"
+       y="190"
+       id="text5153-4-4-5"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-06-3"
+         x="590"
+         y="190">9</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="530"
+       y="190"
+       id="text5153-4-8-1-2"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-3-8-5"
+         x="530"
+         y="190">3</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="470"
+       y="190"
+       id="text5153-4-5-9-2"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-1-8-5"
+         x="470"
+         y="190">)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="410"
+       y="190"
+       id="text5153-4-2-4-8"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-0-1-6"
+         x="410"
+         y="190">(</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="350"
+       y="185"
+       id="text5153-4-1-4-7"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-6-3-7"
+         x="350"
+         y="185">,</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="890"
+       y="190"
+       id="text5153-4-3-2"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-7-2"
+         x="890"
+         y="190">Э</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="830"
+       y="190"
+       id="text5153-4-8-10-9"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-3-7-4"
+         x="830"
+         y="190">Л</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="770"
+       y="190"
+       id="text5153-4-5-3-1"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-1-4-9"
+         x="770"
+         y="190">Б</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="710"
+       y="190"
+       id="text5153-4-2-9-69"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-0-6-8"
+         x="710"
+         y="190">В</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="650"
+       y="190"
+       id="text5153-4-1-5-2"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-6-1-5"
+         x="650"
+         y="190">Н</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="300"
+       y="250"
+       id="text5153-4-54"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-91"
+         x="300"
+         y="250">ч</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="240"
+       y="250"
+       id="text5153-4-8-25"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-3-0"
+         x="240"
+         y="250">к</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="180"
+       y="250"
+       id="text5153-4-5-83"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-1-9"
+         x="180"
+         y="250">ш</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="120"
+       y="250"
+       id="text5153-4-2-39"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-0-67"
+         x="120"
+         y="250">ы</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="60"
+       y="250"
+       id="text5153-4-1-99"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-6-7"
+         x="60"
+         y="250">а</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="600"
+       y="250"
+       id="text5153-4-4-6"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-06-9"
+         x="600"
+         y="250">0</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="540"
+       y="250"
+       id="text5153-4-8-1-3"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-3-8-57"
+         x="540"
+         y="250">4</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="480"
+       y="250"
+       id="text5153-4-5-9-6"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-1-8-6"
+         x="480"
+         y="250">й</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="420"
+       y="250"
+       id="text5153-4-2-4-58"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-0-1-2"
+         x="420"
+         y="250">′</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="360"
+       y="245"
+       id="text5153-4-1-4-5"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-6-3-4"
+         x="360"
+         y="245">.</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="900"
+       y="250"
+       id="text5153-4-3-4"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-7-1"
+         x="900"
+         y="250">Ч</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="840"
+       y="250"
+       id="text5153-4-8-10-6"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-3-7-1"
+         x="840"
+         y="250">К</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="780"
+       y="250"
+       id="text5153-4-5-3-63"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-1-4-3"
+         x="780"
+         y="250">Ш</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="720"
+       y="250"
+       id="text5153-4-2-9-5"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-0-6-5"
+         x="720"
+         y="250">Ы</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="660"
+       y="250"
+       id="text5153-4-1-5-3"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-6-1-2"
+         x="660"
+         y="250">А</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="310"
+       y="310"
+       id="text5153-4-07"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-03"
+         x="310"
+         y="310">ф</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="250"
+       y="310"
+       id="text5153-4-8-4"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-3-00"
+         x="250"
+         y="310">д</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="190"
+       y="310"
+       id="text5153-4-5-5"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-1-31"
+         x="190"
+         y="310">р</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="130"
+       y="310"
+       id="text5153-4-2-0"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-0-675"
+         x="130"
+         y="310">г</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="610"
+       y="310"
+       id="text5153-4-4-4"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-06-54"
+         x="610"
+         y="310">?</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="550"
+       y="310"
+       id="text5153-4-8-1-9"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-3-8-56"
+         x="550"
+         y="310">5</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="490"
+       y="310"
+       id="text5153-4-5-9-48"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-1-8-21"
+         x="490"
+         y="310">;</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="430"
+       y="310"
+       id="text5153-4-2-4-6"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-0-1-83"
+         x="430"
+         y="310">:</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="370"
+       y="310"
+       id="text5153-4-1-4-1"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-6-3-48"
+         x="370"
+         y="310">ь</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="910"
+       y="310"
+       id="text5153-4-3-49"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-7-20"
+         x="910"
+         y="310">Ф</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="850"
+       y="310"
+       id="text5153-4-8-10-7"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-3-7-06"
+         x="850"
+         y="310">Д</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="790"
+       y="310"
+       id="text5153-4-5-3-0"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-1-4-7"
+         x="790"
+         y="310">Р</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="730"
+       y="310"
+       id="text5153-4-2-9-0"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-0-6-56"
+         x="730"
+         y="310">Г</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="330"
+       y="70"
+       id="text5153-4-1-4-6-9"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-6-3-2-2"
+         x="330"
+         y="70">щ</tspan></text>
+    <path
+       style="fill:#ffffff;stroke:none"
+       d="m 355,120 0,-30 -30,0 0,30 z"
+       id="path3258"
+       inkscape:connector-curvature="0"
+       transform="translate(0,10)"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="fill:#ffffff;stroke:none;display:inline"
+       d="m 410,130 0,-30 -20,0 0,30 z"
+       id="path3258-1"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="fill:#ffffff;stroke:none;display:inline"
+       d="m 465,130 0,-30 -10,0 0,30 z"
+       id="path3258-1-7"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="fill:#ffffff;stroke:none;display:inline"
+       d="m 75,310 0,-30 -10,0 0,30 z"
+       id="path3258-1-7-4"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="fill:#ffffff;stroke:none;display:inline"
+       d="m 673,310 0,-30 -6,0 0,30 z"
+       id="path3258-1-7-0"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
+    <text
+       xml:space="preserve"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="140"
+       y="370"
+       id="text5153-4-1-94"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5155-7-6-8"
+         x="140"
+         y="370">у</tspan></text>
+  </g>
+</svg>

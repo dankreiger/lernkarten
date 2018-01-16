@@ -60,27 +60,27 @@
     &.left {
       left: 0;
       background: rgb(255, 0, 120);
-      background-image: url("../../img/berlin-min.png");
-      background-size: cover;
+      background-image: url("../../img/german_umlaut.svg");
+      background-size: contain;
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-position: center;
       &:before {
-        background: rgba(255, 0, 120, 0.5);
+        background: rgba(255, 0, 120, 0.95);
       }
     }
 
     &.right {
       right: 0;
       background: rgb(25, 120, 220);
-      background-image: url("../../img/kiev-min.png");
-      background-size: cover;
+      background-image: url("../../img/cyrillic.svg");
+      background-size: contain;
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-position: center;
 
       &:before {
-        background: rgba(25, 120, 220, 0.5);
+        background: rgba(25, 120, 220, 0.95);
       }
     }
   }
