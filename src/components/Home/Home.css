@@ -40,13 +40,21 @@
     .Home .one-half.left {
       left: 0;
       background: #ff0078;
-      background: url("https://cdn.flixbus.de/city_description_images/berlin-nachtleben.jpg") center center no-repeat; }
+      background-image: url("../../img/berlin-min.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center; }
       .Home .one-half.left:before {
         background: rgba(255, 0, 120, 0.5); }
     .Home .one-half.right {
       right: 0;
       background: #1978dc;
-      background: url("http://www.telegraph.co.uk/content/dam/Travel/Destinations/Europe/Russia/Moscow/moscow-go-red-square-xlarge.jpg") center center no-repeat; }
+      background-image: url("../../img/kiev-min.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center; }
       .Home .one-half.right:before {
         background: rgba(25, 120, 220, 0.5); }
   .Home .headline {

@@ -4,7 +4,7 @@
   height: 100%;
   padding-left: 0;
   padding-right: 0;
-  
+
   &.hover-left {
     .left {
       width: 85%;
@@ -60,8 +60,11 @@
     &.left {
       left: 0;
       background: rgb(255, 0, 120);
-      background: url("https://cdn.flixbus.de/city_description_images/berlin-nachtleben.jpg") center center no-repeat;
-
+      background-image: url("../../img/berlin-min.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
       &:before {
         background: rgba(255, 0, 120, 0.5);
       }
@@ -70,7 +73,11 @@
     &.right {
       right: 0;
       background: rgb(25, 120, 220);
-      background: url("http://www.telegraph.co.uk/content/dam/Travel/Destinations/Europe/Russia/Moscow/moscow-go-red-square-xlarge.jpg") center center no-repeat;
+      background-image: url("../../img/kiev-min.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
 
       &:before {
         background: rgba(25, 120, 220, 0.5);

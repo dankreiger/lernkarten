@@ -4,7 +4,10 @@
   display: table;
   width: 100%; }
   .breadcrumb-wrapper .breadcrumb {
-    font-size: 1.3em;
+    font-size: 1em;
     margin-bottom: 0;
     display: table-cell;
     vertical-align: middle; }
+    @media (min-width: 660px) {
+      .breadcrumb-wrapper .breadcrumb {
+        font-size: 1.15em; } }
