@@ -3,7 +3,12 @@
   .LanguageMenu .languageMenuList {
     height: 95%;
     /* 100% - 5% breadcrumb container height */
-    display: table; }
+    display: table;
+    padding-top: 1.5rem;
+    padding-bottom: 3rem; }
+    .LanguageMenu .languageMenuList:before, .LanguageMenu .languageMenuList:after {
+      display: none;
+      /* bootstrap override */ }
     .LanguageMenu .languageMenuList .menuLinkRow {
       display: table-row;
       text-align: center; }

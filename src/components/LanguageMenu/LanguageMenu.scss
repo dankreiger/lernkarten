@@ -3,6 +3,11 @@
   .languageMenuList {
     height: 95%; /* 100% - 5% breadcrumb container height */
     display: table;
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+    &:before, &:after {
+      display: none; /* bootstrap override */
+    }
     .menuLinkRow {
       display: table-row;
       text-align: center;
