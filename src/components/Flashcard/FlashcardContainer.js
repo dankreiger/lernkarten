@@ -49,13 +49,13 @@ class FlashcardContainer extends Component {
   render() {
     const {currentCardIndex, flipped} = this.state;
     const currentCard = this.currentWords[currentCardIndex];
-
+    console.log(this.currentWords.length - 1 == currentCardIndex)
     return (
       <div className="FlashcardContainer">
         <BreadcrumbMenu history={this.props.history} currentLocation={this.cardCategory} />
         <div className="FlashcardContent">
           <Flashcard cardCategory={this.cardCategory} flipCard={this.flipCard} flipped={flipped} currentCard={currentCard} />
-          <FlashcardButtons previousCard={this.previousCard} currentCategory={this.cardCategory} sayWord={this.sayWord} nextCard={this.nextCard} />
+          <FlashcardButtons previousCard={this.previousCard} currentCategory={this.cardCategory} sayWord={this.sayWord} nextCard={this.nextCard} currentCardIndex={currentCardIndex} currentWords={this.currentWords}/>
         </div>
       </div>
     )

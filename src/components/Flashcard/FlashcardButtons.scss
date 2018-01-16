@@ -33,4 +33,7 @@
     }
 
   }
+  &.finished-toolbar button {
+    width: percentage(1/4);
+  }
 }

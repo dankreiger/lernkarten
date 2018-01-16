@@ -27,3 +27,5 @@
         width: 50%; }
         .button-toolbar button:first-child, .button-toolbar button:nth-child(3) {
           width: 25%; } }
+  .button-toolbar.finished-toolbar button {
+    width: 25%; }
