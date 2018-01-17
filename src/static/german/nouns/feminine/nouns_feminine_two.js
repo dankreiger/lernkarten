@@ -33,10 +33,6 @@ const nouns_feminine_two = [
   {
     word: 'die Eustachi-Röhre',
     translation: 'Eustachian tube'
-  },
-  {
-    word: 'die Spitzenrefinanzierungsfazilität',
-    translation: 'the marginal lending facility'
   }
 ]
 

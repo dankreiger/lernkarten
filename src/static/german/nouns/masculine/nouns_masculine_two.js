@@ -18,9 +18,6 @@ const nouns_masculine_two = [
     word: 'der Gewissenszwang',
     translation: 'the moral constraint'
   }, {
-    word: 'der Wiederaufnahmehemmer',
-    translation: 'the reuptake inhibitor'
-  }, {
     word: 'der Verzichter',
     translation: 'the abdicator'
   }

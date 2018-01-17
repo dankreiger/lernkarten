@@ -21,8 +21,8 @@ const App = ({history, location}) => {
             <Route exact path="/" component={Home}/>
             <Route exact path="/german" component={LanguageMenu}/>
             <Route exact path="/russian" component={LanguageMenu}/>
-            <Route path="/german/:topic" render={ ()=> <FlashcardContainer history={history} location={location} words={vocabulary.german}/> } />
-            <Route path="/russian/:topic" render={ ()=> <FlashcardContainer history={history} location={location} words={vocabulary.russian}/> } />
+            <Route path="/german/:topic" render={ ()=> <FlashcardContainer history={history} language='german' location={location} words={vocabulary.german}/> } />
+            <Route path="/russian/:topic" render={ ()=> <FlashcardContainer history={history} language='russian' location={location} words={vocabulary.russian}/> } />
           </Switch>
         </div>
       </div>

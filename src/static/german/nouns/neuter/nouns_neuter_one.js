@@ -27,9 +27,6 @@ const nouns_neuter_one = [
     word: 'das Buch',
     translation: 'the book'
   }, {
-    word: 'das Einkaufszentrum',
-    translation: 'the shopping center'
-  }, {
     word: 'das Fahrrad',
     translation: 'the bicycle'
   }, {

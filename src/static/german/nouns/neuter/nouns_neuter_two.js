@@ -1,13 +1,10 @@
 const nouns_neuter_two = [
   {
     word: 'das Verhältnis',
-    translation: 'the ratio / relationship'
+    translation: 'the ratio'
   }, {
     word: 'das Unbehagen',
     translation: 'the discomfort'
-  }, {
-    word: 'das Kavaliersdelikt',
-    translation: 'the peccadillo'
   }
 
 ]
