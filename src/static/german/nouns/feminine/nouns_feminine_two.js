@@ -13,7 +13,7 @@ const nouns_feminine_two = [
     translation: 'the pancreas'
   }, {
     word: 'die Desoxyribonukleinsäure',
-    translation: 'the deoxyribonucleic acid (DNA)'
+    translation: 'the DNA'
   }, {
     word: 'die Bedrängnis',
     translation: 'the afflication'
@@ -32,7 +32,7 @@ const nouns_feminine_two = [
   },
   {
     word: 'die Eustachi-Röhre',
-    translation: 'Eustachian tube'
+    translation: 'the Eustachian tube'
   }
 ]
 
