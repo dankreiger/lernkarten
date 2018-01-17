@@ -5,6 +5,10 @@ const nouns_neuter_two = [
   }, {
     word: 'das Unbehagen',
     translation: 'the discomfort'
+  },
+  {
+    word: 'das Elfenbein',
+    translation: 'the ivory'
   }
 
 ]

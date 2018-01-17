@@ -1,19 +1,7 @@
 const nouns_feminine_two = [
-  {
-    word: 'die Wissensexplosion',
-    translation: 'the information explosion'
-  }, {
-    word: 'die Befindlichkeit',
-    translation: 'the mental state'
-  }, {
+ {
     word: 'die Trägheit',
     translation: 'the inertia'
-  }, {
-    word: 'die Bauchspeicheldrüse',
-    translation: 'the pancreas'
-  }, {
-    word: 'die Desoxyribonukleinsäure',
-    translation: 'the DNA'
   }, {
     word: 'die Bedrängnis',
     translation: 'the afflication'
@@ -23,16 +11,6 @@ const nouns_feminine_two = [
   }, {
     word: 'die Verzierung',
     translation: 'the embellishment'
-  }, {
-    word: 'die Lasterhaftigkeit',
-    translation: 'the profligacy'
-  }, {
-    word: 'die Stoffeigenschaft',
-    translation: 'the chemical property'
-  },
-  {
-    word: 'die Eustachi-Röhre',
-    translation: 'the Eustachian tube'
   }
 ]
 

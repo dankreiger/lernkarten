@@ -4,7 +4,7 @@ const nouns_masculine_two = [
     translation: 'the object'
   }, {
     word: 'der Bestandteil',
-    translation: 'the component / ingredient'
+    translation: 'the component'
   }, {
     word: 'der Kontrapunkt',
     translation: 'the counterpoint'
@@ -14,9 +14,6 @@ const nouns_masculine_two = [
   }, {
     word: 'der Einschub',
     translation: 'the parenthesis'
-  }, {
-    word: 'der Gewissenszwang',
-    translation: 'the moral constraint'
   }, {
     word: 'der Verzichter',
     translation: 'the abdicator'
