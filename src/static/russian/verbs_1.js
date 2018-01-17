@@ -1,99 +1,99 @@
 const verbs_1 = [
   {
-    word: "читáть",
+    word: "читать",
     translation: "to read"
   }, {
-    word: "Я читáю",
+    word: "Я читаю",
     translation: "I read"
   }, {
-    word: "Ты читáешь",
+    word: "Ты читаешь",
     translation: "You read (informal)"
   }, {
-    word: "Он читáет",
+    word: "Он читает",
     translation: "He reads"
   }, {
-    word: "Онá читáет",
+    word: "Она читает",
     translation: "She reads"
   }, {
-    word: "Мы читáем",
+    word: "Мы читаем",
     translation: "We read"
   }, {
-    word: "Вы читáете",
+    word: "Вы читаете",
     translation: "You read (formal)"
   }, {
-    word: "Они́ читáют",
+    word: "Они читают",
     translation: "They read"
   }, {
-    word: "повторя́ть",
+    word: "повторять",
     translation: "to repeat"
   }, {
-    word: "Я повторя́ю",
+    word: "Я повторяю",
     translation: "I repeat"
   }, {
-    word: "Ты повторя́ешь",
+    word: "Ты повторяешь",
     translation: "You repeat (informal)"
   }, {
-    word: "Он повторя́ет",
+    word: "Он повторяет",
     translation: "He repeats"
   }, {
-    word: "Онá повторя́ет",
+    word: "Она повторяет",
     translation: "She repeats"
   }, {
-    word: "Мы повторя́ем",
+    word: "Мы повторяем",
     translation: "We repeat"
   }, {
-    word: "Вы повторя́ете",
+    word: "Вы повторяете",
     translation: "You repeat (formal)"
   }, {
-    word: "Они́ повторя́ют",
+    word: "Они повторяют",
     translation: "They repeat"
   }, {
-    word: "рабо́тать",
+    word: "работать",
     translation: "to work"
   }, {
-    word: "Я рабо́таю",
+    word: "Я работаю",
     translation: "I work"
   }, {
-    word: "Ты рабо́таушь",
+    word: "Ты работаушь",
     translation: "You work (informal)"
   }, {
-    word: "Он рабо́тает",
+    word: "Он работает",
     translation: "He works"
   }, {
-    word: "Онá рабо́тает",
+    word: "Она работает",
     translation: "She works"
   }, {
-    word: "Мы рабо́таем",
+    word: "Мы работаем",
     translation: "We work"
   }, {
-    word: "Вы рабо́таете",
+    word: "Вы работаете",
     translation: "You work (formal)"
   }, {
-    word: "Они́ рабо́тают",
+    word: "Они работают",
     translation: "They work"
   }, {
-    word: "отдыхáть",
+    word: "отдыхать",
     translation: "to relax"
   }, {
-    word: "Я отдыхáю",
+    word: "Я отдыхаю",
     translation: "I relax"
   }, {
-    word: "Ты отдыхáешь",
+    word: "Ты отдыхаешь",
     translation: "You relax (informal)"
   }, {
-    word: "Он отдыхáет",
+    word: "Он отдыхает",
     translation: "He relaxes"
   }, {
-    word: "Онá отдыхáет",
+    word: "Она отдыхает",
     translation: "She relaxes"
   }, {
-    word: "Мы отдыхáем",
+    word: "Мы отдыхаем",
     translation: "We relax"
   }, {
-    word: "Вы отдыхáете",
+    word: "Вы отдыхаете",
     translation: "You relax (formal)"
   }, {
-    word: "Они́ отдыхáют",
+    word: "Они отдыхают",
     translation: "They relax"
   }
 ];
