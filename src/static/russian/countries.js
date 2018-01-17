@@ -4,6 +4,22 @@ const countries = [
     translation: 'Where are you from?'
   },
   {
+    word: 'Я из Украины',
+    translation: "I'm from Ukraine"
+  },
+  {
+    word: 'Я из России',
+    translation: "I'm from Russia"
+  },
+  {
+    word: 'Я из Америки',
+    translation: "I'm from America"
+  },
+  {
+    word: 'Я из Германии',
+    translation: "I'm from Germany"
+  },
+  {
     word: 'Украина',
     translation: 'Ukraine'
   }, {
