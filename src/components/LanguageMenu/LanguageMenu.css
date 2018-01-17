@@ -21,3 +21,5 @@
         .LanguageMenu .languageMenuList .menuLinkRow .menuLink:hover {
           transform: scale(1.1);
           text-decoration: none; }
+    .LanguageMenu .languageMenuList.germanMenuList .menuLink {
+      font-size: 1.3em; }

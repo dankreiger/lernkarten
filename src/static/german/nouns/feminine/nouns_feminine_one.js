@@ -1,4 +1,4 @@
-const nouns_feminine = [
+const nouns_feminine_one = [
   {
     word: 'die Adresse',
     translation: 'the address'
@@ -26,7 +26,7 @@ const nouns_feminine = [
   }
 ]
 
-export default nouns_feminine;
+export default nouns_feminine_one;
 
 // Brille,
 // Brücke,

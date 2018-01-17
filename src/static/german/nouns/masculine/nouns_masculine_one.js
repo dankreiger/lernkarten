@@ -1,4 +1,4 @@
-const nouns_masculine = [
+const nouns_masculine_one = [
   {
     word: 'der Apfel',
     translation: 'the apple'
@@ -34,7 +34,7 @@ const nouns_masculine = [
   }
 ]
 
-export default nouns_masculine;
+export default nouns_masculine_one;
 
 
 // Berg,

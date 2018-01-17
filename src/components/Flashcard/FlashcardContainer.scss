@@ -83,8 +83,15 @@
       -moz-user-select: none;
       -ms-user-select: none;
       user-select: none;
+      &.longWord {
+        font-size: 1.2em;
+        word-break: break-word;
+      }
       @media(min-width: 660px) {
         height: 43%;
+        &.longWord {
+          font-size: 1.7em;
+        }
       }
     }
   }

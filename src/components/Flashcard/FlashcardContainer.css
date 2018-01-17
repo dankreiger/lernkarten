@@ -58,6 +58,11 @@
       -moz-user-select: none;
       -ms-user-select: none;
       user-select: none; }
+      .FlashcardContainer .Flashcard .lead.longWord {
+        font-size: 1.2em;
+        word-break: break-word; }
       @media (min-width: 660px) {
         .FlashcardContainer .Flashcard .lead {
-          height: 43%; } }
+          height: 43%; }
+          .FlashcardContainer .Flashcard .lead.longWord {
+            font-size: 1.7em; } }

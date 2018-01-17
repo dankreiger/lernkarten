@@ -1,4 +1,4 @@
-const nouns_neuter = [
+const nouns_neuter_one = [
   {
     word: 'das Auge',
     translation: 'the eye'
@@ -40,7 +40,7 @@ const nouns_neuter = [
 
 ]
 
-export default nouns_neuter;
+export default nouns_neuter_one;
 //
 // Fest,
 // Flugzeug,

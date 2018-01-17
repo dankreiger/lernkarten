@@ -1,8 +1,11 @@
 const topics = {
   german: {
-    nouns_masculine: 'maskuline Nomen',
-    nouns_feminine: 'feminine Nomen',
-    nouns_neuter: 'neutrale Nomen',
+    nouns_masculine_one: 'maskuline Nomen für den Welpe',
+    nouns_masculine_two: 'maskuline Nomen für den Hund',
+    nouns_feminine_one: 'feminine Nomen für die Kaulquappe',
+    nouns_feminine_two: 'feminine Nomen für die Kröte',
+    nouns_neuter_one: 'neutrale Nomen für das Eichhörnchen',
+    nouns_neuter_two: 'neutrale Nomen für das Mammut',
     greetings: 'Begrüßungen',
     freud: 'Freud'
   },
