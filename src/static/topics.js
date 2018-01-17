@@ -10,6 +10,7 @@ const topics = {
     freud: 'Freud'
   },
   russian: {
+    verbs_1: 'глаголы 1',
     greetings: 'приветствия',
     people: 'люди',
     objects: 'объекты',
