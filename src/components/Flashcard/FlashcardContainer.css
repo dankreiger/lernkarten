@@ -57,7 +57,16 @@
       -webkit-user-select: none;
       -moz-user-select: none;
       -ms-user-select: none;
-      user-select: none; }
+      user-select: none;
+      word-break: break-word; }
+      .FlashcardContainer .Flashcard .lead.germanLead {
+        font-size: 1.2em; }
+        @media (min-width: 420px) {
+          .FlashcardContainer .Flashcard .lead.germanLead {
+            font-size: 1.6em; } }
+        @media (min-width: 660px) {
+          .FlashcardContainer .Flashcard .lead.germanLead {
+            font-size: 2.2em; } }
       @media (min-width: 660px) {
         .FlashcardContainer .Flashcard .lead {
           height: 43%; } }

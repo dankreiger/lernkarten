@@ -54,7 +54,7 @@ class FlashcardContainer extends Component {
       <div className="FlashcardContainer">
         <BreadcrumbMenu history={this.props.history} currentLocation={this.cardCategory} />
         <div className="FlashcardContent">
-          <Flashcard cardCategory={this.cardCategory} flipCard={this.flipCard} flipped={flipped} currentCard={currentCard} />
+          <Flashcard cardCategory={this.cardCategory} flipCard={this.flipCard} flipped={flipped} language={this.props.language} currentCard={currentCard} />
           <FlashcardButtons previousCard={this.previousCard} currentCategory={this.cardCategory} sayWord={this.sayWord} nextCard={this.nextCard} />
         </div>
       </div>

@@ -3,6 +3,7 @@
   height: 10%;
   display: table;
   width: 100%;
+
   .breadcrumb {
     font-size: 1em;
     margin-bottom: 0;
@@ -10,6 +11,11 @@
     vertical-align: middle;
     @media(min-width: 660px) {
       font-size: 1.15em;
+    }
+    @media(max-width: 440px) {
+      .longBreadCrumb {
+        font-size: 0.65em;
+      }
     }
   }
 }

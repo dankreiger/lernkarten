@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import { Grid } from 'react-bootstrap';
-
+import classNames from 'classnames';
 import BreadcrumbMenu from '../BreadcrumbMenu/BreadcrumbMenu';
 import vocabulary from '../../static/vocabulary';
 import { formatLink, translateTopic } from '../../static/helpers';
@@ -14,7 +14,7 @@ const LanguageMenu = ({history, location, match}) => {
   return (
     <div className='LanguageMenu'>
       <BreadcrumbMenu history={history} currentLocation={formatLink(location.pathname)} />
-      <Grid className="languageMenuList">
+      <Grid className={classNames('languageMenuList', `${language}MenuList`)}>
         {Object.entries(vocabulary[language]).map(([topic, words]) => {
           return (
             <div className="menuLinkRow" key={topic}>
