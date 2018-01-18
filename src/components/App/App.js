@@ -1,13 +1,6 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom'
-
-// components
-
-import Home from '../Home/Home';
+import Router from '../../Router';
 import Navigation from '../Navigation/Navigation';
-import LanguageMenu from '../LanguageMenu/LanguageMenu';
-import FlashcardContainer from '../Flashcard/FlashcardContainer';
-import vocabulary from '../../static/vocabulary';
 
 import './App.css';
 
@@ -16,15 +9,7 @@ const App = ({history, location}) => {
     <div className="App">
       <div className="Layout">
         <Navigation location={location}/>
-          <div className="full-width app-routes-container" id="app-routes">
-          <Switch location={location}>
-            <Route exact path="/" component={Home}/>
-            <Route exact path="/german" component={LanguageMenu}/>
-            <Route exact path="/russian" component={LanguageMenu}/>
-            <Route path="/german/:topic" render={ ()=> <FlashcardContainer history={history} language='german' location={location} words={vocabulary.german}/> } />
-            <Route path="/russian/:topic" render={ ()=> <FlashcardContainer history={history} language='russian' location={location} words={vocabulary.russian}/> } />
-          </Switch>
-        </div>
+        <Router history={history} location={location} />
       </div>
     </div>
   );
