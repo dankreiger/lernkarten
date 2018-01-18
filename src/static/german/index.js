@@ -5,8 +5,10 @@ import nouns_feminine_two from './nouns/feminine/nouns_feminine_two';
 import nouns_neuter_one from './nouns/neuter/nouns_neuter_one';
 import nouns_neuter_two from './nouns/neuter/nouns_neuter_two';
 
+
 import greetings from './greetings';
 import freud from './freud';
+import schiller from './schiller';
 
 const german = {
   nouns_masculine_one,
@@ -16,7 +18,8 @@ const german = {
   nouns_neuter_one,
   nouns_neuter_two,
   greetings,
-  freud
+  freud,
+  schiller
 }
 
 export default german;

@@ -7,7 +7,8 @@ const topics = {
     nouns_neuter_one: 'neutrale Nomen für Eichhörnchen',
     nouns_neuter_two: 'neutrale Nomen für Mammute',
     greetings: 'Begrüßungen',
-    freud: 'Freud'
+    freud: 'Freud',
+    schiller: 'Schiller'
   },
   russian: {
     verbs_1: 'глаголы 1',
