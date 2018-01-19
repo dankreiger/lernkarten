@@ -12,10 +12,12 @@ export function translateLink(path) {
 }
 
 export function formatLink(path) {
-  const currentLocation = path.includes('german')
-    ? path.slice(8)
-    : path.slice(9);
-  return currentLocation.charAt(0).toUpperCase() + currentLocation.slice(1);
+  const currentTopic = path.split('/')[path.split('/').length - 1];
+  //
+  // const currentLocation = path.includes('german')
+  //   ? path.slice(8)
+  //   : path.slice(9);
+  return currentTopic.charAt(0).toUpperCase() + currentTopic.slice(1);
 }
 
 export function snakeToTitle(str) {
@@ -24,6 +26,9 @@ export function snakeToTitle(str) {
   }).join(' ');
 }
 
-export function translateTopic(language, topic) {
-  return topics[language][topic];
+export function translateTopic(subPaths, topic) {
+  const language = subPaths[1];
+  // console.log('translateTopic', topics[language], topics[language][topic], language, topic);
+
+  return subPaths.length > 3 ? `${topics[language][subPaths[2]]}_${topic}` : topics[language][topic];
 }

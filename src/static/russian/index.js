@@ -1,4 +1,5 @@
-import verbs_1 from './verbs_1';
+import verbs from './verbs';
+
 import greetings from './greetings';
 import people from './people';
 import objects from './objects';
@@ -9,7 +10,7 @@ import bulgakov from './bulgakov';
 import tolstoy from './tolstoy';
 
 const russian = {
-  verbs_1,
+  verbs,
   greetings,
   people,
   objects,

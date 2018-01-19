@@ -11,6 +11,7 @@ const topics = {
     schiller: 'Schiller'
   },
   russian: {
+    verbs: 'глаголы',
     verbs_1: 'глаголы 1',
     greetings: 'приветствия',
     people: 'люди',

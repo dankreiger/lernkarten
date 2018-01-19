@@ -6,6 +6,7 @@ import BreadcrumbMenu from '../BreadcrumbMenu/BreadcrumbMenu';
 import Flashcard from './Flashcard';
 import FlashcardButtons from './FlashcardButtons';
 import { formatLink } from '../../static/helpers';
+import vocabulary from '../../static/vocabulary';
 
 import './FlashcardContainer.css';
 
@@ -16,9 +17,9 @@ class FlashcardContainer extends Component {
       currentCardIndex: 0,
       flipped: false
     }
-
+    const urls = props.location.pathname.split('/').slice(2)
     this.cardCategory = formatLink(props.location.pathname);
-    this.currentWords = props.words[this.cardCategory.toLowerCase()];
+    this.currentWords = props.words[urls[0]][urls[1]];
   }
 
   flipCard = () => {
@@ -48,11 +49,12 @@ class FlashcardContainer extends Component {
 
   render() {
     const {currentCardIndex, flipped} = this.state;
+    const {history} = this.props;
     const currentCard = this.currentWords[currentCardIndex];
 
     return (
       <div className="FlashcardContainer">
-        <BreadcrumbMenu history={this.props.history} currentLocation={this.cardCategory} />
+        <BreadcrumbMenu history={history} subPaths={history.location.pathname.split('/')} currentLocation={this.cardCategory} />
         <div className="FlashcardContent">
           <Flashcard cardCategory={this.cardCategory} flipCard={this.flipCard} flipped={flipped} language={this.props.language} currentCard={currentCard} />
           <FlashcardButtons previousCard={this.previousCard} currentCategory={this.cardCategory} sayWord={this.sayWord} nextCard={this.nextCard} />

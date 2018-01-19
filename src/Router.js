@@ -13,9 +13,16 @@ const Router = ({history, location}) => {
         <Route exact path="/" component={Home}/>
         <Route exact path="/german" component={LanguageMenu}/>
         <Route exact path="/russian" component={LanguageMenu}/>
-        <Route path="/german/:topic" render={ ()=> <FlashcardContainer history={history} language='german' location={location} words={vocabulary.german}/> } />
-        <Route path="/russian/:topic" render={ ()=> <FlashcardContainer history={history} language='russian' location={location} words={vocabulary.russian}/> } />
-      </Switch>      
+        <Route exact path="/german/:topic" component={LanguageMenu} />
+        <Route exact path="/russian/:topic" component={LanguageMenu} />
+
+        <Route
+          path="/german/:topic/:subtopic"
+          render={ ()=> <FlashcardContainer history={history} language='german' location={location} words={vocabulary.german}/> } />
+        <Route
+          path="/russian/:topic/:subtopic"
+          render={ ()=> <FlashcardContainer history={history} language='russian' location={location} words={vocabulary.russian}/> } />
+      </Switch>
     </div>
   );
 }

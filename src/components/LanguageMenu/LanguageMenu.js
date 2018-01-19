@@ -1,29 +1,24 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
 import { Grid } from 'react-bootstrap';
 import classNames from 'classnames';
 import BreadcrumbMenu from '../BreadcrumbMenu/BreadcrumbMenu';
-import vocabulary from '../../static/vocabulary';
-import { formatLink, translateTopic } from '../../static/helpers';
+import LanguageMenuList from './LanguageMenuList';
+import { formatLink } from '../../static/helpers';
 
 import './LanguageMenu.css';
 
 const LanguageMenu = ({history, location, match}) => {
-  const language = match.url.slice(1);
+  const currentLocation = location.pathname,
+        subPaths = currentLocation.split('/'),
+        language = subPaths[1],
+        currentSubpath = subPaths[subPaths.length - 1];
 
   return (
     <div className='LanguageMenu'>
-      <BreadcrumbMenu history={history} currentLocation={formatLink(location.pathname)} />
-      <Grid className={classNames('languageMenuList', `${language}MenuList`)}>
-        {Object.entries(vocabulary[language]).map(([topic, words]) => {
-          return (
-            <div className="menuLinkRow" key={topic}>
-              <Link className='menuLink' to={`${language}/${topic}`}>{translateTopic(language, topic)}</Link>
-            </div>
-          )
-        })}
+      <BreadcrumbMenu history={history} subPaths={subPaths} currentSubpath={currentSubpath} currentLocation={formatLink(currentLocation)} />
+      <Grid className={classNames('languageMenuList', `${currentSubpath}MenuList`)}>
+        <LanguageMenuList currentLocation={currentLocation} language={language} subPaths={subPaths} currentSubpath={currentSubpath} />
       </Grid>
-
     </div>
   )
 }
