@@ -167,6 +167,33 @@ const verbs_1 = [
   }, {
     word: "Они слушают",
     translation: "They listen to"
+  }, {
+    word: "слышать",
+    translation: "to hear (notice, feel, sense)"
+  }, {
+    word: "Я слышу",
+    translation: "I hear"
+  }, {
+    word: "Ты слышишь",
+    translation: "You hear (informal)"
+  }, {
+    word: "Он слышит",
+    translation: "He listens to"
+  }, {
+    word: "Она слышит",
+    translation: "She listens to"
+  }, {
+    word: "Мы слышим",
+    translation: "We listen to"
+  }, {
+    word: "Вы слышите",
+    translation: "You listen to (formal)"
+  }, {
+    word: "Они слышат",
+    translation: "They listen to"
+  }, {
+    word: "Ты слушаешь, но ты не слышишь.",
+    translation: "You listen, but you do not hear."
   }
 ];
 
