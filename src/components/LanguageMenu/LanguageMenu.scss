@@ -2,10 +2,10 @@
   height: 100%;
   .languageMenuList {
     height: 95%; /* 100% - 5% breadcrumb container height */
+    width: 100%;
     display: table;
     padding-top: 1.5rem;
     padding-bottom: 3rem;
-    width: 80%;
     text-align: center;
     &:before, &:after {
       display: none; /* bootstrap override */
@@ -17,7 +17,12 @@
         height: 10%;
         .categoryQuantitySelect {
           width: 25%;
+          margin-right: 0.5rem;
           display: inline-block;
+          @media(min-width: 660px) {
+            width: 10%;
+          }
+
         }
       }
       &.menuListIndex {

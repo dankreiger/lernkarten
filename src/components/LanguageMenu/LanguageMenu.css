@@ -3,10 +3,10 @@
   .LanguageMenu .languageMenuList {
     height: 95%;
     /* 100% - 5% breadcrumb container height */
+    width: 100%;
     display: table;
     padding-top: 1.5rem;
     padding-bottom: 3rem;
-    width: 80%;
     text-align: center; }
     .LanguageMenu .languageMenuList:before, .LanguageMenu .languageMenuList:after {
       display: none;
@@ -18,7 +18,11 @@
         height: 10%; }
         .LanguageMenu .languageMenuList .row.menuForm .categoryQuantitySelect {
           width: 25%;
+          margin-right: 0.5rem;
           display: inline-block; }
+          @media (min-width: 660px) {
+            .LanguageMenu .languageMenuList .row.menuForm .categoryQuantitySelect {
+              width: 10%; } }
       .LanguageMenu .languageMenuList .row.menuListIndex {
         height: 90%; }
       .LanguageMenu .languageMenuList .row div[class^="menuLinkRow-"] {
