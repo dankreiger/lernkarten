@@ -19,7 +19,8 @@ const topics = {
     verbs_infinitive: 'инфинитивом',
     penguin_ch_1: 'Penguin - глава 1',
     bulgakov: 'Булгаков',
-    tolstoy: 'Толсто́й'
+    tolstoy: 'Толсто́й',
+    schiller: 'Шиллер'
   }
 
 }

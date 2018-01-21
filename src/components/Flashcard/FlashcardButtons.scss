@@ -31,6 +31,8 @@
         width: percentage(1/4);
       }
     }
-
+    &.oneCard {
+      width: 100%;
+    }
   }
 }

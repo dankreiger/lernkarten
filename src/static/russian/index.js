@@ -7,6 +7,7 @@ import verbs_infinitive from './verbs_infinitive';
 import penguin_ch_1 from './penguin_ch_1';
 import bulgakov from './bulgakov';
 import tolstoy from './tolstoy';
+import schiller from './schiller';
 
 const russian = {
   verbs_1,
@@ -17,7 +18,8 @@ const russian = {
   verbs_infinitive,
   penguin_ch_1,
   bulgakov,
-  tolstoy
+  tolstoy,
+  schiller
 }
 
 export default russian;

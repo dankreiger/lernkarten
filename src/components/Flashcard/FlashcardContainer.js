@@ -49,13 +49,12 @@ class FlashcardContainer extends Component {
   render() {
     const {currentCardIndex, flipped} = this.state;
     const currentCard = this.currentWords[currentCardIndex];
-
     return (
       <div className="FlashcardContainer">
         <BreadcrumbMenu history={this.props.history} currentLocation={this.cardCategory} />
         <div className="FlashcardContent">
           <Flashcard cardCategory={this.cardCategory} flipCard={this.flipCard} flipped={flipped} language={this.props.language} currentCard={currentCard} />
-          <FlashcardButtons previousCard={this.previousCard} currentCategory={this.cardCategory} sayWord={this.sayWord} nextCard={this.nextCard} />
+          <FlashcardButtons wordQuantity={this.currentWords.length} previousCard={this.previousCard} currentCategory={this.cardCategory} sayWord={this.sayWord} nextCard={this.nextCard} />
         </div>
       </div>
     )
