@@ -13,6 +13,11 @@ class Home extends Component {
     }
   }
 
+  componentWillMount(){
+    localStorage.setItem('currentLanguage', null);
+    localStorage.setItem('visibleRows', 1);
+  }
+
   render() {
     const { hoverLeft, hoverRight } = this.state;
     return (

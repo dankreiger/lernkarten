@@ -3,23 +3,43 @@
   .LanguageMenu .languageMenuList {
     height: 95%;
     /* 100% - 5% breadcrumb container height */
+    width: 100%;
     display: table;
     padding-top: 1.5rem;
-    padding-bottom: 3rem; }
+    padding-bottom: 3rem;
+    text-align: center; }
     .LanguageMenu .languageMenuList:before, .LanguageMenu .languageMenuList:after {
       display: none;
       /* bootstrap override */ }
-    .LanguageMenu .languageMenuList .menuLinkRow {
-      display: table-row;
-      text-align: center; }
-      .LanguageMenu .languageMenuList .menuLinkRow .menuLink {
-        display: table-cell;
-        vertical-align: middle;
-        text-decoration: none;
-        transition: 0.3s all;
-        font-size: 1.6em; }
-        .LanguageMenu .languageMenuList .menuLinkRow .menuLink:hover {
-          transform: scale(1.1);
-          text-decoration: none; }
-    .LanguageMenu .languageMenuList.germanMenuList .menuLink {
-      font-size: 1.3em; }
+    .LanguageMenu .languageMenuList .row {
+      display: table;
+      width: 100%; }
+      .LanguageMenu .languageMenuList .row.menuForm {
+        height: 10%; }
+        .LanguageMenu .languageMenuList .row.menuForm .categoryQuantitySelect {
+          width: 25%;
+          margin-right: 0.5rem;
+          display: inline-block; }
+          @media (min-width: 660px) {
+            .LanguageMenu .languageMenuList .row.menuForm .categoryQuantitySelect {
+              width: 10%; } }
+      .LanguageMenu .languageMenuList .row.menuListIndex {
+        height: 90%; }
+      .LanguageMenu .languageMenuList .row div[class^="menuLinkRow-"] {
+        text-align: center;
+        display: table-row;
+        opacity: 0;
+        transition: 150ms all; }
+        .LanguageMenu .languageMenuList .row div[class^="menuLinkRow-"]:first-child, .LanguageMenu .languageMenuList .row div[class^="menuLinkRow-"].showMenuLinkRow {
+          opacity: 1; }
+        .LanguageMenu .languageMenuList .row div[class^="menuLinkRow-"] .menuLink {
+          display: table-cell;
+          vertical-align: middle;
+          text-decoration: none;
+          transition: 0.3s all;
+          font-size: 1.6em; }
+          .LanguageMenu .languageMenuList .row div[class^="menuLinkRow-"] .menuLink:hover {
+            transform: scale(1.1);
+            text-decoration: none; }
+          .LanguageMenu .languageMenuList .row div[class^="menuLinkRow-"] .menuLink.germanMenuLink {
+            font-size: 1.3em; }

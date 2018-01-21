@@ -2,30 +2,54 @@
   height: 100%;
   .languageMenuList {
     height: 95%; /* 100% - 5% breadcrumb container height */
+    width: 100%;
     display: table;
     padding-top: 1.5rem;
     padding-bottom: 3rem;
+    text-align: center;
     &:before, &:after {
       display: none; /* bootstrap override */
     }
-    .menuLinkRow {
-      display: table-row;
-      text-align: center;
-      .menuLink {
-        display: table-cell;
-        vertical-align: middle;
-        text-decoration: none;
-        transition: 0.3s all;
-        font-size: 1.6em;
-        &:hover {
-          transform: scale(1.1);
-          text-decoration: none;
+    .row {
+      display: table;
+      width: 100%;
+      &.menuForm {
+        height: 10%;
+        .categoryQuantitySelect {
+          width: 25%;
+          margin-right: 0.5rem;
+          display: inline-block;
+          @media(min-width: 660px) {
+            width: 10%;
+          }
+
         }
       }
-    }
-    &.germanMenuList {
-      .menuLink {
-        font-size: 1.3em;
+      &.menuListIndex {
+        height: 90%;
+      }
+      div[class^="menuLinkRow-"] {
+        text-align: center;
+        display: table-row;
+        opacity: 0;
+        transition: 150ms all;
+        &:first-child, &.showMenuLinkRow {
+          opacity: 1;
+        }
+        .menuLink {
+          display: table-cell;
+          vertical-align: middle;
+          text-decoration: none;
+          transition: 0.3s all;
+          font-size: 1.6em;
+          &:hover {
+            transform: scale(1.1);
+            text-decoration: none;
+          }
+          &.germanMenuLink {
+            font-size: 1.3em;
+          }
+        }
       }
     }
   }
