@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
-import { Grid } from 'react-bootstrap';
+import { Grid, Row, Button, FormControl, FormGroup } from 'react-bootstrap';
 import classNames from 'classnames';
 import BreadcrumbMenu from '../BreadcrumbMenu/BreadcrumbMenu';
 import vocabulary from '../../static/vocabulary';
@@ -8,23 +8,80 @@ import { formatLink, translateTopic } from '../../static/helpers';
 
 import './LanguageMenu.css';
 
-const LanguageMenu = ({history, location, match}) => {
-  const language = match.url.slice(1);
+class LanguageMenu extends Component {
+  constructor(props){
+    super(props);
+    this.state = {visibleRows: null, currentLanguage: props.location.pathname.slice(1)};
+    this.categories = Object.entries(vocabulary[props.location.pathname.slice(1)]);
+  }
 
-  return (
-    <div className='LanguageMenu'>
-      <BreadcrumbMenu history={history} currentLocation={formatLink(location.pathname)} />
-      <Grid className={classNames('languageMenuList', `${language}MenuList`)}>
-        {Object.entries(vocabulary[language]).map(([topic, words]) => {
-          return (
-            <div className="menuLinkRow" key={topic}>
-              <Link className='menuLink' to={`${language}/${topic}`}>{translateTopic(language, topic)}</Link>
-            </div>
-          )
-        })}
-      </Grid>
+  componentWillReceiveProps(nextProps){
+    if(nextProps.location.pathname.slice(1) !== this.state.currentLanguage) {
+      this.setDefaults(nextProps.location.pathname.slice(1));
+    }
+  }
 
-    </div>
-  )
+  componentWillMount(){
+    this.setState({visibleRows: localStorage.getItem('visibleRows') || '1'});
+    if(localStorage.getItem('currentLanguage') !== this.state.currentLanguage) {
+      this.setDefaults(this.state.currentLanguage);
+    }
+  }
+
+  setDefaults = (currentLanguage) => {
+    this.setState({visibleRows: 1, currentLanguage: currentLanguage});
+    localStorage.setItem('visibleRows', '1');
+    localStorage.setItem('currentLanguage', currentLanguage);
+  }
+
+  pickCategoryQuantity = () => {
+    this.setState({visibleRows: this.inputEl.value});
+    localStorage.setItem('visibleRows', this.inputEl.value);
+  }
+
+  toggleAllCategories = () => {
+    if(this.categories.length.toString() === this.state.visibleRows){
+      this.setState({visibleRows: '1'});
+      localStorage.setItem('visibleRows', '1');
+    } else {
+      this.setState({visibleRows: this.categories.length.toString()});
+      localStorage.setItem('visibleRows', this.categories.length.toString());
+    }
+  }
+
+
+  render(){
+    const {history, location} = this.props,
+          {currentLanguage} = this.state,
+          categories = Object.entries(vocabulary[currentLanguage]);
+
+    return (
+      <div className='LanguageMenu'>
+        <BreadcrumbMenu history={history} currentLocation={formatLink(location.pathname)} />
+        <Grid className={classNames('languageMenuList', `${currentLanguage}MenuList`)}>
+          <Row className='menuForm'>
+            <FormGroup controlId="formControlsSelect">
+              <FormControl className="categoryQuantitySelect" onChange={this.pickCategoryQuantity} value={this.state.visibleRows} inputRef={ el => this.inputEl=el } componentClass="select">
+                {categories.map((e, i) => <option key={i+1} value={i+1}>{i+1}</option>)}
+              </FormControl>
+              <Button onClick={this.toggleAllCategories} bsStyle='primary'>
+                {translateTopic(currentLanguage, `show${this.state.visibleRows === this.categories.length.toString() ? 'One' : 'All'}Btn`)}
+              </Button>
+            </FormGroup>
+          </Row>
+          <Row className='menuListIndex'>
+            {categories.map(([topic, words], i) => {
+              return (
+                <div className={classNames(`menuLinkRow-${i+1}`, {showMenuLinkRow: i+1 <= this.state.visibleRows})} key={topic}>
+                  <Link className={classNames('menuLink', `${currentLanguage}MenuLink`)} to={`${currentLanguage}/${topic}`}>{translateTopic(currentLanguage, topic)}</Link>
+                </div>
+              )
+            })}
+          </Row>
+        </Grid>
+      </div>
+    )
+  }
 }
+
 export default LanguageMenu;
