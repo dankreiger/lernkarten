@@ -8,7 +8,7 @@
   .button-toolbar.btn-toolbar-Bulgakov, .button-toolbar.btn-toolbar-Freud, .button-toolbar.btn-toolbar-Tolstoy {
     height: 20%; }
   .button-toolbar button {
-    width: 33.33333%;
+    width: 25%;
     height: 100%;
     margin-left: 0;
     border-radius: 0;
@@ -18,14 +18,10 @@
     .button-toolbar button:active, .button-toolbar button:focus {
       outline: 0 !important;
       /* bootstrap override */ }
-    .button-toolbar button:first-child, .button-toolbar button:nth-child(3) {
+    .button-toolbar button:first-child, .button-toolbar button:nth-child(4) {
       font-size: 2.5em;
       font-weight: bold;
       vertical-align: middle; }
-    @media (min-width: 660px) {
-      .button-toolbar button {
-        width: 50%; }
-        .button-toolbar button:first-child, .button-toolbar button:nth-child(3) {
-          width: 25%; } }
     .button-toolbar button.oneCard {
-      width: 100%; }
+      font-size: 18px;
+      width: 50%; }

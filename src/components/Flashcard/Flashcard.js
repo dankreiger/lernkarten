@@ -6,7 +6,7 @@ const Flashcard = ({cardCategory, flipCard, flipped, currentCard, language}) => 
 
   return(
     <div className={ classNames('customBgImg', 'notecard', cardCategory, flashcardClasses) } onClick={flipCard}>
-      <p className={`lead ${language}Lead`}>{flipped ? currentCard.translation : currentCard.word}</p>
+      <p className={classNames(`lead ${language}Lead`, {longText: currentCard.word.length > 60})}>{flipped ? currentCard.translation : currentCard.word}</p>
     </div>
   );
 }

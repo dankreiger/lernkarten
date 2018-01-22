@@ -17,8 +17,28 @@ class FlashcardContainer extends Component {
       flipped: false
     }
 
+    this.artyom = new Artyom();
+    this.slowArtyom = new Artyom();
+
     this.cardCategory = formatLink(props.location.pathname);
     this.currentWords = props.words[this.cardCategory.toLowerCase()];
+    this.currentLocale = this.props.location.pathname.includes('russian') ? "ru-RU" : "de-DE";
+
+  }
+
+  componentWillMount(){
+    this.artyom.initialize({
+        lang: this.currentLocale,
+        soundex: true
+    }).then(() => console.log("Artyom has been succesfully initialized"))
+      .catch(err => console.error("Artyom couldn't be initialized: ", err));
+    this.slowArtyom.initialize({
+        lang: this.currentLocale,
+        soundex: true,
+        speed: 0.25,
+        mode: "slow"
+    }).then(() => console.log("Slow Artyom has been succesfully initialized"))
+      .catch(err => console.error("Slow Artyom couldn't be initialized: ", err));
   }
 
   flipCard = () => {
@@ -26,11 +46,10 @@ class FlashcardContainer extends Component {
   }
 
   nextCard = () => {
-    let wordQuantity = this.currentWords.length - 1,
-        nextCardNumber = this.state.currentCardIndex + 1;
-      this.setState(
-        {currentCardIndex: nextCardNumber > wordQuantity ? 0 : nextCardNumber, flipped: false}
-      );
+    let wordQuantity = this.currentWords.length - 1, nextCardNumber = this.state.currentCardIndex + 1;
+    this.setState(
+      {currentCardIndex: nextCardNumber > wordQuantity ? 0 : nextCardNumber, flipped: false}
+    );
   }
 
   previousCard = () => {
@@ -40,10 +59,10 @@ class FlashcardContainer extends Component {
   }
 
   sayWord = () => {
-    let artyom = new Artyom();
-    artyom.say(this.currentWords[this.state.currentCardIndex].word, {
-      lang: this.props.location.pathname.includes('russian') ? "ru-RU" : "de-DE"
-    });
+    this.artyom.say(this.currentWords[this.state.currentCardIndex].word)
+  }
+  slowSayWord = () => {
+    this.slowArtyom.say(this.currentWords[this.state.currentCardIndex].word)
   }
 
   render() {
@@ -54,7 +73,7 @@ class FlashcardContainer extends Component {
         <BreadcrumbMenu history={this.props.history} currentLocation={this.cardCategory} />
         <div className="FlashcardContent">
           <Flashcard cardCategory={this.cardCategory} flipCard={this.flipCard} flipped={flipped} language={this.props.language} currentCard={currentCard} />
-          <FlashcardButtons wordQuantity={this.currentWords.length} previousCard={this.previousCard} currentCategory={this.cardCategory} sayWord={this.sayWord} nextCard={this.nextCard} />
+        <FlashcardButtons wordQuantity={this.currentWords.length} previousCard={this.previousCard} currentCategory={this.cardCategory} sayWord={this.sayWord} slowSayWord={this.slowSayWord} nextCard={this.nextCard} />
         </div>
       </div>
     )
