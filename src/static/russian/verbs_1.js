@@ -54,7 +54,7 @@ const verbs_1 = [
     word: "Я работаю",
     translation: "I work"
   }, {
-    word: "Ты работаушь",
+    word: "Ты работаешь",
     translation: "You work (informal)"
   }, {
     word: "Он работает",
