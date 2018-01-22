@@ -1,4 +1,4 @@
-const links = {
+const navLinks = {
   german: {
     home: 'Startseite',
     brand: 'Lernkarten',
@@ -21,4 +21,4 @@ const links = {
   }
 }
 
-export default links;
+export default navLinks;

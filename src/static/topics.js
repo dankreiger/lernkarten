@@ -1,7 +1,5 @@
 const topics = {
   german: {
-    showAllBtn: 'Alle Anzeigen',
-    showOneBtn: '1. Anzeigen',
     nouns_masculine_one: 'maskuline Nomen für Welpen',
     nouns_masculine_two: 'maskuline Nomen für Hunde',
     nouns_feminine_one: 'feminine Nomen für Kaulquappen',
@@ -13,9 +11,8 @@ const topics = {
     schiller: 'Schiller'
   },
   russian: {
-    showAllBtn: 'Показывать Все',
-    showOneBtn: 'Показывать 1',
     verbs_1: 'глаголы 1',
+    expressions: 'выражения',
     greetings: 'приветствия',
     people: 'люди',
     objects: 'объекты',

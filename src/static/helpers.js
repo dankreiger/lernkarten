@@ -1,5 +1,6 @@
-import links from './links';
+import navLinks from './navLinks';
 import topics from './topics';
+import labels from './labels';
 
 export function translateLink(path) {
   let lang = path.slice(1);
@@ -7,8 +8,8 @@ export function translateLink(path) {
     ? 'german'
     : 'russian';
   return (lang && path.includes(lang))
-    ? links[lang]
-    : links.default;
+    ? navLinks[lang]
+    : navLinks.default;
 }
 
 export function formatLink(path) {
@@ -26,4 +27,8 @@ export function snakeToTitle(str) {
 
 export function translateTopic(language, topic) {
   return topics[language][topic];
+}
+
+export function translateLabel(language, topic) {
+  return labels[language][topic];
 }

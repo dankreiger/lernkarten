@@ -4,7 +4,7 @@ import { Grid, Row, Button, FormControl, FormGroup } from 'react-bootstrap';
 import classNames from 'classnames';
 import BreadcrumbMenu from '../BreadcrumbMenu/BreadcrumbMenu';
 import vocabulary from '../../static/vocabulary';
-import { formatLink, translateTopic } from '../../static/helpers';
+import { formatLink, translateTopic, translateLabel } from '../../static/helpers';
 
 import './LanguageMenu.css';
 
@@ -65,7 +65,7 @@ class LanguageMenu extends Component {
                 {categories.map((e, i) => <option key={i+1} value={i+1}>{i+1}</option>)}
               </FormControl>
               <Button onClick={this.toggleAllCategories} bsStyle='primary'>
-                {translateTopic(currentLanguage, `show${this.state.visibleRows === this.categories.length.toString() ? 'One' : 'All'}Btn`)}
+                {translateLabel(currentLanguage, `show${this.state.visibleRows === this.categories.length.toString() ? 'One' : 'All'}Btn`)}
               </Button>
             </FormGroup>
           </Row>
