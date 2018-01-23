@@ -40,6 +40,7 @@ class LanguageMenu extends Component {
 
     props.history.listen( location =>  {
        this.stopAssistant();
+       this.setState({spokenText: null})
     });
 
     // Load some commands to Artyom using the commands manager
@@ -134,26 +135,23 @@ class LanguageMenu extends Component {
     const {history, location} = this.props, {currentLanguage, spokenText} = this.state,
       categories = Object.entries(vocabulary[currentLanguage]);
 
-    return (<div className='LanguageMenu'>
+    return (<div className={classNames('LanguageMenu', {'goodnight': new RegExp('спокойной ночи', 'i').exec(spokenText)})}>
       <BreadcrumbMenu history={history} currentLocation={formatLink(location.pathname)}/>
       <Grid className={classNames('languageMenuList', `${currentLanguage}MenuList`)}>
         {
-          spokenText &&
+          spokenText && spokenText !== 'bitte' &&
           <Row><p className='lead spoken'>{spokenText}</p></Row>
         }
         <Row className='menuForm'>
-          <Button bsStyle={this.state.artyomActive ? 'danger' : 'success'} onClick={this.state.artyomActive ? this.stopAssistant : this.startAssistant}>
-            {this.state.artyomActive ? 'Stop' : 'Start'}
-          </Button>
           <FormGroup controlId="formControlsSelect">
             <FormControl className="categoryQuantitySelect" onChange={this.pickCategoryQuantity} value={this.state.visibleRows} inputRef={el => this.inputEl = el} componentClass="select">
               {categories.map((e, i) => <option key={i + 1} value={i + 1}>{i + 1}</option>)}
             </FormControl>
             <Button onClick={this.toggleAllCategories} bsStyle='primary'>
-              {
-                translateLabel(
-                  currentLanguage, `show${this.state.visibleRows === this.categories.length.toString() ? 'One': 'All'}Btn`)
-              }
+              {translateLabel(currentLanguage, `show${this.state.visibleRows === this.categories.length.toString() ? 'One': 'All'}Btn`)}
+            </Button>
+            <Button bsStyle={this.state.artyomActive ? 'danger' : 'success'} onClick={this.state.artyomActive ? this.stopAssistant : this.startAssistant}>
+              {this.state.artyomActive ? 'Stop' : 'Start'}
             </Button>
           </FormGroup>
         </Row>

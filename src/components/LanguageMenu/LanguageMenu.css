@@ -43,3 +43,9 @@
             text-decoration: none; }
           .LanguageMenu .languageMenuList .row div[class^="menuLinkRow-"] .menuLink.germanMenuLink {
             font-size: 1.3em; }
+
+.goodnight {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e1/FullMoon2010.jpg");
+  background-size: cover; }
+  .goodnight .spoken {
+    color: #fff; }

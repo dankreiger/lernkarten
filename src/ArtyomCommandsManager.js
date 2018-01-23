@@ -27,7 +27,7 @@ export default class ArtyomCommandsManager {
                 }
             },
             {
-              indexes: [/меню/ig, /Menu/ig, /Menü/ig, /Regular expressions supported/],
+              indexes: [/меню/ig, /Menu/ig, /Menü/ig, /drucken/ig, /bitte/ig, /drücken/ig, /пожалуйста/ig, /Regular expressions supported/],
               smart: true,
               action: () => {
                 console.log('here')
