@@ -26,6 +26,41 @@ export default class ArtyomCommandsManager {
                     Artyom.say("всё хорошо!");
                 }
             },
+            {
+              indexes: [/меню/ig, /Menu/ig, /Menü/ig, /Regular expressions supported/],
+              smart: true,
+              action: () => {
+                console.log('here')
+                let nav = document.querySelector('.navbar-toggle');
+                (nav.onclick() || nav.click() || function() {})();
+              }
+            },
+            {
+              indexes: [/немецкий/ig, /deutsch/ig, /Regular expressions supported/],
+              smart: true,
+              action: () => {
+                let nav = document.querySelector('.navbar-toggle'),
+                    german = document.querySelector('.navbar-collapse.collapse.in .german');
+                if(german) {
+                  (german.onclick() || german.click() || function() {})();
+                  (nav.onclick() || nav.click() || function() {})();
+
+                }
+
+              }
+            },
+            {
+              indexes: [/русский/ig, /Russisch/ig, /Regular expressions supported/],
+              smart: true,
+              action: () => {
+                let nav = document.querySelector('.navbar-toggle'),
+                    russian = document.querySelector('.navbar-collapse.collapse.in .russian');
+                if(russian) {
+                  (russian.onclick() || russian.click() || function() {})();
+                  (nav.onclick() || nav.click() || function() {})();
+                }
+              }
+            }
             // {
             //     indexes: ["Generate reports of * of this year"],
             //     smart: true,

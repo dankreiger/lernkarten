@@ -6,10 +6,10 @@ import { translateLink } from '../../static/helpers';
 import './Navigation.css';
 
 
-const ListItemLink = ({ to, children }) => (
+const ListItemLink = ({ to, children, anchorClass }) => (
   <Route path={to} children={({match}) => (
     <li role="presentation" className={match ? 'active' : ''}>
-      <NavLink to={to}>{children}</NavLink>
+      <NavLink className={anchorClass} to={to}>{children}</NavLink>
     </li>
   )} />
 );
@@ -29,8 +29,8 @@ const Navigation = ({location}) => {
       </Navbar.Header>
       <Navbar.Collapse>
         <Nav pullRight>
-          <ListItemLink eventKey={1} to="/german">{de}</ListItemLink>
-          <ListItemLink eventKey={2} to="/russian">{ru}</ListItemLink>
+          <ListItemLink anchorClass='german' eventKey={1} to="/german">{de}</ListItemLink>
+          <ListItemLink anchorClass='russian' eventKey={2} to="/russian">{ru}</ListItemLink>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

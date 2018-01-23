@@ -131,14 +131,17 @@ class LanguageMenu extends Component {
   }
 
   render() {
-    const {history, location} = this.props, {currentLanguage} = this.state,
+    const {history, location} = this.props, {currentLanguage, spokenText} = this.state,
       categories = Object.entries(vocabulary[currentLanguage]);
 
     return (<div className='LanguageMenu'>
       <BreadcrumbMenu history={history} currentLocation={formatLink(location.pathname)}/>
       <Grid className={classNames('languageMenuList', `${currentLanguage}MenuList`)}>
+        {
+          spokenText &&
+          <Row><p className='lead spoken'>{spokenText}</p></Row>
+        }
         <Row className='menuForm'>
-          {this.state.spokenText && <p className='lead'>{this.state.spokenText}</p>}
           <Button bsStyle={this.state.artyomActive ? 'danger' : 'success'} onClick={this.state.artyomActive ? this.stopAssistant : this.startAssistant}>
             {this.state.artyomActive ? 'Stop' : 'Start'}
           </Button>
