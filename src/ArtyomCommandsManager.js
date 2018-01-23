@@ -14,29 +14,29 @@ export default class ArtyomCommandsManager {
         // Here you can load all the commands that you want to Artyom
         return Artyom.addCommands([
             {
-                indexes: ["Hello", "Hi"],
+                indexes: ["привет", "Hi"],
                 action: () => {
-                    Artyom.say("Hello, how are you?");
+                    Artyom.say("привет. Как дела?");
                 }
             },
             {
-                indexes: [/How are you/, /Regular expressions supported/],
+                indexes: [/Как дела/, /Regular expressions supported/],
                 smart: true,
                 action: () => {
-                    Artyom.say("I'm fine, thanks for asking !");
+                    Artyom.say("всё хорошо!");
                 }
             },
-            {
-                indexes: ["Generate reports of * of this year"],
-                smart: true,
-                action: (i, month) => {
-                    let year = new Date().getFullYear();
-
-                    Artyom.say(`Generating reports of ${month} ${year} `);
-
-                    Artyom.say("Ready ! What were you expecting? write some code you lazy bear !");
-                }
-            },
+            // {
+            //     indexes: ["Generate reports of * of this year"],
+            //     smart: true,
+            //     action: (i, month) => {
+            //         let year = new Date().getFullYear();
+            //
+            //         Artyom.say(`Generating reports of ${month} ${year} `);
+            //
+            //         Artyom.say("Ready ! What were you expecting? write some code you lazy bear !");
+            //     }
+            // },
         ]);
     }
 }
