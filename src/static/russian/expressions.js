@@ -1,6 +1,6 @@
 const expressions = [
   {word: 'Будь здоров!', translation: 'Gesundheit! (männlich)'},
-  {word: 'Будь здоров!', translation: 'Gesundheit! (weiblich)'},
+  {word: 'Будь здорова!', translation: 'Gesundheit! (weiblich)'},
   {word: 'Приятного аппетита!', translation: 'Guten Appetit!'},
   {word: 'Кушай на здоровье!', translation: 'Guten Appetit! (Essen Sie für die Gesundheit!)'},
   {word: 'Не за что!', translation: 'Gern geschehen!'},
