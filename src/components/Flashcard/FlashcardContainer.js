@@ -29,7 +29,7 @@ class FlashcardContainer extends Component {
   componentWillMount(){
     this.artyom.initialize({
         lang: this.currentLocale,
-        soundex: true
+        soundex: true,
     }).then(() => console.log("Artyom has been succesfully initialized"))
       .catch(err => console.error("Artyom couldn't be initialized: ", err));
     this.slowArtyom.initialize({

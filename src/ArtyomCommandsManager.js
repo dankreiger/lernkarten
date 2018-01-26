@@ -13,21 +13,21 @@ export default class ArtyomCommandsManager {
 
         // Here you can load all the commands that you want to Artyom
         return Artyom.addCommands([
+            // {
+            //     indexes: ["привет", "Hi"],
+            //     action: () => {
+            //         Artyom.say("привет. Как дела?");
+            //     }
+            // },
+            // {
+            //     indexes: [/Как дела/, /Regular expressions supported/],
+            //     smart: true,
+            //     action: () => {
+            //         Artyom.say("всё хорошо!");
+            //     }
+            // },
             {
-                indexes: ["привет", "Hi"],
-                action: () => {
-                    Artyom.say("привет. Как дела?");
-                }
-            },
-            {
-                indexes: [/Как дела/, /Regular expressions supported/],
-                smart: true,
-                action: () => {
-                    Artyom.say("всё хорошо!");
-                }
-            },
-            {
-              indexes: [/меню/ig, /Menu/ig, /Menü/ig, /drucken/ig, /bitte/ig, /drücken/ig, /пожалуйста/ig, /Regular expressions supported/],
+              indexes: [/меню/ig, /Menu/ig, /Menü/ig, /drucken/ig, /bitte/ig, /bitte öffnen Sie/ig, /drücken/ig, /Regular expressions supported/],
               smart: true,
               action: () => {
                 console.log('here')

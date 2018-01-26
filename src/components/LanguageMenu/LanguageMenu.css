@@ -45,7 +45,7 @@
             font-size: 1.3em; }
 
 .goodnight {
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e1/FullMoon2010.jpg");
+  background-image: url("./FullMoon2010.jpg");
   background-size: cover; }
   .goodnight .spoken {
     color: #fff; }

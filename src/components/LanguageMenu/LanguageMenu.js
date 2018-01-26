@@ -65,6 +65,8 @@ class LanguageMenu extends Component {
 
   componentWillUnmount() {
     this.stopAssistant()
+    this.setState({spokenText: null})
+
   }
 
   startAssistant = () => {
@@ -77,7 +79,7 @@ class LanguageMenu extends Component {
       // Display loaded commands in the console
       console.log(Jarvis.getAvailableCommands());
       console.log(_this.currentLocale, this.props.history.location, this.state.currentLanguage)
-      Jarvis.say(this.state.currentLanguage === "russian" ? "привет" : "Was geht alta?");
+      // Jarvis.say(this.state.currentLanguage === "russian" ? "привет" : "Was geht alta?");
       _this.setState({artyomActive: true});
 
 
