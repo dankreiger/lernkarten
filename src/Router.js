@@ -5,6 +5,8 @@ import vocabulary from './static/vocabulary';
 import Home from './components/Home/Home';
 import LanguageMenu from './components/LanguageMenu/LanguageMenu';
 import FlashcardContainer from './components/Flashcard/FlashcardContainer';
+import QuizMenu from './components/QuizMenu/QuizMenu';
+import QuizContainer from './components/QuizContainer/QuizContainer';
 
 const Router = ({history, location}) => {
   return(
@@ -13,9 +15,14 @@ const Router = ({history, location}) => {
         <Route exact path="/" component={Home}/>
         <Route exact path="/german" component={LanguageMenu}/>
         <Route exact path="/russian" component={LanguageMenu}/>
+        <Route exact path="/quiz" component={QuizMenu}/>
+        <Route exact path="/quiz/german" language='german' component={QuizContainer}/>
+        <Route exact path="/quiz/russian" language='russian' component={QuizContainer}/>
+        <Route path="/quiz/german/:topic" language='russian' component={QuizContainer}/>
+        <Route path="/quiz/russian/:topic" language='russian' component={QuizContainer}/>
         <Route path="/german/:topic" render={ ()=> <FlashcardContainer history={history} language='german' location={location} words={vocabulary.german}/> } />
         <Route path="/russian/:topic" render={ ()=> <FlashcardContainer history={history} language='russian' location={location} words={vocabulary.russian}/> } />
-      </Switch>      
+      </Switch>
     </div>
   );
 }

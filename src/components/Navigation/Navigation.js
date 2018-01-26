@@ -31,6 +31,7 @@ const Navigation = ({location}) => {
         <Nav pullRight>
           <ListItemLink anchorClass='german' eventKey={1} to="/german">{de}</ListItemLink>
           <ListItemLink anchorClass='russian' eventKey={2} to="/russian">{ru}</ListItemLink>
+          <ListItemLink anchorClass='quiz' eventKey={3} to="/quiz">Quiz</ListItemLink>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
