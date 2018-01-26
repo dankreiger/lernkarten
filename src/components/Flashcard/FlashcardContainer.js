@@ -78,7 +78,7 @@ class FlashcardContainer extends Component {
         <div className="FlashcardContent">
           <Flashcard cardCategory={this.cardCategory} flipCard={this.flipCard} flipped={flipped} language={this.props.language} currentCard={currentCard} />
           {!quizActive && <FlashcardButtons wordQuantity={this.currentWords.length} previousCard={this.previousCard} currentCategory={this.cardCategory} sayWord={this.sayWord} slowSayWord={this.slowSayWord} nextCard={this.nextCard} />}
-          {quizActive && '&#9836;'}
+          {quizActive && <div>&#9836;</div>}
         </div>
       </div>
     )
