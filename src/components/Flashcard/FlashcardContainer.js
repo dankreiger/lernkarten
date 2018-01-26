@@ -14,16 +14,19 @@ class FlashcardContainer extends Component {
     super(props);
     this.state = {
       currentCardIndex: 0,
-      flipped: false
+      flipped: false,
+      quizActive: false
     }
 
     this.artyom = new Artyom();
     this.slowArtyom = new Artyom();
 
     this.cardCategory = formatLink(props.location.pathname);
-    this.currentWords = props.words[this.cardCategory.toLowerCase()];
-    this.currentLocale = this.props.location.pathname.includes('russian') ? "ru-RU" : "de-DE";
-
+    this.currentWords = props.words[props.location.pathname.includes('quiz') ? this.cardCategory.split('/')[0].toLowerCase() : this.cardCategory.toLowerCase()];
+    props.history.listen( location =>  {
+      this.currentLocale = props.location.pathname.includes('russian') ? "ru-RU" : "de-DE";
+      this.setState({quizActive: location.pathname.includes('quiz')})
+    });
   }
 
   componentWillMount(){
@@ -40,6 +43,7 @@ class FlashcardContainer extends Component {
     }).then(() => console.log("Slow Artyom has been succesfully initialized"))
       .catch(err => console.error("Slow Artyom couldn't be initialized: ", err));
   }
+
 
   flipCard = () => {
     this.setState({flipped: !this.state.flipped})
@@ -66,14 +70,15 @@ class FlashcardContainer extends Component {
   }
 
   render() {
-    const {currentCardIndex, flipped} = this.state;
+    const {currentCardIndex, flipped, quizActive} = this.state;
     const currentCard = this.currentWords[currentCardIndex];
     return (
       <div className="FlashcardContainer">
         <BreadcrumbMenu history={this.props.history} currentLocation={this.cardCategory} />
         <div className="FlashcardContent">
           <Flashcard cardCategory={this.cardCategory} flipCard={this.flipCard} flipped={flipped} language={this.props.language} currentCard={currentCard} />
-          <FlashcardButtons wordQuantity={this.currentWords.length} previousCard={this.previousCard} currentCategory={this.cardCategory} sayWord={this.sayWord} slowSayWord={this.slowSayWord} nextCard={this.nextCard} />
+          {!quizActive && <FlashcardButtons wordQuantity={this.currentWords.length} previousCard={this.previousCard} currentCategory={this.cardCategory} sayWord={this.sayWord} slowSayWord={this.slowSayWord} nextCard={this.nextCard} />}
+          {quizActive && '&#9836;'}
         </div>
       </div>
     )

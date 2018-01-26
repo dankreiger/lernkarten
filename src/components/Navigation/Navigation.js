@@ -15,9 +15,9 @@ const ListItemLink = ({ to, children, anchorClass }) => (
 );
 
 const Navigation = ({location}) => {
-  const path = location.pathname;
-
-  const {brand, de, ru} = translateLink(path);
+  const path = location.pathname,
+        subPaths = path.split('/');
+  const {brand, de, ru, quiz} = translateLink(path);
 
   return (
     <Navbar inverse collapseOnSelect>
@@ -31,7 +31,7 @@ const Navigation = ({location}) => {
         <Nav pullRight>
           <ListItemLink anchorClass='german' eventKey={1} to="/german">{de}</ListItemLink>
           <ListItemLink anchorClass='russian' eventKey={2} to="/russian">{ru}</ListItemLink>
-          <ListItemLink anchorClass='quiz' eventKey={3} to="/quiz">Quiz</ListItemLink>
+        {subPaths.length === 3 && <ListItemLink anchorClass='quiz' eventKey={3} to={`/${subPaths[1]}/${subPaths[2]}/quiz`}>{quiz}</ListItemLink>}
         </Nav>
       </Navbar.Collapse>
     </Navbar>
