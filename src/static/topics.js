@@ -12,6 +12,7 @@ const topics = {
   },
   russian: {
     verbs_1: 'глаголы 1',
+    random_1: 'случайный 1',
     expressions: 'выражения',
     greetings: 'приветствия',
     people: 'люди',
