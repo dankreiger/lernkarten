@@ -8,6 +8,7 @@ import vocabulary from '../../static/vocabulary';
 import {formatLink, translateTopic, translateLabel} from '../../static/helpers';
 
 import Artyom from 'artyom.js';
+import Sound from 'react-sound';
 
 // Import the previously created class to handle the commands from another file
 import ArtyomCommandsManager from './../../ArtyomCommandsManager.js';
@@ -26,6 +27,7 @@ class LanguageMenu extends Component {
       flipped: false,
       artyomActive: false,
       artyomIsReading: false,
+      playSound: false,
       spokenText: null
     };
     this.categories = Object.entries(vocabulary[props.location.pathname.slice(1)]);
@@ -61,6 +63,7 @@ class LanguageMenu extends Component {
     if (localStorage.getItem('currentLanguage') !== this.state.currentLanguage) {
       this.setDefaults(this.state.currentLanguage);
     }
+
   }
 
   componentWillUnmount() {
@@ -68,6 +71,7 @@ class LanguageMenu extends Component {
     this.setState({spokenText: null})
 
   }
+
 
   startAssistant = () => {
     let _this = this;
@@ -134,7 +138,7 @@ class LanguageMenu extends Component {
   }
 
   render() {
-    const {history, location} = this.props, {currentLanguage, spokenText} = this.state,
+    const {history, location} = this.props, {currentLanguage, spokenText, playSound} = this.state,
       categories = Object.entries(vocabulary[currentLanguage]);
 
     return (<div className={classNames('LanguageMenu', {'goodnight': new RegExp('спокойной ночи', 'i').exec(spokenText)})}>
@@ -169,6 +173,16 @@ class LanguageMenu extends Component {
           }
         </Row>
       </Grid>
+
+      {playSound &&
+        <div>
+          <Sound
+            url="audio/success.mp3"
+            playStatus={Sound.status.PLAYING}
+          />
+        </div>
+      }
+
     </div>)
   }
 }

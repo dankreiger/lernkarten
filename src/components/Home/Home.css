@@ -40,7 +40,7 @@
     .Home .one-half.left {
       left: 0;
       background: #ff0078;
-      background-image: url("../../img/german_umlaut.svg");
+      background-image: url("/img/german_umlaut.svg");
       background-size: contain;
       background-repeat: no-repeat;
       background-attachment: fixed;
@@ -50,7 +50,7 @@
     .Home .one-half.right {
       right: 0;
       background: #1978dc;
-      background-image: url("../../img/cyrillic.svg");
+      background-image: url("/img/cyrillic.svg");
       background-size: contain;
       background-repeat: no-repeat;
       background-attachment: fixed;

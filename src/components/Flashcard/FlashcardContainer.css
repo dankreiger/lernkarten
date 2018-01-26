@@ -9,13 +9,13 @@
     background-position: center;
     color: #fff; }
     .FlashcardContainer .customBgImg.Freud {
-      background-image: url("./../../img/freud.svg"); }
+      background-image: url("/img/freud.svg"); }
     .FlashcardContainer .customBgImg.Schiller {
-      background-image: url("./../../img/schiller.svg"); }
+      background-image: url("/img/schiller.svg"); }
     .FlashcardContainer .customBgImg.Tolstoy {
-      background-image: url("./../../img/tolstoy.svg"); }
+      background-image: url("/img/tolstoy.svg"); }
     .FlashcardContainer .customBgImg.Bulgakov {
-      background-image: url("./../../img/bulgakov.svg"); }
+      background-image: url("/img/bulgakov.svg"); }
     .FlashcardContainer .customBgImg.Bulgakov, .FlashcardContainer .customBgImg.Freud, .FlashcardContainer .customBgImg.Tolstoy {
       height: 80%;
       background-color: rgba(0, 0, 0, 0.7);
