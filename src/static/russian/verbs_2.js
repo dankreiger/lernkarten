@@ -80,25 +80,26 @@ const verbs_2 = [
   }, {
     word: "Они обедают",
     translation: "They have lunch"
-  }, {
-    word: "",
-    translation: ""
-  }, {
-    word: "",
-    translation: ""
-  }, {
-    word: "",
-    translation: ""
-  }, {
-    word: "",
-    translation: ""
-  }, {
-    word: "",
-    translation: ""
-  }, {
-    word: "",
-    translation: ""
-  }
+  },
+  // {
+  //   word: "",
+  //   translation: ""
+  // }, {
+  //   word: "",
+  //   translation: ""
+  // }, {
+  //   word: "",
+  //   translation: ""
+  // }, {
+  //   word: "",
+  //   translation: ""
+  // }, {
+  //   word: "",
+  //   translation: ""
+  // }, {
+  //   word: "",
+  //   translation: ""
+  // }
 ];
 
 export default verbs_2;
