@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom'
 
-import {Grid, Row, Button, FormControl, FormGroup} from 'react-bootstrap';
+import {Grid, Row, Col, Button, FormControl, FormGroup} from 'react-bootstrap';
 import classNames from 'classnames';
 import BreadcrumbMenu from '../BreadcrumbMenu/BreadcrumbMenu';
 import vocabulary from '../../static/vocabulary';
@@ -9,6 +9,8 @@ import {formatLink, translateTopic, translateLabel} from '../../helpers/function
 import './LanguageMenu.css';
 
 
+
+// PLEASE CLEAN UP THIS LAYOUT IF YOU CONTINUE ON THIS BRANCH
 class LanguageMenu extends Component {
   constructor(props, context) {
     super(props, context);
@@ -18,7 +20,8 @@ class LanguageMenu extends Component {
       currentCardIndex: 0,
       flipped: false,
       playSound: false,
-      spokenText: null
+      spokenText: null,
+      inputValue: ''
     };
     this.categories = Object.entries(vocabulary[props.location.pathname.slice(1)]);
 
@@ -65,6 +68,14 @@ class LanguageMenu extends Component {
     }
   }
 
+  handleInputChange = e => {
+    this.setState({inputValue: e.target.value})
+  }
+
+  submitVerb = () => {
+    console.log(this.state.inputValue)
+  }
+
   render() {
     const {history, location} = this.props,
           {
@@ -80,27 +91,39 @@ class LanguageMenu extends Component {
           spokenText && spokenText !== 'bitte' &&
           <Row><p className='lead spoken'>{spokenText}</p></Row>
         }
-        <Row className='menuForm'>
-          <FormGroup controlId="formControlsSelect">
+        <FormGroup controlId="inputControlsSelect">
+          <Row className='verbConjugatorForm'>
+            <Col xs={12} sm={7} className='col-sm-offset-2'>
+              <FormControl className="categoryQuantitySelect" onChange={this.handleInputChange} value={this.state.inputValue} componentClass="input"></FormControl>
+            </Col>
+            <Col xs={12} sm={3} className='text-left'>
+              <Button onClick={this.submitVerb} bsStyle='default'><span role='img'>&#128269;</span></Button>
+            </Col>
+          </Row>
+        </FormGroup>
+        <FormGroup controlId="formControlsSelect">
+          <Row className='menuForm'>
             <FormControl className="categoryQuantitySelect" onChange={this.pickCategoryQuantity} value={this.state.visibleRows} inputRef={el => this.inputEl = el} componentClass="select">
               {categories.map((e, i) => <option key={i + 1} value={i + 1}>{i + 1}</option>)}
             </FormControl>
             <Button onClick={this.toggleAllCategories} bsStyle='primary'>
               {translateLabel(currentLanguage, `show${this.state.visibleRows === this.categories.length.toString() ? 'One': 'All'}Btn`)}
             </Button>
-          </FormGroup>
-        </Row>
-        <Row className='menuListIndex'>
-          {
-            categories.map(([topic, words], i) => {
-              return (<div className={classNames(`menuLinkRow-${i + 1}`, {
-                  showMenuLinkRow: i + 1 <= this.state.visibleRows
-                })} key={topic}>
-                <Link className={classNames('menuLink', `${currentLanguage}MenuLink`)} to={`${currentLanguage}/${topic}`}>{translateTopic(currentLanguage, topic)}</Link>
-              </div>)
-            })
-          }
-        </Row>
+          </Row>
+        </FormGroup>
+        <div className='menuListIndexGroup'>
+          <Row className='menuListIndex'>
+            {
+              categories.map(([topic, words], i) => {
+                return (<div className={classNames(`menuLinkRow-${i + 1}`, {
+                    showMenuLinkRow: i + 1 <= this.state.visibleRows
+                  })} key={topic}>
+                  <Link className={classNames('menuLink', `${currentLanguage}MenuLink`)} to={`${currentLanguage}/${topic}`}>{translateTopic(currentLanguage, topic)}</Link>
+                </div>)
+              })
+            }
+          </Row>
+        </div>
       </Grid>
 
     </div>)

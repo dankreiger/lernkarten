@@ -43,3 +43,7 @@
             text-decoration: none; }
           .LanguageMenu .languageMenuList .row div[class^="menuLinkRow-"] .menuLink.germanMenuLink {
             font-size: 1.3em; }
+    .LanguageMenu .languageMenuList.russianMenuList .row.verbConjugatorForm {
+      height: 10%; }
+    .LanguageMenu .languageMenuList.russianMenuList .row.menuListIndex {
+      height: 80%; }

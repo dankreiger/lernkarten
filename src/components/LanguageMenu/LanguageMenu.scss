@@ -52,11 +52,21 @@
         }
       }
     }
+    &.russianMenuList {
+      .row {
+        &.verbConjugatorForm {
+          height: 10%;
+        }
+        &.menuListIndex {
+          height: 80%;
+        }
+      }
+    }
   }
 }
 
 
-// 
+//
 // .goodnight {
 //   background-image: url('/img/FullMoon2010.jpg');
 //   background-size: cover;
