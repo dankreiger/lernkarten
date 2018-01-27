@@ -23,7 +23,8 @@
   border-radius: 50%;
   background: #fff;
   cursor: pointer;
-  -webkit-animation: pulse 1.5s infinite; }
+  -webkit-animation: pulse 1.5s infinite;
+  animation: pulse 1.5s infinite; }
 
 .pulse-button:hover {
   -webkit-animation: none; }

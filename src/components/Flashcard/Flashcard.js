@@ -4,7 +4,8 @@ import QuizSounds from './../QuizSounds/QuizSounds';
 
 
 const Flashcard = ({cardCategory, nextCard, flipCard, flipped, currentCard, spokenText, language, quizActive}) => {
-  const correct = spokenText && spokenText.toLowerCase() == currentCard.word.replace(/\?|!/, '').toLowerCase(),
+  if(spokenText) console.log(spokenText.toLowerCase(), currentCard.word.replace(/\?|!|,|\.|/, '').replace(/ß/, 'ss').toLowerCase())
+  const correct = spokenText && spokenText.replace(/\?|!|,|\.|\(|\)/ig, '').toLowerCase() === currentCard.word.replace(/\?|!|,|\.|\(|\)/ig, '').replace(/ß/ig, 'ss').toLowerCase(),
         incorrect = spokenText && !correct,
         flashcardClasses = ['Flashcard', {front: !flipped, back: flipped, Quiz: quizActive, correct, incorrect, default: !spokenText}];
 
