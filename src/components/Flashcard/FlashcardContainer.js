@@ -125,7 +125,7 @@ class FlashcardContainer extends Component {
     const {currentCardIndex, flipped, spokenText} = this.state,
           currentCard = this.currentWords[currentCardIndex];
 
-    if(spokenText && spokenText.trim() === currentCard.word) {
+    if(spokenText && spokenText.trim() === currentCard.word.replace(/\?|!/, '')) {
       setTimeout(() => this.nextCard, 1500);
     }
     return (
