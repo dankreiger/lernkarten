@@ -1,9 +1,9 @@
 const people = [
   {
-    word: "ма́льчик",
+    word: "мальчик",
     translation: "boy"
   }, {
-    word: "де́вушка",
+    word: "девушка",
     translation: "girl"
   }, {
     word: "друг",
@@ -33,7 +33,7 @@ const people = [
     word: "он мне просто друг",
     translation: "He's just my friend (friend-zoned)"
   }, {
-    word: "преподава́тель",
+    word: "преподаватель",
     translation: "university professor"
   }, {
     word: "имя",
@@ -45,14 +45,14 @@ const people = [
     word: "пол",
     translation: "gender"
   }, {
-    word: "date of birth",
-    translation: "дата рождения"
+    word: "дата рождения",
+    translation: "date of birth"
   }, {
     word: "место рождения",
     translation: "place of birth"
   }, {
-    word: "citizenship",
-    translation: "гражданство"
+    word: "гражданство",
+    translation: "citizenship"
   }, {
     word: "улица / номер дома",
     translation: "street / house number"

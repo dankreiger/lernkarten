@@ -1,5 +1,5 @@
 const greetings = [
-  {word: 'До́брое у́тро', translation: 'Good morning'},
+  {word: 'Доброе утро', translation: 'Good morning'},
   {word: 'Добрый день', translation: 'Good afternoon'},
   {word: 'Добрый вечер', translation: 'Good evening'},
   {word: 'Cпокойной ночи', translation: 'Good night'},
