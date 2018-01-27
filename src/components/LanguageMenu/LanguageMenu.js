@@ -6,16 +6,8 @@ import classNames from 'classnames';
 import BreadcrumbMenu from '../BreadcrumbMenu/BreadcrumbMenu';
 import vocabulary from '../../static/vocabulary';
 import {formatLink, translateTopic, translateLabel} from '../../helpers/functions';
-//
-// import Artyom from 'artyom.js';
-// import Sound from 'react-sound';
-
-// Import the previously created class to handle the commands from another file
-// import ArtyomCommandsManager from './../../helpers/ArtyomCommandsManager.js';
-
 import './LanguageMenu.css';
 
-// const Jarvis = new Artyom();
 
 class LanguageMenu extends Component {
   constructor(props, context) {
@@ -78,7 +70,6 @@ class LanguageMenu extends Component {
           {
             currentLanguage,
             spokenText,
-            // playSound
           } = this.state,
       categories = Object.entries(vocabulary[currentLanguage]);
 
@@ -97,9 +88,6 @@ class LanguageMenu extends Component {
             <Button onClick={this.toggleAllCategories} bsStyle='primary'>
               {translateLabel(currentLanguage, `show${this.state.visibleRows === this.categories.length.toString() ? 'One': 'All'}Btn`)}
             </Button>
-            {/* <Button bsStyle={this.state.artyomActive ? 'danger' : 'success'} onClick={this.state.artyomActive ? this.stopAssistant : this.startAssistant}>
-              {this.state.artyomActive ? 'Stop' : 'Start'}
-            </Button> */}
           </FormGroup>
         </Row>
         <Row className='menuListIndex'>
@@ -114,15 +102,6 @@ class LanguageMenu extends Component {
           }
         </Row>
       </Grid>
-
-      {/* {playSound &&
-        <div>
-          <Sound
-            url="audio/success.mp3"
-            playStatus={Sound.status.PLAYING}
-          />
-        </div>
-      } */}
 
     </div>)
   }
