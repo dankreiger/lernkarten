@@ -75,6 +75,12 @@
       transition: 0s;
     }
 
+    &.Quiz {
+      height: 100%;
+      background: #001f3f;
+    }
+
+
     .lead {
       display: table-cell;
       font-size: 2.2em;
