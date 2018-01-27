@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import Sound from 'react-sound';
 
 const Flashcard = ({cardCategory, nextCard, flipCard, flipped, currentCard, spokenText, language, quizActive}) => {
-  const flashcardClasses = ['Flashcard', {front: !flipped, back: flipped, Quiz: quizActive, incorrect: spokenText !== null && spokenText !== currentCard.word.replace(/\?|!/, ''), correct: spokenText === currentCard.word.replace(/\?|!/, ''), default: spokenText === null }];
+  const flashcardClasses = ['Flashcard', {front: !flipped, back: flipped, Quiz: quizActive, incorrect: spokenText !== null && spokenText !== currentCard.word.replace(/\?|!/, ''), correct: spokenText && spokenText === currentCard.word, default: spokenText === null }];
   if(quizActive){
     if(spokenText && spokenText.toLowerCase() == currentCard.word.replace(/\?|!/, '').toLowerCase()){
       setTimeout(nextCard, 900);
