@@ -3,10 +3,10 @@ import {Link} from 'react-router-dom';
 import {Grid, Row, Col, Button} from 'react-bootstrap';
 import Artyom from 'artyom.js';
 import Sound from 'react-sound';
-import {formatLink, translateTopic, translateLabel} from '../../static/helpers';
+import {formatLink, translateTopic, translateLabel} from '../../helpers/functions';
 
 // Import the previously created class to handle the commands from another file
-import ArtyomCommandsManager from './../../ArtyomCommandsManager.js';
+import ArtyomCommandsManager from './../../helpers/ArtyomCommandsManager.js';
 
 import vocabulary from '../../static/vocabulary';
 

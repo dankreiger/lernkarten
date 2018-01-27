@@ -1,7 +1,7 @@
 import React from 'react'
 import classNames from 'classnames';
 import { Breadcrumb } from 'react-bootstrap';
-import { capitalizeFirstLetter, translateLink, translateTopic } from '../../static/helpers';
+import { capitalizeFirstLetter, translateLink, translateTopic } from '../../helpers/functions';
 import './BreadcrumbMenu.css';
 
 

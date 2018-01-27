@@ -5,13 +5,13 @@ import {Grid, Row, Button, FormControl, FormGroup} from 'react-bootstrap';
 import classNames from 'classnames';
 import BreadcrumbMenu from '../BreadcrumbMenu/BreadcrumbMenu';
 import vocabulary from '../../static/vocabulary';
-import {formatLink, translateTopic, translateLabel} from '../../static/helpers';
+import {formatLink, translateTopic, translateLabel} from '../../helpers/functions';
 //
 // import Artyom from 'artyom.js';
 // import Sound from 'react-sound';
 
 // Import the previously created class to handle the commands from another file
-// import ArtyomCommandsManager from './../../ArtyomCommandsManager.js';
+// import ArtyomCommandsManager from './../../helpers/ArtyomCommandsManager.js';
 
 import './LanguageMenu.css';
 

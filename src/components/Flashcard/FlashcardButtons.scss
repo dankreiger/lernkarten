@@ -25,6 +25,13 @@
       font-weight: bold;
       vertical-align: middle;
     }
+    &.quizButton {
+      span {
+        font-size: 0.4em;
+        display: block;
+      }
+    }
+
     // @media(min-width: 660px) {
     //   width: percentage(3/8);
     //   &:nth-child(3) {
@@ -38,5 +45,11 @@
       font-size: 18px;
       width: 50%;
     }
+  }
+}
+
+.quizButtonToolbar {
+  button {
+    width: 100%;
   }
 }

@@ -3,15 +3,23 @@ import classNames from 'classnames';
 import { ButtonToolbar, Button } from 'react-bootstrap';
 import './FlashcardButtons.css';
 
-const FlashcardButtons = ({wordQuantity, previousCard, nextCard, sayWord, slowSayWord, currentCategory}) => {
-  return(
-    <ButtonToolbar className={classNames('button-toolbar', `btn-toolbar-${currentCategory}`)}>
-      {wordQuantity > 1 && <Button bsStyle="default" bsSize="large" onClick={previousCard}>&#8592;</Button>}
-      <Button className={classNames({'oneCard': wordQuantity === 1})} bsStyle="primary" bsSize="large" onClick={sayWord}>Say</Button>
-      <Button className={classNames({'oneCard': wordQuantity === 1})} bsStyle="warning" bsSize="large" onClick={slowSayWord}>Slow</Button>
-      {wordQuantity > 1 && <Button bsStyle="default" bsSize="large" onClick={nextCard}>&#8594;</Button>}
-    </ButtonToolbar>
-  )
+const FlashcardButtons = ({wordQuantity, previousCard, nextCard, sayWord, slowSayWord, artyomActive, quizActive, startQuiz, stopQuiz, currentCategory}) => {
+  if(!quizActive){
+    return(
+      <ButtonToolbar className={classNames('button-toolbar', `btn-toolbar-${currentCategory}`)}>
+        {wordQuantity > 1 && <Button bsStyle="default" bsSize="large" onClick={previousCard}>&#8592;</Button>}
+        <Button className={classNames({'oneCard': wordQuantity === 1})} bsStyle="primary" bsSize="large" onClick={sayWord}>Say</Button>
+        <Button className={classNames({'oneCard': wordQuantity === 1})} bsStyle="warning" bsSize="large" onClick={slowSayWord}>Slow</Button>
+        {wordQuantity > 1 && <Button bsStyle="default" bsSize="large" onClick={nextCard}>&#8594;</Button>}
+      </ButtonToolbar>
+    )
+  } else {
+    return (
+      <ButtonToolbar className={classNames('button-toolbar', `btn-toolbar-${currentCategory}`, 'quizButtonToolbar')}>
+        <Button className='quizButton' bsStyle={artyomActive ? 'danger' : 'success'} bsSize="large" onClick={artyomActive ? stopQuiz : startQuiz}>{artyomActive ? 'Stop' : 'Start'} Quiz <span>read the word aloud</span></Button>
+      </ButtonToolbar>
+    )
+  }
 }
 
 export default FlashcardButtons;

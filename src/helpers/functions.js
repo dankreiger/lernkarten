@@ -1,6 +1,6 @@
-import navLinks from './navLinks';
-import topics from './topics';
-import labels from './labels';
+import navLinks from './../static/navLinks';
+import topics from './../static/topics';
+import labels from './../static/labels';
 
 export function translateLink(path) {
   let lang = path.slice(1);
