@@ -15,19 +15,19 @@
     color: #fff;
 
     &.Freud {
-      background-image: url("./../../img/freud.svg");
+      background-image: url("/img/freud.svg");
     }
 
     &.Schiller {
-      background-image: url("./../../img/schiller.svg");
+      background-image: url("/img/schiller.svg");
     }
 
     &.Tolstoy {
-      background-image: url("./../../img/tolstoy.svg");
+      background-image: url("/img/tolstoy.svg");
     }
 
     &.Bulgakov {
-      background-image: url("./../../img/bulgakov.svg");
+      background-image: url("/img/bulgakov.svg");
     }
 
     &.Bulgakov,
@@ -60,9 +60,9 @@
     font-size: 1.5em;
     -webkit-box-shadow: 0 1px 7px rgba(0, 0, 0, 0.05);
     box-shadow: 0 1px 7px rgba(0, 0, 0, 0.05);
-    -webkit-transition: 0.6s;
-    -o-transition: 0.6s;
-    transition: 0.6s;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
     @media(min-width: 660px) {
       height: 78%;
     }
@@ -74,6 +74,24 @@
     &.newCard {
       transition: 0s;
     }
+
+    &.Quiz {
+      background: #e9e9e9;
+      color: #3c3c3c;
+
+      &.incorrect {
+        background: #f65372;
+      }
+
+      &.correct {
+        background: #00ff7f;
+        color: #fff;
+      }
+      &.default {
+        background: inherit;
+      }
+    }
+
 
     .lead {
       display: table-cell;

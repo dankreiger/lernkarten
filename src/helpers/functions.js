@@ -1,6 +1,6 @@
-import navLinks from './navLinks';
-import topics from './topics';
-import labels from './labels';
+import navLinks from './../static/navLinks';
+import topics from './../static/topics';
+import labels from './../static/labels';
 
 export function translateLink(path) {
   let lang = path.slice(1);
@@ -26,9 +26,14 @@ export function snakeToTitle(str) {
 }
 
 export function translateTopic(language, topic) {
-  return topics[language][topic];
+  let currentTopic = topic.includes('quiz') ? topic.split('/')[0] : topic;
+  return topics[language][currentTopic];
 }
 
 export function translateLabel(language, topic) {
   return labels[language][topic];
+}
+
+export function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
 }

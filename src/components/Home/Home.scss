@@ -60,7 +60,7 @@
     &.left {
       left: 0;
       background: rgb(255, 0, 120);
-      background-image: url("../../img/german_umlaut.svg");
+      background-image: url("/img/german_umlaut.svg");
       background-size: contain;
       background-repeat: no-repeat;
       background-attachment: fixed;
@@ -73,7 +73,7 @@
     &.right {
       right: 0;
       background: rgb(25, 120, 220);
-      background-image: url("../../img/cyrillic.svg");
+      background-image: url("/img/cyrillic.svg");
       background-size: contain;
       background-repeat: no-repeat;
       background-attachment: fixed;

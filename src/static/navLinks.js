@@ -4,6 +4,7 @@ const navLinks = {
     brand: 'Lernkarten',
     de: 'Deutsch',
     ru: 'Russisch',
+    quiz: 'Quiz',
     url: 'german'
   },
   russian: {
@@ -11,6 +12,7 @@ const navLinks = {
     brand: 'Флеш Карточки',
     de: 'Немецкий',
     ru: 'Русский',
+    quiz: 'Викторина',
     url: 'russian'
   },
   default: {

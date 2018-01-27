@@ -25,6 +25,20 @@
       font-weight: bold;
       vertical-align: middle;
     }
+    &.quizButton {
+      width: 100%;
+      &.stopButton {
+        width: percentage(4/5);
+      }
+      &.nextButton {
+        width: percentage(1/5);
+      }
+      span {
+        font-size: 0.4em;
+        display: block;
+      }
+    }
+
     // @media(min-width: 660px) {
     //   width: percentage(3/8);
     //   &:nth-child(3) {

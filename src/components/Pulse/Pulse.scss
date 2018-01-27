@@ -1,0 +1,48 @@
+.Pulse {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden;
+}
+
+.pulse-button {
+  position: relative;
+  left: 75%;
+  top: 2%;
+  margin-left: 50px;
+  margin-top: -35px;
+  display: block;
+  width: 25px;
+  height: 25px;
+  font-size: 1.3em;
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: -1px;
+  color: #000;
+  border: none;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+  // box-shadow: 0 0 0 0 rgba(#5a99d4, .5);
+  -webkit-animation: pulse 1.5s infinite;
+}
+
+.pulse-button:hover {
+  -webkit-animation: none;
+}
+@-webkit-keyframes pulse {
+  0% {
+    transform: scale(.9);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 50px rgba(#5a99d4, 0);
+  }
+
+  100% {
+    transform: scale(.9);
+    box-shadow: 0 0 0 0 rgba(#5a99d4, 0);
+  }
+}

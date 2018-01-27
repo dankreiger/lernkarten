@@ -1,23 +1,23 @@
 import React from 'react';
 import { Route, NavLink, Link } from 'react-router-dom'
 import { Navbar, Nav } from 'react-bootstrap';
-import { translateLink } from '../../static/helpers';
+import { translateLink } from '../../helpers/functions';
 
 import './Navigation.css';
 
 
-const ListItemLink = ({ to, children }) => (
+const ListItemLink = ({ to, children, anchorClass }) => (
   <Route path={to} children={({match}) => (
     <li role="presentation" className={match ? 'active' : ''}>
-      <NavLink to={to}>{children}</NavLink>
+      <NavLink className={anchorClass} to={to}>{children}</NavLink>
     </li>
   )} />
 );
 
 const Navigation = ({location}) => {
-  const path = location.pathname;
-
-  const {brand, de, ru} = translateLink(path);
+  const path = location.pathname,
+        subPaths = path.split('/');
+  const {brand, de, ru, quiz} = translateLink(path);
 
   return (
     <Navbar inverse collapseOnSelect>
@@ -29,8 +29,9 @@ const Navigation = ({location}) => {
       </Navbar.Header>
       <Navbar.Collapse>
         <Nav pullRight>
-          <ListItemLink eventKey={1} to="/german">{de}</ListItemLink>
-          <ListItemLink eventKey={2} to="/russian">{ru}</ListItemLink>
+          <ListItemLink anchorClass='german' eventKey={1} to="/german">{de}</ListItemLink>
+          <ListItemLink anchorClass='russian' eventKey={2} to="/russian">{ru}</ListItemLink>
+        {!navigator.userAgent.match(/Android|webOS|iPhone|iPod|Blackberry/i) && navigator.userAgent.indexOf('Chrome') > -1 && subPaths.length === 3 && <ListItemLink anchorClass='quiz' eventKey={3} to={`/${subPaths[1]}/${subPaths[2]}/quiz`}>{quiz}</ListItemLink>}
         </Nav>
       </Navbar.Collapse>
     </Navbar>
