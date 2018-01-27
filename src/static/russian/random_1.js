@@ -48,12 +48,6 @@ const random_1 = [
     word: "отвечать",
     translation: "to answer"
   }, {
-    word: "учиться",
-    translation: "to study"
-  }, {
-    word: "завтракать",
-    translation: "to eat breakfast"
-  }, {
     word: "добрый",
     translation: "kind"
   }

@@ -1,4 +1,5 @@
 import verbs_1 from './verbs_1';
+import verbs_2 from './verbs_2';
 import random_1 from './random_1';
 import expressions from './expressions';
 import greetings from './greetings';
@@ -13,6 +14,7 @@ import schiller from './schiller';
 
 const russian = {
   verbs_1,
+  verbs_2,
   random_1,
   expressions,
   greetings,
