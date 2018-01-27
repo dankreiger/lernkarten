@@ -26,6 +26,13 @@
       vertical-align: middle;
     }
     &.quizButton {
+      width: 100%;
+      &.stopButton {
+        width: percentage(4/5);
+      }
+      &.nextButton {
+        width: percentage(1/5);
+      }
       span {
         font-size: 0.4em;
         display: block;
@@ -45,11 +52,5 @@
       font-size: 18px;
       width: 50%;
     }
-  }
-}
-
-.quizButtonToolbar {
-  button {
-    width: 100%;
   }
 }

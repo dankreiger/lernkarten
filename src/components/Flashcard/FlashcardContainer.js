@@ -50,7 +50,7 @@ class FlashcardContainer extends Component {
 
   // confirm that this is necessary
   componentWillUnmount(){
-    this.artyom = null,
+    this.artyom = null;
     this.slowArtyom = null;
     this.stopQuiz();
   }
@@ -68,8 +68,6 @@ class FlashcardContainer extends Component {
       this.setState({spokenText: null})
     }
   }
-
-
 
   previousCard = () => {
     this.setState(
@@ -123,15 +121,13 @@ class FlashcardContainer extends Component {
     });
   }
 
-
   render() {
     const {currentCardIndex, flipped, spokenText} = this.state,
           currentCard = this.currentWords[currentCardIndex];
 
     if(spokenText && spokenText.trim() === currentCard.word) {
-      setTimeout(() => { this.nextCard }, 1500);
+      setTimeout(() => this.nextCard, 1500);
     }
-    console.log(spokenText)
     return (
       <div className="FlashcardContainer" ref="FlashcardContainer">
         <BreadcrumbMenu history={this.props.history} currentLocation={this.cardCategory} />
