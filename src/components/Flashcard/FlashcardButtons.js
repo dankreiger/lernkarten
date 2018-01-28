@@ -20,7 +20,7 @@ const FlashcardButtons = ({wordQuantity, previousCard, nextCard, sayWord, slowSa
         <Button className={classNames('quizButton', {stopButton: artyomActive, startButton: !artyomActive })} bsStyle={artyomActive ? 'danger' : 'success'} bsSize="large" onClick={artyomActive ? stopQuiz : startQuiz}>
           {artyomActive ? 'Stop' : 'Start Quiz'} {artyomActive ? <Pulse/> : null}
           <span>read the word aloud</span>
-      </Button>
+        </Button>
         {artyomActive && <Button className='quizButton nextButton' bsStyle='warning' onClick={nextCard}>&#8594;</Button>}
       </ButtonToolbar>
     )
