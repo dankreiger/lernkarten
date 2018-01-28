@@ -1,10 +1,10 @@
 .button-toolbar {
-  height: 30%;
+  height: 31%;
   width: 100%;
   margin-left: 0; }
   @media (min-width: 660px) {
     .button-toolbar {
-      height: 22%; } }
+      height: 23%; } }
   .button-toolbar.btn-toolbar-Bulgakov, .button-toolbar.btn-toolbar-Freud, .button-toolbar.btn-toolbar-Tolstoy {
     height: 20%; }
   .button-toolbar button {
