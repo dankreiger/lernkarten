@@ -107,6 +107,33 @@ const verbs_2 = [
   }, {
     word: "Они ужинают",
     translation: "They have supper"
+  }, {
+    word: "смотреть",
+    translation: "to look, see, watch"
+  }, {
+    word: "Я смотрю",
+    translation: "I look"
+  }, {
+    word: "Ты смотришь",
+    translation: "You look"
+  }, {
+    word: "Он смотрит",
+    translation: "He looks"
+  }, {
+    word: "Она смотрит",
+    translation: "She looks"
+  }, {
+    word: "Оно смотрит",
+    translation: "It looks"
+  }, {
+    word: "Мы смотрим",
+    translation: "We look"
+  }, {
+    word: "Вы смотрите",
+    translation: "You look (formal)"
+  }, {
+    word: "Они смотрят",
+    translation: "They look"
   }
 ];
 
