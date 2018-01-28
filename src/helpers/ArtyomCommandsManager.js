@@ -27,7 +27,7 @@ export default class ArtyomCommandsManager {
             //     }
             // },
             {
-              indexes: [/меню/ig, /Menu/ig, /Menü/ig, /drucken/ig, /bitte/ig, /bitte öffnen Sie/ig, /drücken/ig, /Regular expressions supported/],
+              indexes: [/меню/ig, /Menu/ig, /Menü/ig, /bitte öffnen Sie/ig, /Regular expressions supported/],
               smart: true,
               action: () => {
                 console.log('here')
@@ -36,7 +36,7 @@ export default class ArtyomCommandsManager {
               }
             },
             {
-              indexes: [/немецкий/ig, /deutsch/ig, /Regular expressions supported/],
+              indexes: [/немецкий пожалуйста/ig, /deutsch bitte/ig, /Regular expressions supported/],
               smart: true,
               action: () => {
                 let nav = document.querySelector('.navbar-toggle'),
@@ -50,7 +50,7 @@ export default class ArtyomCommandsManager {
               }
             },
             {
-              indexes: [/русский/ig, /Russisch/ig, /Regular expressions supported/],
+              indexes: [/русский пожалуйста/ig, /russisch bitte/ig, /Regular expressions supported/],
               smart: true,
               action: () => {
                 let nav = document.querySelector('.navbar-toggle'),

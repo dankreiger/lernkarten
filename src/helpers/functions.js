@@ -19,6 +19,10 @@ export function formatLink(path) {
   return currentLocation.charAt(0).toUpperCase() + currentLocation.slice(1);
 }
 
+export function formatQuizStr(str) {
+  return str.trim().replace(/\?|!|,|\.|\(|\)|\//ig, '').replace(/ß/ig, 'ss').replace(/\s\s+/g, ' ').toLowerCase()
+}
+
 export function snakeToTitle(str) {
   return str.split('_').map(function(item) {
     return item.charAt(0).toUpperCase() + item.substring(1);

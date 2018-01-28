@@ -67,43 +67,37 @@ class LanguageMenu extends Component {
 
   render() {
     const {history, location} = this.props,
-          {
-            currentLanguage,
-            spokenText,
-          } = this.state,
-      categories = Object.entries(vocabulary[currentLanguage]);
+          {currentLanguage, spokenText} = this.state,
+          categories = Object.entries(vocabulary[currentLanguage]);
 
-    return (<div className={classNames('LanguageMenu', {'goodnight': new RegExp('спокойной ночи', 'i').exec(spokenText)})}>
-      <BreadcrumbMenu history={history} currentLocation={formatLink(location.pathname)}/>
-      <Grid className={classNames('languageMenuList', `${currentLanguage}MenuList`)}>
-        {
-          spokenText && spokenText !== 'bitte' &&
-          <Row><p className='lead spoken'>{spokenText}</p></Row>
-        }
-        <Row className='menuForm'>
-          <FormGroup controlId="formControlsSelect">
-            <FormControl className="categoryQuantitySelect" onChange={this.pickCategoryQuantity} value={this.state.visibleRows} inputRef={el => this.inputEl = el} componentClass="select">
-              {categories.map((e, i) => <option key={i + 1} value={i + 1}>{i + 1}</option>)}
-            </FormControl>
-            <Button onClick={this.toggleAllCategories} bsStyle='primary'>
-              {translateLabel(currentLanguage, `show${this.state.visibleRows === this.categories.length.toString() ? 'One': 'All'}Btn`)}
-            </Button>
-          </FormGroup>
-        </Row>
-        <Row className='menuListIndex'>
-          {
-            categories.map(([topic, words], i) => {
-              return (<div className={classNames(`menuLinkRow-${i + 1}`, {
-                  showMenuLinkRow: i + 1 <= this.state.visibleRows
-                })} key={topic}>
-                <Link className={classNames('menuLink', `${currentLanguage}MenuLink`)} to={`${currentLanguage}/${topic}`}>{translateTopic(currentLanguage, topic)}</Link>
-              </div>)
-            })
-          }
-        </Row>
-      </Grid>
-
-    </div>)
+    return (
+      <div className={classNames('LanguageMenu', {'goodnight': new RegExp('спокойной ночи', 'i').exec(spokenText)})}>
+        <BreadcrumbMenu history={history} currentLocation={formatLink(location.pathname)}/>
+        <Grid className={classNames('languageMenuList', `${currentLanguage}MenuList`)}>
+          <Row className='menuForm'>
+            <FormGroup controlId="formControlsSelect">
+              <FormControl className="categoryQuantitySelect" onChange={this.pickCategoryQuantity} value={this.state.visibleRows} inputRef={el => this.inputEl = el} componentClass="select">
+                {categories.map((e, i) => <option key={i + 1} value={i + 1}>{i + 1}</option>)}
+              </FormControl>
+              <Button onClick={this.toggleAllCategories} bsStyle='primary'>
+                {translateLabel(currentLanguage, `show${this.state.visibleRows === this.categories.length.toString() ? 'One': 'All'}Btn`)}
+              </Button>
+            </FormGroup>
+          </Row>
+          <Row className='menuListIndex'>
+            {
+              categories.map(([topic, words], i) => {
+                return (
+                  <div className={classNames(`menuLinkRow-${i + 1}`, { showMenuLinkRow: i + 1 <= this.state.visibleRows })} key={topic}>
+                  <Link className={classNames('menuLink', `${currentLanguage}MenuLink`)} to={`${currentLanguage}/${topic}`}>{translateTopic(currentLanguage, topic)}</Link>
+                  </div>
+                );
+              })
+            }
+          </Row>
+        </Grid>
+      </div>
+    );
   }
 }
 

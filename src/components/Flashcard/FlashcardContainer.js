@@ -130,7 +130,7 @@ class FlashcardContainer extends Component {
       <div className="FlashcardContainer" ref="FlashcardContainer">
         <BreadcrumbMenu history={this.props.history} currentLocation={this.cardCategory} />
         <div className="FlashcardContent">
-          <Flashcard quizActive={this.quizActive} spokenText={spokenText && spokenText.trim()} nextCard={this.nextCard} cardCategory={this.cardCategory} flipCard={this.flipCard} flipped={flipped} language={this.props.language} currentCard={currentCard} />
+          <Flashcard quizActive={this.quizActive} spokenText={spokenText} nextCard={this.nextCard} cardCategory={this.cardCategory} flipCard={this.flipCard} flipped={flipped} language={this.props.language} currentCard={currentCard} />
           <FlashcardButtons wordQuantity={this.currentWords.length} previousCard={this.previousCard} currentCategory={this.cardCategory} sayWord={this.sayWord} slowSayWord={this.slowSayWord} nextCard={this.nextCard} quizActive={this.quizActive} artyomActive={this.state.artyomActive} startQuiz={this.startQuiz} stopQuiz={this.stopQuiz} />
         </div>
       </div>

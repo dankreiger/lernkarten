@@ -12,7 +12,7 @@ const freud = [
     word: "Wenn Du es nicht tun kannst (nicht schaffst), gib auf",
     translation: "If you can’t do it, give up"
   }, {
-    word: "Die meisten Menschen wollen nicht wirklich Freiheit, denn Freiheit beinhaltet/bedeutet Verantwortung und die meisten Menschen fürchten sich vor Verantwortung",
+    word: "Die meisten Menschen wollen nicht wirklich Freiheit, denn Freiheit beinhaltet / bedeutet Verantwortung und die meisten Menschen fürchten sich vor Verantwortung",
     translation: "Most people do not really want freedom, because freedom involves responsibility, and most people are frightened of responsibility"
   }, {
     word: "Man ist verrrückt wenn man verliebt ist (liebt)",
