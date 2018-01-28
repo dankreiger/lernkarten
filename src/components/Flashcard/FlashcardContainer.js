@@ -89,10 +89,10 @@ class FlashcardContainer extends Component {
     console.log("Artyom succesfully started !");
 
     Jarvis.initialize({lang: _this.currentLocale, debug: true, continuous: true, soundex: true, listen: true}).then(() => {
-      // Display loaded commands in the console
-      console.log(Jarvis.getAvailableCommands());
-      // console.log(_this.currentLocale, this.props.history.location, this.state.currentLanguage)
-      // Jarvis.say(this.state.currentLanguage === "russian" ? "привет" : "Was geht alta?");
+      // // Display loaded commands in the console
+      // console.log(Jarvis.getAvailableCommands());
+
+      // Jarvis.say(_this.currentLocale === "ru-RU" ? "привет" : "Was geht alta?");
       _this.setState({artyomActive: true});
 
     }).catch((err) => {
