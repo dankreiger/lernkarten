@@ -80,26 +80,34 @@ const verbs_2 = [
   }, {
     word: "Они обедают",
     translation: "They have lunch"
-  },
-  // {
-  //   word: "",
-  //   translation: ""
-  // }, {
-  //   word: "",
-  //   translation: ""
-  // }, {
-  //   word: "",
-  //   translation: ""
-  // }, {
-  //   word: "",
-  //   translation: ""
-  // }, {
-  //   word: "",
-  //   translation: ""
-  // }, {
-  //   word: "",
-  //   translation: ""
-  // }
+  }, {
+    word: "ужинать",
+    translation: "to have supper (dinner)"
+  }, {
+    word: "Я ужинаю",
+    translation: "I have supper"
+  }, {
+    word: "Ты ужинаешь",
+    translation: "You have supper"
+  }, {
+    word: "Он ужинает",
+    translation: "He has supper"
+  }, {
+    word: "Она ужинает",
+    translation: "She has supper"
+  }, {
+    word: "Оно ужинает",
+    translation: "It has supper"
+  }, {
+    word: "Мы ужинаем",
+    translation: "We have supper"
+  }, {
+    word: "Вы ужинаете",
+    translation: "You have supper (formal)"
+  }, {
+    word: "Они ужинают",
+    translation: "They have supper"
+  }
 ];
 
 export default verbs_2;
