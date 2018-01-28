@@ -78,6 +78,7 @@ class FlashcardContainer extends Component {
   sayWord = () => {
     this.artyom.say(this.currentWords[this.state.currentCardIndex].word)
   }
+
   slowSayWord = () => {
     this.slowArtyom.say(this.currentWords[this.state.currentCardIndex].word)
   }
