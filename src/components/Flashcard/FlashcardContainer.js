@@ -5,7 +5,7 @@ import Artyom from 'artyom.js';
 import BreadcrumbMenu from '../BreadcrumbMenu/BreadcrumbMenu';
 import Flashcard from './Flashcard';
 import FlashcardButtons from './FlashcardButtons';
-import { formatLink } from '../../helpers/functions';
+import { formatLink, formatQuizStr } from '../../helpers/functions';
 import { initializeArtyomInstance, initializeArtyomSlowInstance } from '../../helpers/ArtyomFunctions';
 import ArtyomCommandsManager from '../../helpers/ArtyomCommandsManager';
 
@@ -19,6 +19,7 @@ class FlashcardContainer extends Component {
     this.state = {
       currentCardIndex: 0,
       flipped: false,
+      guessCount: 0,
       artyomActive: false,
       artyomIsReading: false,
       quizActive: false,
@@ -55,6 +56,10 @@ class FlashcardContainer extends Component {
     this.stopQuiz();
   }
 
+  componentWillReceiveProps(x,y){
+    console.log(x,y)
+  }
+
   flipCard = () => {
     this.setState({flipped: !this.state.flipped})
   }
@@ -65,7 +70,7 @@ class FlashcardContainer extends Component {
       {currentCardIndex: nextCardNumber > wordQuantity ? 0 : nextCardNumber, flipped: false}
     );
     if(this.quizActive){
-      this.setState({spokenText: null})
+      this.setState({spokenText: null, guessCount: 0})
     }
   }
 
@@ -102,7 +107,8 @@ class FlashcardContainer extends Component {
     Jarvis.redirectRecognizedTextOutput(function(recognized,isFinal){
       if (isFinal) {
         console.log("Final recognized text: " + recognized);
-        _this.setState({spokenText: recognized})
+        let newGuessCount = _this.state.guessCount + 1;
+        _this.setState({spokenText: recognized, guessCount: newGuessCount})
       } else{
         console.log(recognized);
       }
@@ -123,14 +129,23 @@ class FlashcardContainer extends Component {
   }
 
   render() {
-    const {currentCardIndex, flipped, spokenText} = this.state,
+    const {currentCardIndex, flipped, spokenText, guessCount} = this.state,
           currentCard = this.currentWords[currentCardIndex];
+    // log final result comparison
+    if(spokenText) {
+      console.log(`You --> %c${formatQuizStr(spokenText)}`, 'background: #222; color: #bada55');
+      console.log(`Flashcard --> ${formatQuizStr(currentCard.word)}`);
+    }
+
+    const correct = spokenText && formatQuizStr(spokenText) === formatQuizStr(currentCard.word),
+          incorrect = spokenText && !correct,
+          flashcardClasses = ['Flashcard', {front: !flipped, back: flipped, Quiz: this.quizActive, correct, incorrect, default: !spokenText}];
 
     return (
       <div className="FlashcardContainer" ref="FlashcardContainer">
         <BreadcrumbMenu history={this.props.history} currentLocation={this.cardCategory} />
         <div className="FlashcardContent">
-          <Flashcard quizActive={this.quizActive} spokenText={spokenText} nextCard={this.nextCard} cardCategory={this.cardCategory} flipCard={this.flipCard} flipped={flipped} language={this.props.language} currentCard={currentCard} />
+          <Flashcard flashcardClasses={flashcardClasses} guessCount={guessCount} correct={correct} incorrect={incorrect} quizActive={this.quizActive} spokenText={spokenText} nextCard={this.nextCard} cardCategory={this.cardCategory} flipCard={this.flipCard} flipped={flipped} language={this.props.language} currentCard={currentCard} />
           <FlashcardButtons wordQuantity={this.currentWords.length} previousCard={this.previousCard} currentCategory={this.cardCategory} sayWord={this.sayWord} slowSayWord={this.slowSayWord} nextCard={this.nextCard} quizActive={this.quizActive} artyomActive={this.state.artyomActive} startQuiz={this.startQuiz} stopQuiz={this.stopQuiz} />
         </div>
       </div>
