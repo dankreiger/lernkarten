@@ -1,5 +1,9 @@
 const countries = [
   {
+    word: 'Кто вы по национальности?',
+    translation: "What's your nationality?"
+  },
+  {
     word: 'Откуда вы?',
     translation: 'Where are you from?'
   },
