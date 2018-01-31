@@ -1,5 +1,4 @@
 import React from 'react';
-import Sound from 'react-sound';
 
 import correctSound from '../../static/audio/correct.mp3'
 import incorrectSound from '../../static/audio/incorrect.mp3'
