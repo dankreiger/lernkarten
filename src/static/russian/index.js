@@ -1,5 +1,7 @@
 import verbs_1 from './verbs_1';
 import verbs_2 from './verbs_2';
+import numbers from './numbers';
+import colors from './colors';
 import professions from './professions';
 import random_1 from './random_1';
 import expressions from './expressions';
@@ -16,6 +18,8 @@ import schiller from './schiller';
 const russian = {
   verbs_1,
   verbs_2,
+  numbers,
+  colors,
   professions,
   random_1,
   expressions,

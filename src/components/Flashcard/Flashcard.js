@@ -9,8 +9,8 @@ const Flashcard = ({cardCategory, nextCard, flipCard, flipped, currentCard, spok
     console.log(`You --> %c${formatQuizStr(spokenText)}`, 'background: #222; color: #bada55');
     console.log(`Flashcard --> ${formatQuizStr(currentCard.word)}`);
   }
-  
-  const correct = spokenText && formatQuizStr(spokenText) === formatQuizStr(currentCard.word),
+
+  const correct = spokenText && formatQuizStr(spokenText) === formatQuizStr(!isNaN(spokenText) ? currentCard.translation : currentCard.word),
         incorrect = spokenText && !correct,
         flashcardClasses = ['Flashcard', {front: !flipped, back: flipped, Quiz: quizActive, correct, incorrect, default: !spokenText}];
 

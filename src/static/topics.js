@@ -13,6 +13,8 @@ const topics = {
   russian: {
     verbs_1: 'глаголы 1',
     verbs_2: 'глаголы 2',
+    numbers: 'чисел',
+    colors: 'цвета',
     professions: 'профессии',
     random_1: 'случайный 1',
     expressions: 'выражения',
