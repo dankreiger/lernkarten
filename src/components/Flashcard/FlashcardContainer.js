@@ -22,6 +22,7 @@ class FlashcardContainer extends Component {
       artyomActive: false,
       artyomIsReading: false,
       quizActive: false,
+      quizInput: false,
       playSound: false,
       spokenText: null
     }
@@ -85,53 +86,62 @@ class FlashcardContainer extends Component {
 
   startQuiz = () => {
     let _this = this;
-    // let currentLocale = this.state.currentLanguage === "russian" ? "ru-RU" : "de-DE";
-    console.log("Artyom succesfully started !");
+    if(!navigator.userAgent.match(/Android|webOS|iPhone|iPod|Blackberry/i) && navigator.userAgent.indexOf('Chrome') > -1 && window.confirm('Is your microphone plugged in?')) {
+      // let currentLocale = this.state.currentLanguage === "russian" ? "ru-RU" : "de-DE";
+      console.log("Artyom succesfully started !");
 
-    Jarvis.initialize({lang: _this.currentLocale, debug: true, continuous: true, soundex: true, listen: true}).then(() => {
-      // // Display loaded commands in the console
-      // console.log(Jarvis.getAvailableCommands());
+      Jarvis.initialize({lang: _this.currentLocale, debug: true, continuous: true, soundex: true, listen: true}).then(() => {
+        // // Display loaded commands in the console
+        // console.log(Jarvis.getAvailableCommands());
 
-      // Jarvis.say(_this.currentLocale === "ru-RU" ? "привет" : "Was geht alta?");
-      _this.setState({artyomActive: true});
+        // Jarvis.say(_this.currentLocale === "ru-RU" ? "привет" : "Was geht alta?");
+        _this.setState({artyomActive: true});
 
-    }).catch((err) => {
-      console.error("Oopsy daisy, this shouldn't happen !", err);
-    });
+      }).catch((err) => {
+        console.error("Oopsy daisy, this shouldn't happen !", err);
+      });
 
-    Jarvis.redirectRecognizedTextOutput(function(recognized,isFinal){
-      if (isFinal) {
-        console.log("Final recognized text: " + recognized);
-        _this.setState({spokenText: recognized})
-      } else{
-        console.log(recognized);
-      }
-    });
+      Jarvis.redirectRecognizedTextOutput(function(recognized,isFinal){
+        if (isFinal) {
+          console.log("Final recognized text: " + recognized);
+          _this.setState({spokenText: recognized})
+        } else{
+          console.log(recognized);
+        }
+      });
+    } else {
+        _this.setState({quizInput: true})
+    }
+
   }
 
   stopQuiz = () => {
     let _this = this;
+    if(this.state.artyomActive){
+      Jarvis.fatality().then(() => {
+        console.log("Jarvis has been succesfully stopped");
+        _this.setState({artyomActive: false, spokenText: null});
 
-    Jarvis.fatality().then(() => {
-      console.log("Jarvis has been succesfully stopped");
-      _this.setState({artyomActive: false, spokenText: null});
+      }).catch((err) => {
+        console.error("Oopsy daisy, this shouldn't happen neither!", err);
+        _this.setState({artyomActive: false, spokenText: null});
+      });
+    } else {
+      _this.setState({quizInput: false});
+    }
 
-    }).catch((err) => {
-      console.error("Oopsy daisy, this shouldn't happen neither!", err);
-      _this.setState({artyomActive: false, spokenText: null});
-    });
   }
 
   render() {
-    const {currentCardIndex, flipped, spokenText} = this.state,
+    const {currentCardIndex, flipped, spokenText, quizInput} = this.state,
           currentCard = this.currentWords[currentCardIndex];
 
     return (
       <div className="FlashcardContainer" ref="FlashcardContainer">
         <BreadcrumbMenu history={this.props.history} currentLocation={this.cardCategory} />
         <div className="FlashcardContent">
-          <Flashcard quizActive={this.quizActive} spokenText={spokenText} nextCard={this.nextCard} cardCategory={this.cardCategory} flipCard={this.flipCard} flipped={flipped} language={this.props.language} currentCard={currentCard} />
-          <FlashcardButtons wordQuantity={this.currentWords.length} previousCard={this.previousCard} currentCategory={this.cardCategory} sayWord={this.sayWord} slowSayWord={this.slowSayWord} nextCard={this.nextCard} quizActive={this.quizActive} artyomActive={this.state.artyomActive} startQuiz={this.startQuiz} stopQuiz={this.stopQuiz} />
+          <Flashcard quizActive={this.quizActive} quizInput={quizInput} spokenText={spokenText} nextCard={this.nextCard} cardCategory={this.cardCategory} flipCard={this.flipCard} flipped={flipped} language={this.props.language} currentCard={currentCard} />
+          <FlashcardButtons wordQuantity={this.currentWords.length} previousCard={this.previousCard} currentCategory={this.cardCategory} sayWord={this.sayWord} slowSayWord={this.slowSayWord} nextCard={this.nextCard} quizActive={this.quizActive} artyomActive={this.state.artyomActive} startQuiz={this.startQuiz} stopQuiz={this.stopQuiz} quizInput={quizInput} />
         </div>
       </div>
     )

@@ -31,7 +31,7 @@ const Navigation = ({location}) => {
         <Nav pullRight>
           <ListItemLink anchorClass='german' eventKey={1} to="/german">{de}</ListItemLink>
           <ListItemLink anchorClass='russian' eventKey={2} to="/russian">{ru}</ListItemLink>
-        {!navigator.userAgent.match(/Android|webOS|iPhone|iPod|Blackberry/i) && navigator.userAgent.indexOf('Chrome') > -1 && subPaths.length === 3 && <ListItemLink anchorClass='quiz' eventKey={3} to={`/${subPaths[1]}/${subPaths[2]}/quiz`}>{quiz}</ListItemLink>}
+        {subPaths.length === 3 && <ListItemLink anchorClass='quiz' eventKey={3} to={`/${subPaths[1]}/${subPaths[2]}/quiz`}>{quiz}</ListItemLink>}
         </Nav>
       </Navbar.Collapse>
     </Navbar>

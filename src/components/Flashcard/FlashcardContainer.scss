@@ -143,9 +143,32 @@
           font-size: 1.5em;
         }
       }
+      &.typedQuiz {
+        display: inline-block;
+        padding-top: 12rem;
+        width: 100%;
+      }
+
 
       @media(min-width: 660px) {
         height: 43%;
+      }
+    }
+    .form-inline {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      justify-content: center;
+      .form-group {
+        margin-bottom: 0;
+        flex-grow: 1;
       }
     }
   }

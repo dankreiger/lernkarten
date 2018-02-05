@@ -4,7 +4,7 @@ import { ButtonToolbar, Button } from 'react-bootstrap';
 import Pulse from '../Pulse/Pulse';
 import './FlashcardButtons.css';
 
-const FlashcardButtons = ({wordQuantity, previousCard, nextCard, sayWord, slowSayWord, artyomActive, quizActive, startQuiz, stopQuiz, currentCategory}) => {
+const FlashcardButtons = ({quizInput, wordQuantity, previousCard, nextCard, sayWord, slowSayWord, artyomActive, quizActive, startQuiz, stopQuiz, currentCategory}) => {
   if(!quizActive){
     return(
       <ButtonToolbar className={classNames('button-toolbar', `btn-toolbar-${currentCategory}`)}>
@@ -17,11 +17,11 @@ const FlashcardButtons = ({wordQuantity, previousCard, nextCard, sayWord, slowSa
   } else {
     return (
       <ButtonToolbar className={classNames('button-toolbar', `btn-toolbar-${currentCategory}`, 'quizButtonToolbar')}>
-        <Button className={classNames('quizButton', {stopButton: artyomActive, startButton: !artyomActive })} bsStyle={artyomActive ? 'danger' : 'success'} bsSize="large" onClick={artyomActive ? stopQuiz : startQuiz}>
-          {artyomActive ? 'Stop' : 'Start Quiz'} {artyomActive ? <Pulse/> : null}
-          <span>read the word aloud</span>
+        <Button className={classNames('quizButton', {stopButton: artyomActive || quizInput, startButton: !artyomActive || !quizInput })} bsStyle={artyomActive || quizInput ? 'danger' : 'success'} bsSize="large" onClick={artyomActive || quizInput ? stopQuiz : startQuiz}>
+          {artyomActive || quizInput ? 'Stop' : 'Start Quiz'} {artyomActive ? <Pulse/> : null}
+          {artyomActive || quizInput && <span>{artyomActive ? 'read the word aloud' : 'type in the translation'}</span>}
         </Button>
-        {artyomActive && <Button className='quizButton nextButton' bsStyle='warning' onClick={nextCard}>&#8594;</Button>}
+        {artyomActive || quizInput && <Button className='quizButton nextButton' bsStyle='warning' onClick={nextCard}>&#8594;</Button>}
       </ButtonToolbar>
     )
   }
