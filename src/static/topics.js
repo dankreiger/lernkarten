@@ -18,6 +18,7 @@ const topics = {
     professions: 'профессии',
     random_1: 'случайный 1',
     expressions: 'выражения',
+    ordinals: 'Порядковое числительное',
     greetings: 'приветствия',
     people: 'люди',
     objects: 'объекты',

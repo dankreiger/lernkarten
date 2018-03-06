@@ -1,3 +1,4 @@
+import ordinals from './ordinals';
 import verbs_1 from './verbs_1';
 import verbs_2 from './verbs_2';
 import numbers from './numbers';
@@ -16,6 +17,7 @@ import tolstoy from './tolstoy';
 import schiller from './schiller';
 
 const russian = {
+  ordinals,
   verbs_1,
   verbs_2,
   numbers,

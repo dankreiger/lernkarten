@@ -24,10 +24,16 @@
             .LanguageMenu .languageMenuList .row.menuForm .categoryQuantitySelect {
               width: 10%; } }
       .LanguageMenu .languageMenuList .row.menuListIndex {
-        height: 90%; }
+        height: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center; }
+        .LanguageMenu .languageMenuList .row.menuListIndex > div {
+          flex: 1 1 33%; }
       .LanguageMenu .languageMenuList .row div[class^="menuLinkRow-"] {
-        text-align: center;
-        display: table-row;
+        display: flex;
+        justify-content: center;
         opacity: 0;
         transition: 150ms all; }
         .LanguageMenu .languageMenuList .row div[class^="menuLinkRow-"]:first-child, .LanguageMenu .languageMenuList .row div[class^="menuLinkRow-"].showMenuLinkRow {
